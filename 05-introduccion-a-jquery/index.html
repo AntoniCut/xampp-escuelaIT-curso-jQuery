@@ -1,0 +1,61 @@
+<!--  -----------------------------------------------------  -->
+<!--  ----------  /curso-jquery-escuela-it.com/  ----------  -->
+<!--  ----------  /05-introduccion-a-jquery/  -------------  -->
+<!--  ----------  /index.html  ----------------------------  -->
+<!--  -----------------------------------------------------  -->
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/favicon/jquery-favicon-original.ico" type="image/x-icon">
+    <title> 5 - Introduccion a jQuery - Curso jQuery escuelaIT </title>
+
+    <style>
+        
+        #capa {
+            padding: 20px;
+            text-align: center;
+        }
+
+    </style>
+
+    <script 
+        src="https://code.jquery.com/jquery-3.6.3.min.js---"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" 
+        crossorigin="anonymous"
+    > </script>
+
+    <script>
+        window.jQuery || document.write('<script src="../assets/jquery/core/jquery-1.11.1.min.js">\x3C/script>')
+    </script>
+
+</head>
+
+<body>
+
+    <div class="titular-container">
+        <h1> Introducción a jQuery </h1>
+    </div>
+    
+    <div id="capa"> Hola Mundo!!! </div>
+    
+    <script>
+
+        $(document).on('ready', function () {
+
+            const jQueryVersion = $.fn.jquery;
+            console.warn('jQuery Version:', jQueryVersion);
+
+            $("#capa").css("background-color", "red");
+        });
+
+    </script>
+
+</body>
+
+</html>
