@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso de jQuery</title>
+    <style>
+        #bloqueavanzado {
+            display: none;
+            padding: 10px;
+            background-color: #ddd;
+        }
+        .error{
+            background-color: #f99;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+    <form action="enviar.php">
+        Nombre: <input type="text" name="nombre" id="fnombre" value="x">
+        <br>
+        Avanzado <input type="checkbox" name="avanzado" checked id="checkav">
+        <br>
+        <div id="bloqueavanzado">
+            Este es el bloque del formulario para "avanzado"....
+            <br>
+            <a href="#">Cerrar</a>
+        </div>
+    </form>
+
+    <form action="kk.php" id="loquesea">
+        
+    </form>
+    
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        $(function(){
+
+            $("#fnombre").on("change", function(){
+                //this atajo acceder al elemento actual (contexto)
+                var campo = $(this);
+                var texto = campo.val();
+                if(texto.length < 4){
+                    campo.addClass("error");
+                }else{
+                    campo.removeClass("error");
+                }
+            });
+
+            var ch = $("#checkav");
+
+            console.log($("form").eq(1).attr("action"));
+            console.log(ch.prop("checked"));
+
+            console.log("esto es attr -->", ch.attr("checked"));
+
+            ch.on("click", mostrarOcular);
+
+            mostrarOcular();
+
+            $("#bloqueavanzado a").on("click", function(){
+                ch.prop("checked", false);
+                mostrarOcular();
+            });
+        });
+
+        
+        function mostrarOcular(){
+            if($("#checkav").prop("checked")){
+                $("#bloqueavanzado").css("display", "block");
+            }else{
+                $("#bloqueavanzado").css("display", "none");
+            }    
+        }
+    </script>
+</body>
+</html>

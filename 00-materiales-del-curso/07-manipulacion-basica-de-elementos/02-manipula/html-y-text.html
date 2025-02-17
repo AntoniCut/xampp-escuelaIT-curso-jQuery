@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso de jQuery</title>
+</head>
+<body>
+    <div id="capa">cualquier<p> cosa</p></div>
+    
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        $(function(){
+            //Tu código jQuery
+            console.log($("#capa").html());
+
+            $("#capa").text("otro <b>texto</b>...");
+            $("#capa").html("otro <script>alert('hola')<\/script><b>texto</b>...");
+
+        });
+    </script>
+</body>
+</html>

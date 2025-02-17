@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso de jQuery</title>
+</head>
+<body>
+    <div id="capa" data-usuario="ivan">haz click</div>
+    <div id="ssss">sdfs fs</div>
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        $(function(){
+            
+            var capa = $("#capa");
+            capa.data("dato", "1234");
+            capa.removeData("usuario");
+            console.log(capa.data("usuario"));
+
+            //.............
+
+            console.log(capa.data("dato"));
+
+            $("div").on("click", acumulaClics);
+        });
+    </script>
+
+
+    <script>
+    	function acumulaClics(){
+    		console.log(this, "--->", $(this));
+			var capa = $(this);
+        	var num = capa.data("numclics");
+        	//console.log(num);
+        	if(typeof(num)=="undefined"){
+        		num = 1;
+        	}else{
+        		num += 1;
+        	}
+        	capa.data("numclics", num);
+        	if(num == 10){
+        			capa.removeData("numclics");
+        	}
+        	console.log("llevamos " ,  num , " clics" , capa);
+        }
+
+    </script>
+</body>
+</html>

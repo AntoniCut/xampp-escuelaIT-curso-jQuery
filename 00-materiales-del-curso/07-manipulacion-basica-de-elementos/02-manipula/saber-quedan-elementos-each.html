@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Yeahhhhh</h1>
+	<p class="probando">Uno</p>
+	<p>Dos</p>
+	<p class="probando">Tres</p>
+	<p class="probando">Cuatro</p>
+	<p>Cinco</p>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+	$(function(){
+		//averiguar el número de elementos seleccionados en un obj jQuery
+		console.log($(".probando").size());
+		console.log($("p").length);
+
+		//saber en un each si aun quedan elementos por recorrer
+		//Los párrafos que tienen una clase determinada 
+		var parrafosProbando = $("p.probando");
+		//numero de elementos que tengo
+		var num = parrafosProbando.size();
+		//cadena para obtener este listado de textos...
+		var listadoComas = "";
+		//bucle each para reccorrer esos párrafos y guardarse los textos
+		parrafosProbando.each(function(id, elem){
+			listadoComas += $(elem).text();
+			//compruemo si quedan párrafos
+			if(id < num -1){
+				listadoComas += ", "	
+			}
+		});
+		console.log(listadoComas);
+		
+	});
+	</script>
+</body>
+</html>
