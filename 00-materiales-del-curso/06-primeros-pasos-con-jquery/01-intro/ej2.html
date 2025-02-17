@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>cargar jQuery</title>
+	<style>
+	div{
+		background-color: #ccc;
+	}
+	.h:hover{
+		background-color: #0f0;
+	}
+	</style>
+</head>
+<body>
+	<h1>Hola mundo</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae officiis deserunt tempore accusamus nesciunt ducimus neque facere quasi, repellat ex animi incidunt enim quidem, ratione dolores sint perspiciatis, molestiae id.</p>
+	<p id="algo">id algo</p>
+	<p class="miclase">ckasdssss</p>
+	<p class="miclase">sfsd fsdf dsfd dgdfg</p>
+	<ul>
+		<li>uno</li>
+		<li>dos</li>
+		<li>tres</li>
+	</ul>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="jquery-1.11.1.min.js"><\/script>')</script>
+	<script>
+		$(document).ready(function(){
+			var parrafos = $("p");
+			console.log(parrafos);
+
+			parrafos.each(function(indice, elem){
+				//codigo para cada uno
+				console.log("hola" + indice);
+				console.log($(elem).text());
+			});
+
+			var x=[1,2,3,"x"];
+			$(x).each(function(i,e){
+				console.log(e);
+			});
+		});
+
+		$(function(){
+			//console.log(x);
+			$("li").each(recorreLi);
+
+
+			function recorreLi(indice, elem){
+				//elem existe pero no es un objeto jQuery, hay que extenderlo con $()
+				console.log(elem, $(elem));
+
+				$(elem).css("color", "red");
+
+				if($(elem).text() == "dos"){
+					$(elem).remove();
+				}
+			}
+
+			$("li").text("hola");
+		});
+	</script>
+
+</body>
+</html>

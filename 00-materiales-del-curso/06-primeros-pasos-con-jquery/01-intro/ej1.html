@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>cargar jQuery</title>
+	<style>
+	div{
+		background-color: #ccc;
+	}
+	.h:hover{
+		background-color: #0f0;
+	}
+	</style>
+</head>
+<body>
+	<h1>Hola mundo</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repudiandae officiis deserunt tempore accusamus nesciunt ducimus neque facere quasi, repellat ex animi incidunt enim quidem, ratione dolores sint perspiciatis, molestiae id.</p>
+	<p id="algo">id algo</p>
+	<p class="miclase">ckasdssss</p>
+	<p class="miclase">sfsd fsdf dsfd dgdfg</p>
+	
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="jquery-1.11.1.min.js"><\/script>')</script>
+	<script>
+		$(document).ready(function(){
+			$(".miclase").hide(2000);
+
+
+			var caja = $("<div class='h'>texto<p>parrafo</p><b>negrita</b></div>").appendTo("#algo");
+			caja.css("color", "red");
+		});
+	</script>
+
+	...
+
+	<script>
+		$(document).ready(mostrar);
+
+		function mostrar(){
+			$("p").show(2000);
+		}
+	</script>
+</body>
+</html>
