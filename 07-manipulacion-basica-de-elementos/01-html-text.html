@@ -1,0 +1,72 @@
+<!--  -------------------------------------------------------------  -->
+<!--  ----------  /curso-jquery-escuela-it.com/  ------------------  -->
+<!--  ----------  /07-manipulacion-basica-de-elementos/  ----------  -->
+<!--  ----------  /01-html-text.html  -----------------------------  -->
+<!--  -------------------------------------------------------------  -->
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../assets/favicon/jquery-favicon-original.ico" type="image/x-icon">
+    <title> Html y Text - Clase 7 - Manipulación Básica de Elementos - Curso jQuery escuelaIT </title>
+
+    <style>
+
+        h1 {
+            text-align: center;
+        }
+
+    </style>
+		
+</head>
+
+<body>
+	
+    <hr>
+    <h1> html() y text() - Clase 7 - Manipulación Básica de Elementos </h1>
+    <hr>
+
+    <div id="capa1">
+        cualquier
+        <p> cosa </p>
+    </div>
+
+    <div id="capa2"> </div>
+    <div id="capa3"> </div>
+    
+    
+	<script 
+        src="https://code.jquery.com/jquery-1.11.0.min.js" 
+        integrity="sha256-spTpc4lvj4dOkKjrGokIrHkJgNA0xMS98Pw9N7ir9oI=" 
+        crossorigin="anonymous"
+    > </script>
+
+    <script> window.jQuery || document.write('<script src="./jquery-1.11.1.min.js"><\/script>') </script>
+	
+    <script>
+		
+        $(function(){
+			
+            const jQueryVersion = $.fn.jquery;
+            console.warn('jQuery Version:', jQueryVersion);
+
+            console.log($("#capa1").html());
+
+            $("#capa2").text("otro <b>texto</b>...");
+            $("#capa3").html("otro <script>alert('hola')<\/script><b>texto</b>...");
+          
+		});
+
+	</script>
+	
+
+</body>
+
+</html>

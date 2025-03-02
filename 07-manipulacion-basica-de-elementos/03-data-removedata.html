@@ -1,0 +1,110 @@
+<!--  -------------------------------------------------------------  -->
+<!--  ----------  /curso-jquery-escuela-it.com/  ------------------  -->
+<!--  ----------  /07-manipulacion-basica-de-elementos/  ----------  -->
+<!--  ----------  /03-data-y-removedata.html  ---------------------  -->
+<!--  -------------------------------------------------------------  -->
+
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../assets/favicon/jquery-favicon-original.ico" type="image/x-icon">
+    <title> data() y removeData() - Clase 7 - Manipulación Básica de Elementos - Curso jQuery escuelaIT </title>
+
+    <style>
+        
+        h1 {
+            text-align: center;
+        }
+        
+    </style>
+
+</head>
+
+<body>
+
+    <hr>
+    <h1> data() y removeData() - Clase 7 - Manipulación Básica de Elementos </h1>
+    <hr>
+
+    <div id="capa" data-usuario="ivan"> haz click </div>
+    <div id="acumula"> Acumula Clicks, haz click </div>
+
+
+    <script src="https://code.jquery.com/jquery-1.11.0.min.js"
+        integrity="sha256-spTpc4lvj4dOkKjrGokIrHkJgNA0xMS98Pw9N7ir9oI=" crossorigin="anonymous">
+        </script>
+
+    <script> window.jQuery || document.write('<script src="../../assets/jquery/core/jquery-1.11.1.min.js"><\/script>') </script>
+
+    <script>
+
+
+        $(function () {
+
+
+            //  -----  Version de jQuery  -----
+            const jQueryVersion = $.fn.jquery;
+            console.warn('jQuery Version:', jQueryVersion);
+
+
+            //  ------  referencias al HTML  -----
+            const $capa = $("#capa");
+            const $acumula = $("#acumula");
+
+
+            //  -----  data() y removeData()  -----
+            $capa.data("dato", "1234");
+            $capa.removeData("usuario");
+
+            console.log('$capa.data("usuario") =>', $capa.data("usuario"));
+            console.log('$capa.data("dato") =>', $capa.data("dato"));
+
+
+            //  -----  'click' en cualquiera de los 2 divs que tengo  -----
+            $("div").on("click", acumulaClics);
+
+            
+            //  -----  función que cuenta el nº de clics de cada div  -----
+            function acumulaClics() {
+
+                console.log("\nthis =>", this, "\n$(this) =>", $(this));
+
+                const $div = $(this);
+                let numeroClickPorDiv = $div.data("numclics");
+                
+                
+                if (typeof (numeroClickPorDiv) == "undefined") {
+                    numeroClickPorDiv = 1;
+                    console.log('Nº de clicks: ', (numeroClickPorDiv), ' en el div: ', this);
+                }
+                else {
+                    numeroClickPorDiv += 1;
+                    console.log('Nº de clicks: ', (numeroClickPorDiv), ' en el div: ', this);
+                } 
+                
+                
+                $div.data("numclics", numeroClickPorDiv);
+                if (numeroClickPorDiv == 10) {
+                    $div.removeData("numclics");
+                }
+                
+                console.log("llevamos ", numeroClickPorDiv, " clics en el div ", this);
+            }
+
+
+        });
+
+
+    </script>
+ 
+
+</body>
+
+</html>
