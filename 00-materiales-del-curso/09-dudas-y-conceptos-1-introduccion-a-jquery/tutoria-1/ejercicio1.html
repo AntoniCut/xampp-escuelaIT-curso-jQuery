@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso de jQuery</title>
+</head>
+<body>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    <p></p>
+    
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        $(function(){
+            //Tu código jQuery
+            $("p").each(function(indice, elem){
+                console.log(indice);
+                //var pActual = $(this);
+                var pActual = $(elem);
+                pActual.text("Parrafo " + (indice + 1));
+            	
+            });
+            
+        })
+    </script>
+</body>
+</html>

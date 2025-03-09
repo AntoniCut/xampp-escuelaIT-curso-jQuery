@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>timestamp</title>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script>
+
+	$(function(){
+		$("p").children().css("color", "red");
+		$("p").children().each(function(){
+			console.log($(this).text());
+		});
+
+		$("p").siblings().css("color", "green");
+		$("p").siblings("div").css("color", "orange");
+		$("p").siblings("div").not("#undiv").css("color", "purple");
+		console.log($("table").length);
+		$("table").find(".miclase, tr:first").css("background-color", "orange");
+
+		console.log($("td").length);
+		$("td").filter(".c2").css("background-color", "grey");
+
+		//Desde el LI que tiene class="miclase" acceder a la división con texto "división amiga!!"
+		//$("li.miclase").parent().parent().next().css("color", "#3f9")
+		$("li.miclase").parents("div").next().css("color", "#3f9")
+
+
+		$("ul").find("b").css("color", "#00f");
+
+		//$("ul", "li").filter(".milista").hide(10000);
+		$("ul").find(".milista").css("font-size", "3em");
+		$("[id^='id']").css("border", "2px solid red");
+
+	});
+	</script>
+</head>
+<body>
+	<p>
+		<span class="sp">Span en el párrafo</span> esto está fuera de spam <b>y esto en negrita</b>
+	</p>
+	<ul>
+		<li>1</li>
+		<li class="milista"><b>2</b></li>
+		<li>3</li>
+		<li>
+			<ul>
+				<li id="id1" class="milista">algo</li>
+				<li id="id2">fsdfd</li>
+				<li id="id3">sdf sfsfds</li>
+				<li>sdsfsdfs</li>
+			</ul>
+			<ul class="milista">
+				<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente impedit quia qui earum, atque quibusdam odit suscipit porro. Temporibus, tempore accusamus odit tenetur ipsam? Assumenda, quaerat. Velit deserunt, dolores voluptates.</li>
+				<li>Ea perspiciatis maiores, soluta laboriosam aut? Exercitationem ea non similique dicta praesentium nostrum vitae mollitia repellendus eum quos eveniet facere quam fugit facilis delectus commodi, hic, voluptatibus vero earum placeat.</li>
+				<li>Quam voluptates expedita reprehenderit doloremque soluta quidem. Adipisci porro, rem, distinctio minus deserunt eligendi itaque laborum accusantium quod tempore dolor mollitia totam quibusdam beatae ullam odio quasi repellat maxime ad?</li>
+			</ul>
+		</li>
+	</ul>
+	<div>
+		<ul class="milista">
+			<li>Elem1</li>
+			<li><i>Elem2</i> pongo otra cosa <b>en negrita de nuevo</b></li>
+			<li class="miclase">Elem3</li>
+			<li>In sed necessitatibus facere, iusto quia odio explicabo praesentium itaque autem quo voluptatibus esse, magnam, asperiores labore totam sunt pariatur debitis a.</li>
+			<li>Lorem ipsum <span class="milista">dolor</span> sit amet, consectetur adipisicing elit. </li>
+		</ul>
+	</div>
+	<div>División amiga!!</div>
+	<div>
+		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil nesciunt, fugit ipsum ullam esse culpa repellat a fugiat totam consequatur laborum autem alias, perspiciatis repellendus cupiditate, aspernatur aliquid enim harum!
+		<table border=1>
+			<tr>
+				<td>1.1</td>
+				<td class="miclase">1.2</td>
+				<td>1.3</td>
+				<td>1.4</td>
+			</tr>
+			<tr>
+				<td class="c2">2.1</td>
+				<td>2.2</td>
+				<td class="miclase">2.3</td>
+				<td>2.4</td>
+			</tr>
+			<tr>
+				<td>3.1</td>
+				<td class="c2">3.2</td>
+				<td>3.3</td>
+				<td>3.4</td>
+			</tr>
+		</table>
+	</div>
+	<div>
+		Esta es otra <span>división</span>
+	</div>
+	<div id="undiv">
+		Esta es otra división que tiene id <span class="sp">"undiv"</span> </div>
+
+</body>
+</html>

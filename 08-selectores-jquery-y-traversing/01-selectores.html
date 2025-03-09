@@ -1,0 +1,240 @@
+<!--  -----------------------------------------------------------  -->
+<!--  ----------  /curso-jquery-escuela-it.com/  ----------------  -->
+<!--  ----------  /08-selectores-jquery-y-traversing/  ----------  -->
+<!--  ----------  /01-selectores.html  --------------------------  -->
+<!--  -----------------------------------------------------------  -->
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../assets/favicon/jquery-favicon-original.ico" type="image/x-icon">
+    <title> Selectores - Clase 8 - Selectores de jQuery y Traversing - Curso jQuery escuelaIT </title>
+
+    <style>
+
+        body {
+            width: 100%;
+            max-width: 1024px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        #contenido {
+            padding-left: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 20px;
+            font-weight: bold;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            color: white;
+            background-color: cornflowerblue;
+            transition: all 300 ms ease-in-out;
+        }
+
+        button:hover {
+            background-color: rgb(33, 76, 155);
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <hr>
+    <h1 class="title"> Selectores - Clase 8 - Selectores de jQuery y Traversing </h1>
+    <hr>
+
+    <div id="contenido">
+
+        <p> p indice 1 </p>
+        <p> p indice 2 </p>
+        <h1> header h1 </h1>
+        
+        <div>
+            
+            <P>
+                Párrafo 
+                <span> 
+                    span del 
+                    <i> párrafo </i>
+                </span> 
+                <b> 
+                    Negrita 
+                    <i> italica </i> 
+                    <span>
+                        Otro span dentro de negrita
+                    </span>
+                </b>
+            </P>
+            
+            <P id="p2">
+                Párrafo con id 2
+                <span>
+                    span del <i> párrafo </i>
+                </span> 
+                <b> Negrita 
+                    <span>
+                        Otro span dentro de negrita
+                    </span>
+                </b>
+            </P>
+            
+            <P>
+                Párrafo 
+                <span>
+                    span del 
+                    <i> párrafo </i>
+                </span> 
+                <b> Negrita 
+                    <span> 
+                        Otro span dentro de negrita 
+                    </span>
+                </b>
+            </P>
+            
+            <P>
+                Párrafo 
+                <span>
+                    span del 
+                    <i> párrafo </i>
+                </span> 
+                <b> 
+                    Negrita 
+                    <span>
+                        Otro span dentro de negrita
+                    </span>
+                </b>
+            </P>
+
+        </div>
+
+        <blockquote>
+            
+            <p> probando parrafo 1 de la etiqueta blockquote </p>
+            
+            <p> probando parrafo 2 de la etiqueta blockquote </p>
+            
+            <table>
+                <tr>
+                    <td> 1 </td>
+                    <td> 2 </td>
+                    <td> 3 </td>
+                    <td> 4 </td>
+                </tr>
+                <tr>
+                    <td> 5 </td>
+                    <td> 6 </td>
+                    <td> 7 </td>
+                    <td> 8 </td>
+                </tr>
+                <tr>
+                    <td> 9 </td>
+                    <td> 10 </td>
+                    <td> 11 </td>
+                    <td> 12 </td>
+                </tr>
+                <tr>
+                    <td> 13 </td>
+                    <td> 14 </td>
+                    <td> 15 </td>
+                    <td> 16 </td>
+                </tr>
+            </table>
+
+        </blockquote>
+
+        <h2> Encabezamiento nivel 2 </h2>
+        
+        <p>
+            probando parrafo 3 de la etiqueta blockquote dentro enlace
+            <a href="#"> enlace </a>
+        </p>
+
+        <p>
+            probando parrafo 4 de la etiqueta blockquote dentro enlace y span
+            <a href="#"> enlace </a>
+            <span> span </span>
+        </p>
+
+        <a href="#"> enlace </a>
+
+    </div>
+
+    <br> <br> <hr> <br> <br>
+
+    <button id="btn1"> Jerarquia a cualquier nivel </button>
+    <button id="btn2"> Hijos Directos </button>
+    <button id="btn3"> Hermanos </button>
+    <button id="btn4"> No parrafo con id 2 </button>
+    <button id="btn5"> Primer hijo de todos los parrafos </button>
+    <button id="btn6"> Probando de los parrafos que lo contengan </button>
+
+
+    <script 
+        src="https://code.jquery.com/jquery-1.11.0.min.js"
+        integrity="sha256-spTpc4lvj4dOkKjrGokIrHkJgNA0xMS98Pw9N7ir9oI=" 
+        crossorigin="anonymous"
+    > </script>
+
+    <script> window.jQuery || document.write('<script src="./jquery-1.11.1.min.js"><\/script>') </script>
+
+    <script>
+
+        $(function () {
+
+            const jQueryVersion = $.fn.jquery;
+            console.warn('jQuery Version:', jQueryVersion);
+
+            $("#btn1").click(function() {
+                $("p span").css("color", "red");
+            });
+
+            $("#btn2").click(function() {
+                $("p > span").css("color", "red");
+            });
+
+            $("#btn3").click(function() {
+                $("div ~ p").css("color", "red");
+            });
+
+            $("#btn4").click(function() {
+                $("p:not(#p2)").css("color", "green");
+            });
+
+            $("#btn5").click(function() {
+                
+                $("p:first-child").css({
+                    "font-size": "2em",
+                    "border": "1px solid #445",
+                    "background-color": "#ffc"
+                });
+            });
+
+            $("#btn6").click(function() {
+                
+                $("p:contains('probando')").hide(3000);
+            });
+           
+        });
+
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	
+<div id="contenido">
+    
+        <p> p indice 1</p>
+        <p> p indice 2</p>
+        <h1>header h1</h1>
+       <div>
+                    <P>Párrafo <span>span del <i>párrafo</i></span> <b>Negrita <i>italica</i> <span>Otro span dentro de negrita</span></b></P>
+                    <P id="p2">Párrafo <span>span del <i>párrafo</i></span> <b>Negrita <span>Otro span dentro de negrita</span></b></P>
+                    <P>Párrafo <span>span del <i>párrafo</i></span> <b>Negrita <span>Otro span dentro de negrita</span></b></P>
+                    <P>Párrafo <span>span del <i>párrafo</i></span> <b>Negrita <span>Otro span dentro de negrita</span></b></P>
+            </div>
+            <blockquote>
+                    <p>
+                            probando p1dfsdfsd f...
+                    </p>
+                    <p>
+                            probando p1
+                    </p>
+                    <table>
+                            <tr>
+                                    <td>1</td>
+                                    <td>2</td>
+                                    <td>3</td>
+                                    <td>4</td>
+                            </tr>
+                            <tr>
+                                    <td>5</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td>8</td>
+                            </tr>
+                            <tr>
+                                    <td>9</td>
+                                    <td>10</td>
+                                    <td>11</td>
+                                    <td>12</td>
+                            </tr>
+                            <tr>
+                                    <td>13</td>
+                                    <td>14</td>
+                                    <td>15</td>
+                                    <td>16</td>
+                            </tr>
+                    </table>
+            </blockquote>
+            <h2>Encabezamiento nivel 2</h2>
+            <p>
+                    dfs sf s<a href="#">enlace</a>
+            </p>
+            <p>
+                    probando p4
+                    <a href="#">enlace</a>
+                    <span>dsds</span>
+            </p>
+    
+            <a href="#">enlace</a>
+    </div>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$("div ~ p").css("color", "red");
+		$("p:not(#p2)").css("color", "green");
+		$("p:first-child").css({
+			"font-size": "2em",
+			"border": "1px solid #445",
+			"background-color": "#ffc"
+		});
+		$("p:contains('probando')").hide(3000);
+	</script>
+</body>
+</html>

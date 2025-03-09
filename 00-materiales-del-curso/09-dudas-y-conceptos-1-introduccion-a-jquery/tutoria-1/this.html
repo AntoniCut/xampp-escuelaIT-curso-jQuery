@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso de jQuery</title>
+</head>
+<body>
+    clases --> definición elementos que forman parte de un sistema
+    objetos ---> ejemplares concretos de una definición
+
+	planos de una casa --> clase
+	casa cuando está construida --> objeto
+
+	definicíón de las funcionalidades ---> metodos (funciones definidas en una clase) utilizamos this
+
+	1 clase ---> n objetos (tantos como casas hay con aquel plano de la casa)
+
+	------
+	-----
+	-----
+	----- la casa sobre la que se invocó aquel método (funcionalidad)
+	this (este) 
+
+	----------------------------------------
+
+	jquery no se usa diseño orientado a objetos, si sintaxis
+	this ¿quien referencia? esta capa o este elemento sobre el que estamos trabajando....
+	this ---> contexto
+
+	----------------------------------------
+
+
+	<ul>
+		<li>e1</li>
+		<li>e2</li>
+		<li>e3</li>
+	</ul>
+    
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        $(function(){
+            //Tu código jQuery
+            $("li").each(function(){
+            	//operaciones que quieres realizar para cada elemento "genérico", en este caso son los LI de mi página.
+            	//este codigo se ejecutará 3 veces
+            	//this en cada iteración será el LI actual
+            	console.log(this);
+            	//this no está extendido con las funcionalidades de jquery
+            	//this es un objeto javascript nativo, nada a ver con jquery
+            	//sobre this yo podré ejecutar cosas que tengan q ver con javascript, pero no con cosas que tengan que ver con jquery
+            	var elemActual = $(this);
+            	elemActual.css("color", "green");
+            	// esto no lo podría hacer porque this, tal cual, no es un objeto jquery this.css("background-color", "orange");
+            	console.log("innerHTML:", this.innerHTML);
+            	alert("paro un instante");
+            });
+            
+        })
+    </script>
+</body>
+</html>
