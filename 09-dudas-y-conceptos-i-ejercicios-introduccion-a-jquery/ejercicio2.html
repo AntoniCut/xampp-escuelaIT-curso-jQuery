@@ -1,0 +1,129 @@
+<!--  ---------------------------------------------------------------------------------  -->
+<!--  ----------  /curso-jquery-escuela-it.com/  --------------------------------------  -->
+<!--  ----------  /09-dudas-y-conceptos-i-ejercicios-introduccion-a-jquery/  ----------  -->
+<!--  ----------  /ejercicio2.html  ---------------------------------------------------  -->
+<!--  ---------------------------------------------------------------------------------  -->
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../assets/favicon/jquery-favicon-original.ico" type="image/x-icon">
+    <title> Ejercicio 2 - Clase 9 - Dudas y Conceptos I - Ejercicios Introduccion a jQuery - Curso jQuery escuelaIT </title>
+
+    <style>
+        
+        body {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            margin-bottom: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        .title {
+            text-align: center;
+        }
+
+        .contenido {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        
+        li {
+            margin-bottom: 10px;
+        }
+       
+    </style>
+
+</head>
+
+<body>
+
+    <hr>
+    <h1 class="title"> Ejercicio 2 - Clase 9 - Dudas y Conceptos I - Ejercicios Introduccion a jQuery </h1>
+    <hr>
+
+    <pre>
+
+        2.- Crea una lista con varios LI. Luego te creas un array Javascript con valores de colores
+            RGB. Luego recorres todos los LI y vas asignando colores de fondo con valores que sacas
+            del array.
+            
+            var colores = ["#f4e", "#600", ...]
+
+            Con ese array, el primer LI tendría el background-color #f4e y el segundo "#600"... así todo
+            seguido.
+    </pre>
+
+    <br> <hr> <br>
+
+    <div class="contenido">
+
+        <ul>
+            <li> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum debitis, atque corporis minima amet similique numquam, nihil repellat ex quo iste laudantium necessitatibus ab commodi nostrum perspiciatis suscipit maiores sapiente. </li>
+            <li> Nostrum commodi reiciendis quam doloribus omnis minus at provident, optio adipisci, iure officiis sint assumenda. Deleniti sit fugit officiis unde, eum iusto aliquid labore quasi reiciendis, fuga cumque aperiam repellat. </li>
+            <li> Beatae nisi assumenda vel, veritatis porro quod, quidem sapiente repellendus pariatur ipsam, sequi doloremque consequuntur atque ab, ipsum incidunt tenetur obcaecati odio ratione facere eius ea! Voluptatem minus delectus quis. </li>
+            <li> Adipisci inventore ipsum eaque exercitationem voluptatibus natus maiores fugiat soluta ea, fugit omnis saepe pariatur, dicta, odio. Id sint fuga sit amet, temporibus, nostrum minima, porro ipsum totam dolor optio. </li>
+            <li> Id repellat nihil expedita quidem, eligendi earum aperiam illo sapiente perspiciatis recusandae inventore sunt natus voluptatem temporibus accusantium libero voluptates dolorem error. Praesentium, fuga, temporibus iste quibusdam aspernatur possimus rerum. </li>
+            <li> Maxime distinctio mollitia inventore error fugiat, harum quibusdam eum cumque iste necessitatibus soluta nobis consequatur, eius consectetur. Rerum nihil, obcaecati quisquam porro suscipit corporis nam, placeat. Consequatur nulla quo doloremque! </li>
+            <li> Nulla veritatis, delectus aut alias accusantium porro ad perferendis ipsum, earum voluptatum omnis, tenetur excepturi quisquam quasi atque corrupti tempore. Deserunt eaque, a quod enim omnis, commodi voluptatem quae sit! </li>
+            <li> Doloremque officia, numquam iste minima voluptatibus enim ad impedit aspernatur consectetur eos optio ipsum illum aliquid aperiam repudiandae rerum, tenetur sapiente molestiae quod cupiditate laudantium! Perspiciatis blanditiis numquam ratione reprehenderit. </li>
+            <li> Praesentium autem quibusdam iusto suscipit nam ex sapiente pariatur ullam corporis, ipsa magni in rem veniam omnis quaerat reprehenderit dicta tempora modi eius voluptatum facere. Ipsam assumenda similique non, nihil. </li>
+            <li> Officia sapiente, quaerat magnam aut. Ex perspiciatis, modi labore voluptatem ad. Maxime excepturi, culpa autem delectus aliquid eum expedita similique natus, accusantium reiciendis ratione sed perferendis accusamus. Deleniti, sequi officia! </li>
+        </ul>
+                
+    </div>
+
+    <br> <hr>
+
+    
+    <script 
+        src="https://code.jquery.com/jquery-1.11.0.min.js"
+        integrity="sha256-spTpc4lvj4dOkKjrGokIrHkJgNA0xMS98Pw9N7ir9oI=" 
+        crossorigin="anonymous"
+    > </script>
+
+    <script> window.jQuery || document.write('<script src="./jquery-1.11.1.min.js"><\/script>') </script>
+
+    <script>
+
+        const arrayRGB=[
+            "#FF8C00",
+            "#FFD700",
+            "#B8860B",
+            "#F0E68C",
+            "#FF4500",
+            "#FF0000",
+            "#FF7F50",
+            "#FA8072",
+            "#00FF00",
+            "#00FA9A"
+        ];
+        
+        
+        $(function () {
+
+            const jQueryVersion = $.fn.jquery;
+            console.warn('jQuery Version:', jQueryVersion);
+
+            $("li").each(function(index, elem) {
+
+                $(elem).css("background-color", arrayRGB[index]);
+
+            });
+
+        });
+
+    </script>
+
+</body>
+
+</html>

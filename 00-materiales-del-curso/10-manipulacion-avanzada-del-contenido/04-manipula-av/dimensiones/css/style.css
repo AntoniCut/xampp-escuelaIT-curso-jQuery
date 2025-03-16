@@ -1,0 +1,8 @@
+.capa {
+  width: 200px;
+  height: 100px;
+  background-color: #ddd;
+  padding: 20px;
+  margin: 100px;
+  border: 10px solid red;
+}
