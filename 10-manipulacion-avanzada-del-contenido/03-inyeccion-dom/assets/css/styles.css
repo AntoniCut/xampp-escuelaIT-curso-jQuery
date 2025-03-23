@@ -1,0 +1,27 @@
+/*  -----------------------------------------------------------------  */
+/*  ----------  /curso-jquery-escuela-it.com/  ----------------------  */
+/*  ----------  /10-mainipulacion-avanzada-del-contenido/  ----------  */
+/*  ----------  /03-inyeccion-dom/  ---------------------------------  */
+/*  ----------  /assets/css/styles.css  -----------------------------  */
+/*  -----------------------------------------------------------------  */
+
+
+body {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+.title {
+    text-align: center;
+}
+
+a {
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: antiquewhite;
+}

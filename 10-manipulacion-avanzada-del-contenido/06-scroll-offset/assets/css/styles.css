@@ -1,0 +1,92 @@
+/*  -----------------------------------------------------------------  */
+/*  ----------  /curso-jquery-escuela-it.com/  ----------------------  */
+/*  ----------  /10-mainipulacion-avanzada-del-contenido/  ----------  */
+/*  ----------  /06-scroll-offset/  ---------------------------------  */
+/*  ----------  /assets/css/styles.css  -----------------------------  */
+/*  -----------------------------------------------------------------  */
+
+
+body {
+    display: flex;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: rgb(230, 235, 241);
+    box-shadow: inset 0px 0px 20px rgb(209, 220, 235);
+}
+
+.layout {
+    width: 100%;
+    
+    min-height: 1500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.layout__header {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: cornflowerblue;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.layout__title {
+    font-size: 36px;
+    color: #E6EBF1;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.layout__content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.btn__container {
+    margin-top: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: cornflowerblue;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: rgb(24, 56, 116)
+}
+
+#p1 {
+    width: 50%;
+    padding: 20px;
+    background-color: burlywood;
+    cursor: pointer;
+}
+
+.capa {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #ccc;
+}
+
+.pos {
+    position: absolute;
+    top: 85px;
+    left: 125px;
+}
