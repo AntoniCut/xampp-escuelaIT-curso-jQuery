@@ -1,0 +1,25 @@
+/*  ---------------------------------------------------------------------------------  */
+/*  ----------  /curso-jquery-escuela-it.com/  ----------------------  --------------  */
+/*  ----------  /09-dudas-y-conceptos-i-ejercicios-introduccion-a-jquery/  ----------  */  
+/*  ----------  /07-ejercicio-date/  ------------------------------------------------  */
+/*  ----------  /assets/css/styles.css  ---------------------------------------------  */
+/*  ---------------------------------------------------------------------------------  */
+
+
+.contenido {
+    padding-left: 5rem;
+    padding-right: 5rem;
+}
+
+p {
+    padding: 1rem;
+}
+
+#result {
+    width: 100%;
+    min-height: 5rem;
+    line-height: 5rem;
+    padding-left: 1rem;
+    text-align: center;
+    background-color: rgb(250, 247, 243);
+}
