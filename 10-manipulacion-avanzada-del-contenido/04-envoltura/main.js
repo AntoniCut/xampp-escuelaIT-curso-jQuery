@@ -2,12 +2,12 @@
 //  ----------  /curso-jquery-escuela-it.com/  ----------------------  
 //  ----------  /10-mainipulacion-avanzada-del-contenido/  ----------  
 //  ----------  /04-envoltura/  -------------------------------------  
-//  ----------  /load-jquery-and-script.js  -------------------------
+//  ----------  /main.js  -------------------------------------------
 //  ----------------------------------------------------------------- 
 
 
 import { loadJQueryByCdnOLocal } from "../../assets/plugins/load-jquery-by-cdn-local.js";
-import { envoltura } from "./assets/js/index.js";
+import { envoltura } from "./assets/js/envoltura.js";
 
 
 //  ----------  Carga de jQuery  ----------

@@ -1,13 +1,13 @@
 //  -----------------------------------------------------------------  
 //  ----------  /curso-jquery-escuela-it.com/  ----------------------  
 //  ----------  /10-mainipulacion-avanzada-del-contenido/  ----------  
-//  ----------  /01-inyeccion-append-prepend/  ----------------------  
-//  ----------  /load-jquery-and-script.js  -------------------------
+//  ----------  /06-scroll-offset/  ---------------------------------  
+//  ----------  /main.js.js  ----------------------------------------
 //  ----------------------------------------------------------------- 
 
 
 import { loadJQueryByCdnOLocal } from "../../assets/plugins/load-jquery-by-cdn-local.js";
-import { inyeccionAppendPreppend } from "./assets/js/index.js";
+import { scrollOffset } from "./assets/js/scroll-offset.js";
 
 
 //  ----------  Carga de jQuery  ----------
@@ -16,7 +16,7 @@ const integrityCdnJQuery = "sha256-spTpc4lvj4dOkKjrGokIrHkJgNA0xMS98Pw9N7ir9oI="
 const crossOriginCdnJQuery = "anonymous";
 const referrePolicyCdnJQuery = "no-referrer";
 const srcLocalJQuery = "../../assets/jquery/core/jquery-1.11.1.min.js";
-const scriptMain = inyeccionAppendPreppend;
+const scriptMain = scrollOffset;
 
 
 //  -----  Ejecutamos las Promesa  -----

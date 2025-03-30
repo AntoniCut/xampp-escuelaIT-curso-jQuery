@@ -2,7 +2,7 @@
 //  ----------  /curso-jquery-escuela-it.com/  ----------------------
 //  ----------  /10-mainipulacion-avanzada-del-contenido/  ----------
 //  ----------  /06-scroll-offset/  ---------------------------------
-//  ----------  /assets/js/index.js  --------------------------------
+//  ----------  /assets/js/scroll-offset.js  ------------------------
 //  -----------------------------------------------------------------
 
 
@@ -40,13 +40,13 @@ export const scrollOffset = ($) => {
 
 
     $p1.on("click", function () {
-        const scrollActual = $(window).scrollTop();
+        const scrollActual = $(window).scrollTop() - "200px";
         alert("El scroll actual de la ventana es: " + scrollActual);
     });
 
     $btnScroll.on("click", function () {
         
-        const posicionParrafo = $p1.offset().top;
+        const posicionParrafo = $p1.offset().top - 250;
                 
         $("html, body").scrollTop(posicionParrafo);
         
@@ -55,7 +55,7 @@ export const scrollOffset = ($) => {
 
     $btnScrollAnimation.on("click", function () {
         
-        const posicionParrafo = $p1.offset().top;
+        const posicionParrafo = $p1.offset().top - 250;
                 
         $("html, body").animate({ 
             scrollTop: posicionParrafo 

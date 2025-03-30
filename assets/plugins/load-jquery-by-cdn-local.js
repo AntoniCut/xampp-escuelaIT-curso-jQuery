@@ -3,8 +3,16 @@
 //  ---------- -----------------------------------------
 
 
-export function loadJQueryByCdnOLocal(srcCdn, integrityCdn, crossOriginCdn, referePolicyCdn, srcLocal) {
+export function loadJQueryByCdnOLocal( jQueryConfig ) {
     
+    const { 
+        srcCdnJQuery, 
+        integrityCdnJQuery, 
+        crossOriginCdnJQuery, 
+        referePolicyCdnJQuery, 
+        srcLocalJQuery 
+    } = jQueryConfig;
+
     return new Promise((resolve, reject) => {
         
         //  -----  Verifica si jQuery ya está cargado  -----
@@ -19,10 +27,10 @@ export function loadJQueryByCdnOLocal(srcCdn, integrityCdn, crossOriginCdn, refe
 
         //  -----  Crea el script del CDN  -----
         const script = document.createElement("script");
-        script.src = srcCdn;
-        script.integrity = integrityCdn;
-        script.crossOrigin = crossOriginCdn;
-        script.referrerPolicy = referePolicyCdn;
+        script.src = srcCdnJQuery;
+        script.integrity = integrityCdnJQuery;
+        script.crossOrigin = crossOriginCdnJQuery;
+        script.referrerPolicy = referePolicyCdnJQuery;
 
 
         //  -----  Eventos de Carga  -----
@@ -38,7 +46,7 @@ export function loadJQueryByCdnOLocal(srcCdn, integrityCdn, crossOriginCdn, refe
 
             //  -----  Si el CDN falla, carga jQuery localmente  -----
             const localScript = document.createElement("script");
-            localScript.src = srcLocal;
+            localScript.src = srcLocalJQuery;
 
             //  -----  Eventos de Carga  -----
             localScript.onload = () => {

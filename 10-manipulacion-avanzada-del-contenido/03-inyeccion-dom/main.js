@@ -1,13 +1,13 @@
 //  -----------------------------------------------------------------  
 //  ----------  /curso-jquery-escuela-it.com/  ----------------------  
 //  ----------  /10-mainipulacion-avanzada-del-contenido/  ----------  
-//  ----------  /06-scroll-offset/  ---------------------------------  
-//  ----------  /load-jquery-and-script.js  -------------------------
+//  ----------  /03-envoltura/  -------------------------------------  
+//  ----------  /main.js  -------------------------------------------
 //  ----------------------------------------------------------------- 
 
 
 import { loadJQueryByCdnOLocal } from "../../assets/plugins/load-jquery-by-cdn-local.js";
-import { scrollOffset } from "./assets/js/index.js";
+import { inyeccionDom } from "./assets/js/inyeccion-dom.js";
 
 
 //  ----------  Carga de jQuery  ----------
@@ -16,7 +16,7 @@ const integrityCdnJQuery = "sha256-spTpc4lvj4dOkKjrGokIrHkJgNA0xMS98Pw9N7ir9oI="
 const crossOriginCdnJQuery = "anonymous";
 const referrePolicyCdnJQuery = "no-referrer";
 const srcLocalJQuery = "../../assets/jquery/core/jquery-1.11.1.min.js";
-const scriptMain = scrollOffset;
+const scriptMain = inyeccionDom;
 
 
 //  -----  Ejecutamos las Promesa  -----

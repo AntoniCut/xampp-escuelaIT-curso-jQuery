@@ -2,12 +2,12 @@
 //  ----------  /curso-jquery-escuela-it.com/  ----------------------  
 //  ----------  /10-mainipulacion-avanzada-del-contenido/  ----------  
 //  ----------  /02-inyeccion-after-before/  ------------------------  
-//  ----------  /load-jquery-and-script.js  -------------------------
+//  ----------  /main.js  -------------------------------------------
 //  ----------------------------------------------------------------- 
 
 
 import { loadJQueryByCdnOLocal } from "../../assets/plugins/load-jquery-by-cdn-local.js";
-import { inyeccionAfterBefore } from "./assets/js/index.js";
+import { inyeccionAfterBefore } from "./assets/js/inyeccion-after-before.js";
 
 
 //  ----------  Carga de jQuery  ----------

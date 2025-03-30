@@ -11,7 +11,7 @@ export const inyeccionDom = ($) => {
     
     //  -----  insertar un hr después de cada item  -----
     //$("<hr>").insertAfter(".item");
-    $(".item").after("<br> <hr> <br>");
+    $(".item").after("<hr>");
 
     
     //  -----  generar enlace  -----

@@ -8,9 +8,14 @@
 
 #div1,
 #div2 {
-    margin-top: 50px;
     padding: 30px;
     color: green;
+}
+
+#div1 span,
+#div2 span {
+    font-size: 3rem;
+    font-weight: bold;
 }
 
 .p1 {

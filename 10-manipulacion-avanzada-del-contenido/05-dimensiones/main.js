@@ -1,13 +1,13 @@
 //  -----------------------------------------------------------------  
 //  ----------  /curso-jquery-escuela-it.com/  ----------------------  
 //  ----------  /10-mainipulacion-avanzada-del-contenido/  ----------  
-//  ----------  /03-envoltura/  -------------------------------------  
-//  ----------  /load-jquery-and-script.js  -------------------------
+//  ----------  /05-dimensiones/  -----------------------------------  
+//  ----------  /main.js  -------------------------------------------
 //  ----------------------------------------------------------------- 
 
 
 import { loadJQueryByCdnOLocal } from "../../assets/plugins/load-jquery-by-cdn-local.js";
-import { inyeccionDom } from "./assets/js/index.js";
+import { dimensiones } from "./assets/js/dimensiones.js";
 
 
 //  ----------  Carga de jQuery  ----------
@@ -16,7 +16,7 @@ const integrityCdnJQuery = "sha256-spTpc4lvj4dOkKjrGokIrHkJgNA0xMS98Pw9N7ir9oI="
 const crossOriginCdnJQuery = "anonymous";
 const referrePolicyCdnJQuery = "no-referrer";
 const srcLocalJQuery = "../../assets/jquery/core/jquery-1.11.1.min.js";
-const scriptMain = inyeccionDom;
+const scriptMain = dimensiones;
 
 
 //  -----  Ejecutamos las Promesa  -----

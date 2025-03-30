@@ -18,8 +18,10 @@
     <link rel="shortcut icon" href="../../assets/favicon/jquery-favicon-original.ico" type="image/x-icon">
     <title> 5 - Dimensiones - Clase 10 - Manipulación Avanzada del Contenido - Curso jQuery escuelaIT </title>
 
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/layout.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <script type="module" src="./load-jquery-and-script.js"> </script>
+    <script type="module" src="./main.js"> </script>
 
 </head>
 
@@ -28,20 +30,26 @@
 
     <div class="layout">
 
-        <h1 class="layout__title"> 5 - Dimensiones </h1>
+        <header class="layout__header">
+            <h1 class="layout__title"> 5 - Dimensiones </h1>
+        </header>
 
-        <div class="btn__container">
-            <button id="btnWidth"> Width 10% Capa </button>
-            <button id="btnHeight"> Height 300px Capa </button>
-            <button id="btnInnerWidth"> InnerWidth </button>
-            <button id="btnInnerHeight"> InnerHeight </button>
-            <button id="btnOuterWidth"> OuterWidth - true </button>
-            <button id="btnOuterHeight"> OuterHeight - false </button>
-        </div>
+        <main class="layout__content">
 
-        <img src="./assets/img/dimensiones.png" alt="imagen dimensiones" class="imagen">
-
-        <div class="capa"> Esto es una capa </div>
+            <div class="btn__container">
+                <button id="btnWidth"> Width 10% Capa </button>
+                <button id="btnHeight"> Height 300px Capa </button>
+                <button id="btnInnerWidth"> InnerWidth </button>
+                <button id="btnInnerHeight"> InnerHeight </button>
+                <button id="btnOuterWidth"> OuterWidth - true </button>
+                <button id="btnOuterHeight"> OuterHeight - false </button>
+            </div>
+    
+            <img src="./assets/img/dimensiones.png" alt="imagen dimensiones" class="img-dimensiones">
+    
+            <div class="capa"> Esto es una capa </div>
+            
+        </main>
 
     </div>
 

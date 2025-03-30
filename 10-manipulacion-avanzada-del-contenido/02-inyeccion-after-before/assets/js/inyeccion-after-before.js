@@ -2,7 +2,7 @@
 //  ----------  /curso-jquery-escuela-it.com/  ----------------------
 //  ----------  /10-mainipulacion-avanzada-del-contenido/  ----------
 //  ----------  /01-inyeccion-append-prepend/  ----------------------
-//  ----------  /assets/js/index.js  --------------------------------
+//  ----------  /assets/js/inyeccion-after-before.js  ---------------
 //  -----------------------------------------------------------------
 
 
