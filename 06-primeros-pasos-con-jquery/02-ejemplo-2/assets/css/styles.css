@@ -1,0 +1,21 @@
+/*  ------------------------------------------------------  */
+/*  ----------  /curso-jquery-escuela-it.com/  -----------  */
+/*  ----------  /06-primeros-pasos-con-jquery/  ----------  */  
+/*  ----------  /02-ejemplo-2/  --------------------------  */
+/*  ----------  /assets/css/styles.css  ------------------  */
+/*  ------------------------------------------------------  */
+
+.h {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #ccc;
+}
+
+.h:hover{
+    background-color: #0f0;
+}
+
+#info {
+    padding: 3rem;
+    background-color: aquamarine;
+}

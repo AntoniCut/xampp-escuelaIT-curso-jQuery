@@ -1,0 +1,137 @@
+<!--  ------------------------------------------------------  -->
+<!--  ----------  /curso-jquery-escuela-it.com/  -----------  -->
+<!--  ----------  /06-primeros-pasos-con-jquery/  ----------  -->
+<!--  ----------  /02-ejemplo-2/  -------------------------- -->
+<!--  ----------  /index.html  -----------------------------  -->
+<!--  ------------------------------------------------------  -->
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../../assets/favicon/jquery-favicon-original.ico" type="image/x-icon">
+    <title> Ejemplo 2 - Clase 6 - Primeros pasos con jQuery - Curso jQuery escuelaIT </title>
+
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"> </script>
+    <script> window.jQuery || document.write('<script src="../../assets/jquery/core/jquery-1.11.1.min.js"><\/script>') </script>
+
+</head>
+
+
+<body>
+
+    <div class="layout">
+
+        <header class="layout__header">
+            <h1 class="layout__title"> Ejemplo 2 - Clase 6 - Hola mundo </h1>
+        </header>
+
+        <main class="layout__content">
+
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Repudiandae officiis deserunt tempore accusamus nesciunt ducimus neque facere quasi,
+                repellat ex animi incidunt enim quidem, ratione dolores sint perspiciatis, molestiae id.
+            </p>
+
+            <p id="algo"> párrafo con id = algo </p>
+            <p class="miclase"> párrafo con clase = miclase </p>
+            <p class="miclase"> párrafo con clase = miclase </p>
+
+            <pre>
+                let x = [1, 2, 3, "x"];
+            </pre>
+
+            <ul>
+                <li> uno </li>
+                <li> dos </li>
+                <li> tres </li>
+            </ul>
+
+            <div id="info"> </div>
+
+        </main>
+
+    </div>
+
+
+    <script>
+
+        $(document).ready(function () {
+
+            const jQueryVersion = $.fn.jquery;
+            console.warn('jQuery Version:', jQueryVersion);
+
+
+            const $parrafos = $("p");
+            const $info = $("#info");
+
+            console.log('parrafos', $parrafos);
+            //$info.append( $parrafos.html() );
+
+            $parrafos.each(function (indice, elem) {
+
+                //  -----  codigo para cada uno  -----
+                console.log("\nhola - " + indice);
+
+                elem = $(elem);
+                console.log('Texto del párrafo ', (indice + 1), ' - ', elem.text());
+                $info.append(`<br> <h3> Texto del párrafo ${(indice + 1)}, ${elem.text()} </h3>`);
+            });
+
+
+            let x = [1, 2, 3, "x"];
+
+            console.log('\n');
+
+            $(x).each(function (i, e) {
+                console.log('posicion ', i, ' elemento ', e, ' del array x');
+                $info.append(`<br> <h3> Posición ${i}, elemento ${e} del array x </h3>`);
+            });
+
+        });
+
+
+        $(function () {
+            
+            const jQueryVersion = $.fn.jquery;
+            console.log('\n');
+            console.warn('jQuery Version:', jQueryVersion);
+
+            const $info = $("#info");
+
+            // Primero modificamos el texto de todos los <li> a "hola"
+            $("li").text("hola");
+
+            // Luego recorremos los elementos
+            $("li").each(recorreLi);
+
+            function recorreLi(indice, elem) {
+                
+                console.log('elem', elem, ' - indice ', indice, ' - $(elem)', $(elem), ' - texto de li', $(elem).text());
+                $info.append(`<br> <h3> elem ${$(elem).text()} - indice ${indice} - $(elem) ${$(elem).text()} - texto de li ${$(elem).text()} </h3>`);
+
+                $(elem).css("color", "red");
+
+                if ($(elem).text() == "dos") {
+                    $(elem).remove();
+                }
+            }
+        });
+
+       
+    </script>
+
+</body>
+
+</html>
