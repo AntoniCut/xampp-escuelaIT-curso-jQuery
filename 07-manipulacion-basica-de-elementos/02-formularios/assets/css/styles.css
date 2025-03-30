@@ -1,0 +1,28 @@
+/*  -------------------------------------------------------------  */
+/*  ----------  /curso-jquery-escuela-it.com/  ------------------  */
+/*  ----------  /07-manipulacion-basica-de-elementos/  ----------  */  
+/*  ----------  /02-formularios/  -------------------------------  */
+/*  ----------  /assets/css/styles.css  -------------------------  */
+/*  -------------------------------------------------------------  */
+
+
+#bloqueavanzado {
+    display: none;
+    padding: 2rem;
+    background-color: #ddd;
+}
+
+a {
+    color: blueviolet;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+a:hover {
+    font-size: 2.2rem;
+}
+
+.error {
+    background-color: #f99;
+    border: 2px solid red;
+}

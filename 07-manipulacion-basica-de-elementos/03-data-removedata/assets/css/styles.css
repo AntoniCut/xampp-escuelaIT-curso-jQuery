@@ -1,0 +1,20 @@
+/*  -------------------------------------------------------------  */
+/*  ----------  /curso-jquery-escuela-it.com/  ------------------  */
+/*  ----------  /07-manipulacion-basica-de-elementos/  ----------  */  
+/*  ----------  /03-data-removedata/  -----------------------  */
+/*  ----------  /assets/css/styles.css  -------------------------  */
+/*  -------------------------------------------------------------  */
+
+
+#capa,
+#acumula {
+    width: 30rem;
+    cursor: pointer;
+    background-color: cornflowerblue;
+    padding: 1rem 2rem;
+}
+
+#info {
+    padding: 3rem;
+    background-color: aquamarine;
+}
