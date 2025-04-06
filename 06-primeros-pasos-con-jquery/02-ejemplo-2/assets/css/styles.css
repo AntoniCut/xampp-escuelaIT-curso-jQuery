@@ -5,6 +5,20 @@
 /*  ----------  /assets/css/styles.css  ------------------  */
 /*  ------------------------------------------------------  */
 
+
+.content__ejemplo2 {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    background: radial-gradient(circle, rgb(255, 255, 255), rgb(219, 228, 240), rgb(176, 196, 236));
+    box-shadow: inset 50px 50px 100px rgb(209, 220, 235);
+    padding: 5rem 3rem;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+}
+
 .h {
     margin-top: 20px;
     padding: 20px;
@@ -18,4 +32,8 @@
 #info {
     padding: 3rem;
     background-color: aquamarine;
+}
+
+li {
+    margin: 1rem 0;
 }
