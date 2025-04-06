@@ -1,0 +1,25 @@
+/*  -----------------------------------------------------------  */
+/*  ----------  /curso-jquery-escuela-it.com/  ----------------  */
+/*  ----------  /03-practica-primeros-pasps-jquery/  ----------  */  
+/*  ----------  /01-practica-primeros-pasos/  -----------------  */
+/*  ----------  /assets/css/styles.css  -----------------------  */
+/*  -----------------------------------------------------------  */
+
+
+.content__primeros-pasos {
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.titular-container {
+    text-align: center;
+}
+
+.titular {
+    background-color: aquamarine !important;
+    color: blueviolet !important;
+    padding: 10px !important;
+}
