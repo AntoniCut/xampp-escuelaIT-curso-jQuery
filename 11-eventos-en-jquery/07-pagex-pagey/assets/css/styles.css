@@ -1,0 +1,23 @@
+/*  -----------------------------------------------------  */
+/*  ----------  /curso-jquery-escuela-it.com/  ----------  */
+/*  ----------  /11-eventos-en-jquery/  -----------------  */
+/*  ----------  /07-pagex-pagey/  -----------------------  */
+/*  ----------  /assets/css/styles.css  -----------------  */
+/*  -----------------------------------------------------  */
+
+
+
+.div {
+  height: 40rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.6rem;
+  font-weight: bold;
+  color: blue;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}

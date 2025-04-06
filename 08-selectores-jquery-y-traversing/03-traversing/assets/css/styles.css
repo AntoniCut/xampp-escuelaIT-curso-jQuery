@@ -23,9 +23,13 @@
     width: 25%;
     flex-direction: column;
     gap: 1rem;
-    margin-top: 0;
+    margin-top: -10rem;
 }
 
 ul, li {
     list-style: disc;
+}
+
+li {
+    margin-left: 2rem;
 }

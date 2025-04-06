@@ -1,0 +1,28 @@
+/*  -----------------------------------------------------  */
+/*  ----------  /curso-jquery-escuela-it.com/  ----------  */
+/*  ----------  /11-eventos-en-jquery/  -----------------  */
+/*  ----------  /05-propagation/  -----------------------  */
+/*  ----------  /assets/css/styles.css  -----------------  */
+/*  -----------------------------------------------------  */
+
+
+
+.div {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: blue;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.salidas__container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    gap: 5rem;
+    padding: 2rem;
+    background-color: rgb(209, 238, 228);
+}

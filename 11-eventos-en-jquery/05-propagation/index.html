@@ -1,0 +1,68 @@
+<!--  -----------------------------------------------------  -->
+<!--  ----------  /curso-jquery-escuela-it.com/  ----------  -->
+<!--  ----------  /11-eventos-en-jquery/  -----------------  -->
+<!--  ----------  /05-propagation/  -----------------------  -->
+<!--  ----------  /index.html  ----------------------------  -->
+<!--  -----------------------------------------------------  -->
+
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="../../assets/favicon/jquery-favicon-original.ico" type="image/x-icon">
+    <title> 5 - Propagation - Clase 11 - Eventos en jQuery - Curso jQuery escuelaIT </title>
+
+    <link rel="stylesheet" href="../../assets/css/reset.css">
+    <link rel="stylesheet" href="../../assets/css/layout.css">
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    
+    <script type="module" src="./main.js"> </script>
+
+</head>
+
+
+<body>
+
+    <div class="layout">
+
+        <header class="layout__header">
+            <h1 class="layout__title"> 5 - Propagation </h1>
+        </header>
+
+        <main class="layout__content">
+
+            <div class="div">
+                
+                Esto es la división
+                
+                <p> &nbsp; &nbsp;
+                    Esto es el párrafo dentro de la division <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; <span> esto es el primer span, esta dentro del párrafo </span> <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; Esto no es span, esta dentro del párrafo <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; <span> el segundo span, esta dentro del párrafo </span> <br> 
+                    &nbsp; &nbsp; &nbsp; &nbsp; Esto tampoco es span, esta dentro del párrafo <br>
+                    &nbsp; &nbsp; &nbsp; &nbsp; <span> el tercer span, esta dentro del párrafo </span> <br>
+                </p>
+
+            </div>
+        
+            <div class="salidas__container">
+
+                <div id="salida1"> </div>
+                <div id="salida2"> </div>
+
+            </div>
+                                    
+        </main>
+
+    </div>
+   
+</body>
+
+</html>

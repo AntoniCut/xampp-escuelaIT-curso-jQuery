@@ -44,9 +44,11 @@ body {
 
 .layout__content {
     width: 100%;
+    /* height: 100%; */
     max-width: 1200px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 3rem;
     margin-top: 15rem;
     margin-bottom: 15rem;

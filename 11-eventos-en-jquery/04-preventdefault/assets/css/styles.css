@@ -1,0 +1,21 @@
+/*  -----------------------------------------------------  */
+/*  ----------  /curso-jquery-escuela-it.com/  ----------  */
+/*  ----------  /11-eventos-en-jquery/  -----------------  */
+/*  ----------  /04-preventdefault/  --------------------  */
+/*  ----------  /assets/css/styles.css  -----------------  */
+/*  -----------------------------------------------------  */
+
+
+
+.enlace1,
+.enlace2 {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: green;
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin: 10px;
+  border: 1px solid #ccc;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}

@@ -11,11 +11,15 @@ import { envoltura } from "./assets/js/envoltura.js";
 
 
 //  ----------  Carga de jQuery  ----------
-const srcCdnJQuery = "https://code.jquery.com/jquery-1.11.0.min.js";
-const integrityCdnJQuery = "sha256-spTpc4lvj4dOkKjrGokIrHkJgNA0xMS98Pw9N7ir9oI=";
-const crossOriginCdnJQuery = "anonymous";
-const referrePolicyCdnJQuery = "no-referrer";
-const srcLocalJQuery = "../../assets/jquery/core/jquery-1.11.1.min.js";
+const jQueryConfig = {
+
+    srcCdnJQuery: "https://code.jquery.com/jquery-1.11.0.min.js",
+    integrityCdnJQuery: "sha256-spTpc4lvj4dOkKjrGokIrHkJgNA0xMS98Pw9N7ir9oI=",
+    crossOriginCdnJQuery: "anonymous",
+    referrePolicyCdnJQuery: "no-referrer",
+    srcLocalJQuery: "../../assets/jquery/core/jquery-1.11.1.min.js",
+}
+
 const scriptMain = envoltura;
 
 
@@ -23,7 +27,7 @@ const scriptMain = envoltura;
 console.warn("Iniciando carga de jQuery...");
 console.log('\n')
 
-loadJQueryByCdnOLocal(srcCdnJQuery, integrityCdnJQuery, crossOriginCdnJQuery, referrePolicyCdnJQuery, srcLocalJQuery)
+loadJQueryByCdnOLocal(jQueryConfig)
 
     .then($ => {
         

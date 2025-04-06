@@ -1,13 +1,13 @@
-//  -----------------------------------------------------------------  
-//  ----------  /curso-jquery-escuela-it.com/  ----------------------  
-//  ----------  /10-mainipulacion-avanzada-del-contenido/  ----------  
-//  ----------  /03-envoltura/  -------------------------------------  
-//  ----------  /main.js  -------------------------------------------
-//  ----------------------------------------------------------------- 
+//  -----------------------------------------------------
+//  ----------  /curso-jquery-escuela-it.com/  ----------
+//  ----------  /11-eventos-en-jquery/  -----------------
+//  ----------  /01-metodo-on/  -------------------------
+//  ----------  /main.js  -------------------------------
+//  ----------------------------------------------------- 
 
 
 import { loadJQueryByCdnOLocal } from "../../assets/plugins/load-jquery-by-cdn-local.js";
-import { inyeccionDom } from "./assets/js/inyeccion-dom.js";
+import { metodoOn } from "./assets/js/metodo-on.js";
 
 
 //  ----------  Carga de jQuery  ----------
@@ -20,7 +20,7 @@ const jQueryConfig = {
     srcLocalJQuery: "../../assets/jquery/core/jquery-1.11.1.min.js",
 }
 
-const scriptMain = inyeccionDom;
+const scriptMain = metodoOn;
 
 
 //  -----  Ejecutamos las Promesa  -----
