@@ -1,19 +1,15 @@
-/*  ------------------------------------------------------  */
-/*  ----------  /curso-jquery-escuela-it.com/  -----------  */
-/*  ----------  /06-primeros-pasos-con-jquery/  ----------  */  
-/*  ----------  /01-ejemplo-1/  --------------------------  */
-/*  ----------  /assets/css/styles.css  ------------------  */
-/*  ------------------------------------------------------  */
+/*  -----------------------------------------------------  */
+/*  ----------  /curso-jquery-escuela-it.com/  ----------  */
+/*  ----------  /05-introduccion-a-jquery/  -------------  */  
+/*  ----------  /01-introduccion-jquery/  ---------------  */
+/*  ----------  /assets/css/styles.css  -----------------  */
+/*  -----------------------------------------------------  */
 
 
-.h {
-    margin-top: 20px;
+#capa {
+    color: white;
+    font-size: 2.6rem;
+    font-weight: bold;
     padding: 20px;
-    background-color: #ccc;
+    text-align: center;
 }
-
-.h:hover{
-    background-color: #0f0;
-}
-
-

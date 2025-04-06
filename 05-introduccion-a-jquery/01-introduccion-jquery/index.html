@@ -1,7 +1,7 @@
-<!--  ------------------------------------------------------  -->
-<!--  ----------  /curso-jquery-escuela-it.com/  -----------  -->
-<!--  ----------  /06-primeros-pasos-con-jquery/  ----------  -->
-<!--  ----------  /01-ejemplo-1/  -------------------------- -->
+<!--  -----------------------------------------------------  -->
+<!--  ----------  /curso-jquery-escuela-it.com/  ----------  -->
+<!--  ----------  /01-introduccion-a-jquery/  -------------  -->
+<!--  ----------  /01-introduccion-jquery/  --------------- -->
 <!--  ----------  /index.html  -----------------------------  -->
 <!--  ------------------------------------------------------  -->
 
@@ -16,7 +16,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="../../assets/favicon/jquery-favicon-original.ico" type="image/x-icon">
-    <title> Ejemplo 1 - Clase 6 - Primeros pasos con jQuery - Curso jQuery escuelaIT </title>
+    <title> 5 - Introduccion a jQuery - Curso jQuery escuelaIT </title>
 
     <link rel="stylesheet" href="../../assets/css/reset.css">
     <link rel="stylesheet" href="../../assets/css/layout.css">
@@ -33,60 +33,28 @@
     <div class="layout">
 
         <header class="layout__header">
-            <h1 class="layout__title"> Ejemplo 1 - Clase 6 - Hola mundo </h1>
+            <h1 class="layout__title"> Introducción a jQuery </h1>
         </header>
 
         <main class="layout__content">
 
-            <p> 
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-                Repudiandae officiis deserunt tempore accusamus nesciunt ducimus neque facere quasi, 
-                repellat ex animi incidunt enim quidem, ratione dolores sint perspiciatis, 
-                molestiae id.
-            </p>
-        
-            <p id="algo"> párrafo con id = algo </p>
-            <p class="miclase"> párrafo con clase = miclase </p>
-            <p class="miclase"> párrafo con clase = miclase </p>
+            <div id="capa"> Hola Mundo!!! </div>
 
         </main>
 
     </div>
 
     <script>
-		
-        $(document).ready(function(){
-			
+
+        $(document).on('ready', function () {
+
             const jQueryVersion = $.fn.jquery;
             console.warn('jQuery Version:', jQueryVersion);
-            
-            $(".miclase").hide(2000);
 
-			//let caja = $("<div class='h'>texto<p>parrafo</p><b>negrita</b></div>").appendTo("body");
-            let caja = $("<div class='h'>texto<p>parrafo</p><b>negrita</b></div>").appendTo("#algo");
-			caja.css("color", "red");
-		});
+            $("#capa").css("background-color", "red");
+        });
 
-	</script>
-
-
-	<script>
-		
-        $(document).ready(mostrar);
-
-		function mostrar(){
-			
-            const jQueryVersion = $.fn.jquery;
-            console.warn('jQuery Version:', jQueryVersion);
-                        
-            $("p").show(2000);
-            
-            // return function() {
-            //     $("p").show(10000);
-            // }
-		}
-
-	</script>
+    </script>
 
 </body>
 
