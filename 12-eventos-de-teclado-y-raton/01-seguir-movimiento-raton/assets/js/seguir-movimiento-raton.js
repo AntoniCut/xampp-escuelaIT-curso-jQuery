@@ -1,32 +1,26 @@
-//  -----------------------------------------------------
-//  ----------  /curso-jquery-escuela-it.com/  ----------
-//  ----------  /11-eventos-en-jquery/  -----------------
-//  ----------  /01-metodo-on/  -------------------------
-//  ----------  /assets/js/metodo-on.js  ----------------
-//  -----------------------------------------------------
+/*  
+    -------------------------------------------------------------
+    ----------  /curso-jquery-escuela-it.com/  ------------------
+    ----------  /12-eventos-de-teclado-y-raton/  ----------------
+    ----------  /01-seguir-movimiento-raton/  -------------------
+    ----------  /assets/js/seguir-movimiento-raton.js  ----------
+    -------------------------------------------------------------  
+*/
 
 
 
-export const metodoOn = ($) => {
+export const seguirMovimientoRaton = ($) => {
 
-    const $div = $(".div");
+    const $document = $(document);
+    
+    $document.mousemove(function (evento) {
 
-    $div.on("click", function () {
+        const $capa = $("#moverse");
 
-        //  -----  codigo a ejecutar cuando se produzca el click  -----
-
-        let texto = "";
-
-        const $elem = $(this);
-
-        if ($elem.data("textoanterior"))
-            texto = $elem.data("textoanterior");
-
-        else
-            texto = "hiciste clic"
-
-        $elem.data("textoanterior", $elem.text());
-        $elem.text(texto);
+        $capa.css({
+            top: evento.pageY + "px",
+            left: evento.pageX + "px",
+        });
 
     });
 

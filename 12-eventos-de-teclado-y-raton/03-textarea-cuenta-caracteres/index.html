@@ -2,7 +2,7 @@
     -------------------------------------------------------
     ----------  /curso-jquery-escuela-it.com/  ------------
     ----------  /12-eventos-de-teclado-y-raton/  ----------
-    ----------  /01-seguir-movimiento-raton/  -------------
+    ----------  /03-textarea-cuenta-caracteres/  ----------
     ----------  /index.html  ------------------------------
     -------------------------------------------------------  
   -->
@@ -18,12 +18,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="../../assets/favicon/jquery-favicon-original.ico" type="image/x-icon">
-    <title> 1 - Seguir Movimiento Ratón - Clase 12 - Eventos en jQuery - Curso jQuery escuelaIT </title>
+    <title> 3 - TextArea Cuenta Caracteres - Clase 12 - Eventos de Teclado y Ratón en jQuery - Curso jQuery escuelaIT </title>
 
     <link rel="stylesheet" href="../../assets/css/reset.css">
     <link rel="stylesheet" href="../../assets/css/layout.css">
-    <link rel="stylesheet" href="./assets/css/seguir-movimiento-raton.css">
-
+    <link rel="stylesheet" href="./assets/css/textarea-cuenta-caracteres.css">
 
     <script type="module" src="./main.js"> </script>
 
@@ -36,18 +35,24 @@
 
         <header class="layout__header">
             <img class="header__logo-jquery" src="../../assets/favicon/jquery-favicon-original.ico" alt="Logo jQuery">
-            <h1 class="header__title"> Seguir Movimientos del Ratón </h1>
+            <h1 class="header__title"> TextArea Cuenta Caracteres </h1>
             <img class="header__logo-jquery" src="../../assets/favicon/jquery-favicon-original.ico" alt="Logo jQuery">
         </header>
-
+        
         <main class="layout__main">
 
-            <div id="moverse"> siga el movimiento </div>
+            <section class="main__textarea-cuenta-caracteres background-main">
+
+                <textarea id="textArea" cols="30" rows="10" data-maximo="30"> escribe algo aki... </textarea>
+
+                <div id="mensaje"> </div>
+
+            </section>
 
         </main>
 
     </div>
-
+   
 </body>
 
 </html>

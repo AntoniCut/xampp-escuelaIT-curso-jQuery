@@ -21,8 +21,10 @@
 .header__logo-jquery {
     width: 5rem;
     height: 5rem;
-    /* display: block; */
-    /* object-fit: contain; */
+}
+
+.header__logo-jquery:hover {
+    transform: scale(1.1);
 }
 
 .header__title {

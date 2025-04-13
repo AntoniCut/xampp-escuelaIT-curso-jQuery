@@ -1,0 +1,39 @@
+/*  
+    ------------------------------------------------------------------
+    ----------  /curso-jquery-escuela-it.com/  -----------------------
+    ----------  /12-eventos-de-teclado-y-raton/  ---------------------
+    ----------  /03-textarea-cuenta-caracteres/  ---------------------
+    ----------  /assets/css/textarea-cuenta-caracteres.css  ----------
+    ------------------------------------------------------------------  
+*/
+
+.layout__main {
+    justify-content: flex-start;
+    gap: 3rem;
+    margin-top: 15rem;
+}
+
+.main__textarea-cuenta-caracteres {
+    max-width: 102.4rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 3rem;
+    border-radius: 0.5rem;
+}
+
+#textArea {
+    padding: 2rem;
+}
+
+.cuenta-caracteres {
+    color: #fff;
+    background-color: rgb(133, 164, 221);
+    padding: 2rem;
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 5px #fff;
+}

@@ -1,16 +1,15 @@
 /*
-    -------------------------------------------------------
-    ----------  /curso-jquery-escuela-it.com/  ------------
-    ----------  /12-eventos-de-teclado-y-raton/  ----------
-    ----------  /01-seguir-movimiento-raton/  -------------
-    ----------  /main.js  ---------------------------------
-    -------------------------------------------------------
+    ----------------------------------------------------------
+    ----------  /curso-jquery-escuela-it.com/  ---------------
+    ----------  /12-eventos-de-teclado-y-raton/  -------------
+    ----------  /02-menu-contextual-personalizado/  ----------
+    ----------  /main.js  ------------------------------------
+    ----------------------------------------------------------
 */
 
 
 import { loadJQueryByCdnOLocal } from "../../assets/plugins/load-jquery-by-cdn-local.js";
-import { seguirMovimientoRaton } from "./assets/js/seguir-movimiento-raton.js";
-
+import { menuContextualPersonalizado } from "./assets/js/menu-contextual-personalizado.js";
 
 
 //  ----------  Carga de jQuery  ----------
@@ -23,7 +22,7 @@ const jQueryConfig = {
     srcLocalJQuery: "../../assets/jquery/core/jquery-1.11.1.min.js",
 }
 
-const scriptMain = seguirMovimientoRaton;
+const scriptMain = menuContextualPersonalizado;
 
 
 //  -----  Ejecutamos las Promesa  -----

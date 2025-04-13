@@ -1,20 +1,22 @@
-/*  -----------------------------------------------------  */
-/*  ----------  /curso-jquery-escuela-it.com/  ----------  */
-/*  ----------  /11-eventos-en-jquery/  -----------------  */
-/*  ----------  /01-metodo-on/  -------------------------  */
-/*  ----------  /assets/css/styles.css  -----------------  */
-/*  -----------------------------------------------------  */
+/*  
+    ---------------------------------------------------------------
+    ----------  /curso-jquery-escuela-it.com/  --------------------
+    ----------  /12-eventos-de-teclado-y-raton/  ------------------
+    ----------  /01-seguir-movimiento-raton/  ---------------------
+    ----------  /assets/css/seguir-movimiento-raton.css  ----------
+    ---------------------------------------------------------------  
+*/
 
 
-
-.div {
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: green;
-  background-color: #f0f0f0;
-  padding: 20px;
-  margin: 10px;
-  border: 1px solid #ccc;
-  border-radius: 0.5rem;
-  cursor: pointer;
+#moverse{
+    position: absolute;
+    z-index: 1000;
+    width: 200px; 
+    height: 40px;
+    padding: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #f98;
+    text-align: center;
 }

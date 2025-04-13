@@ -1,20 +1,22 @@
-/*  ------------------------------------------------------  */
-/*  ----------  /curso-jquery-escuela-it.com/  -----------  */
-/*  ----------  /06-primeros-pasos-con-jquery/  ----------  */  
-/*  ----------  /02-ejemplo-2/  --------------------------  */
-/*  ----------  /assets/css/styles.css  ------------------  */
-/*  ------------------------------------------------------  */
+/*  
+    ------------------------------------------------------
+    ----------  /curso-jquery-escuela-it.com/  -----------
+    ----------  /06-primeros-pasos-con-jquery/  ----------  
+    ----------  /02-ejemplo-2/  --------------------------
+    ----------  /assets/css/ejemplo2.css  ----------------
+    ------------------------------------------------------  
+*/
 
 
-.content__ejemplo2 {
+.main__ejemplo2 {
     width: 100%;
     max-width: 102.4rem;
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 1rem;
     background: radial-gradient(circle, rgb(255, 255, 255), rgb(219, 228, 240), rgb(176, 196, 236));
     box-shadow: inset 50px 50px 100px rgb(209, 220, 235);
-    padding: 5rem 3rem;
+    padding: 3rem 3rem;
     margin-top: 15rem;
     margin-bottom: 5rem;
 }
@@ -30,7 +32,7 @@
 }
 
 #info {
-    padding: 3rem;
+    padding: 2rem 3rem;
     background-color: rgb(190, 215, 235);
 }
 
