@@ -90,7 +90,7 @@
 
                 elem = $(elem);
                 console.log('Texto del párrafo ', (indice + 1), ' - ', elem.text());
-                $info.append(`<br> <h3> Texto del párrafo ${(indice + 1)}, ${elem.text()} </h3>`);
+                $info.append(`<h3> Texto del párrafo ${(indice + 1)}, ${elem.text()} </h3>`);
             });
 
 
@@ -100,7 +100,7 @@
 
             $(x).each(function (i, e) {
                 console.log('posicion ', i, ' elemento ', e, ' del array x');
-                $info.append(`<br> <h3> Posición ${i}, elemento ${e} del array x </h3>`);
+                $info.append(`<h3> Posición ${i}, elemento ${e} del array x </h3>`);
             });
 
         });
@@ -123,7 +123,7 @@
             function recorreLi(indice, elem) {
                 
                 console.log('elem', elem, ' - indice ', indice, ' - $(elem)', $(elem), ' - texto de li', $(elem).text());
-                $info.append(`<br> <h3> elem ${$(elem).text()} - indice ${indice} - $(elem) ${$(elem).text()} - texto de li ${$(elem).text()} </h3>`);
+                $info.append(`<h3> elem ${$(elem).text()} - indice ${indice} - $(elem) ${$(elem).text()} - texto de li ${$(elem).text()} </h3>`);
 
                 $(elem).css("color", "red");
 

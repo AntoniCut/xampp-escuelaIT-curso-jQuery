@@ -8,13 +8,14 @@
 
 .content__ejemplo1 {
     width: 100%;
-    max-width: 1200px;
+    max-width: 102.4rem;
+    height: 45rem;
     display: flex;
     flex-direction: column;
-    gap: 4rem;
+    gap: 2rem;
     background: radial-gradient(circle, rgb(255, 255, 255), rgb(219, 228, 240), rgb(176, 196, 236));
     box-shadow: 50px 50px 100px rgb(209, 220, 235);
-    padding: 2rem;
+    padding: 3rem;
     border-radius: 0.5rem;
 }
 

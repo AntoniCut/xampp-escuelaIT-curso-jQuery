@@ -8,15 +8,15 @@
 
 .content__ejemplo2 {
     width: 100%;
-    max-width: 1200px;
+    max-width: 102.4rem;
     display: flex;
     flex-direction: column;
-    gap: 3rem;
+    gap: 2rem;
     background: radial-gradient(circle, rgb(255, 255, 255), rgb(219, 228, 240), rgb(176, 196, 236));
     box-shadow: inset 50px 50px 100px rgb(209, 220, 235);
     padding: 5rem 3rem;
     margin-top: 15rem;
-    margin-bottom: 15rem;
+    margin-bottom: 5rem;
 }
 
 .h {
@@ -31,7 +31,13 @@
 
 #info {
     padding: 3rem;
-    background-color: aquamarine;
+    background-color: rgb(190, 215, 235);
+}
+
+#info h3 {
+    font-size: 1.4rem;
+    font-weight: 100;
+    padding: 0.5rem;
 }
 
 li {
