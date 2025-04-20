@@ -1,12 +1,17 @@
-//  -------------------------------------------------------------  
-//  ----------  /curso-jquery-escuela-it.com/  ------------------
-//  ----------  /07-manipulacion-basica-de-elementos/  ----------  
-//  ----------  /03-data-removedata/  ---------------------------  
-//  ----------  /assets/js//03-data-removedata/.js  -------------
-//  ------------------------------------------------------------- 
+/*
+    ----------------------------------------------------------
+    ----------  /01-curso-jquery-escuela-it/  ----------------
+    ----------  /src/scripts/  -------------------------------
+    ----------  /07-manipulacion-basica-elementos/  ----------
+    ----------  /03-data-removedata.js  ----------------------
+    ----------------------------------------------------------
+*/
 
 
-export const dataRemoveData = ($) => {
+(function ($) {
+
+	console.log('\n');
+    console.warn('----------  03-data-remove-data.js  ----------');
 
 
     //  ------  referencias al HTML  -----
@@ -67,6 +72,10 @@ export const dataRemoveData = ($) => {
         $info.append(`<h3> Llevamos: ${numeroClickPorDiv}, clics en el div: ${$div.attr("id")}</h3>`);
 
     }
+    
+
+})(jQuery);
+ 
 
 
-}
+

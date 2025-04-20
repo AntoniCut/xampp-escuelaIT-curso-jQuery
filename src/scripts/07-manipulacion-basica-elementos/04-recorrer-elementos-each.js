@@ -1,12 +1,18 @@
-//  ------------------------------------------------------------------  
-//  ----------  /curso-jquery-escuela-it.com/  -----------------------
-//  ----------  /07-manipulacion-basica-de-elementos/  ---------------  
-//  ----------  /04-recorrer-elementos-con-each/  --------------------
-//  ----------  /assets/js/04-recorrer-elementos-con-each/  ----------
-//  ------------------------------------------------------------------
+/*
+    ----------------------------------------------------------
+    ----------  /01-curso-jquery-escuela-it/  ----------------
+    ----------  /src/scripts/  -------------------------------
+    ----------  /07-manipulacion-basica-elementos/  ----------
+    ----------  /04-recorrer-elementos-each.js  --------------
+    ----------------------------------------------------------
+*/
 
 
-export const recorrerElementosConEach = ($) => {
+(function ($) {
+
+    console.log('\n');
+    console.warn('----------  04-recorrer-elementos-each.js  ----------');
+
 
     //  ------  referencias al HTML  -----
     const $parrafosProbando = $("p.probando");
@@ -37,9 +43,13 @@ export const recorrerElementosConEach = ($) => {
             listadoComas += ", "
         }
     });
-    
+
     console.log('\n', listadoComas);
     $info.append(`<h3> Párrafos con la clase probando son el </h3> ${listadoComas} `);
 
 
-}
+
+})(jQuery);
+
+
+

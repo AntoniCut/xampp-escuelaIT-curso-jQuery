@@ -1,10 +1,33 @@
-/*  -------------------------------------------------------------  */
-/*  ----------  /curso-jquery-escuela-it.com/  ------------------  */
-/*  ----------  /07-manipulacion-basica-de-elementos/  ----------  */  
-/*  ----------  /03-data-removedata/  -----------------------  */
-/*  ----------  /assets/css/styles.css  -------------------------  */
-/*  -------------------------------------------------------------  */
+/*
+    ----------------------------------------------------------
+    ----------  /01-curso-jquery-escuela-it/  ----------------
+    ----------  /src/styles/  --------------------------------
+    ----------  /07-manipulacion-basica-elementos/  ----------
+    ----------  /03-data-removedata.css  ---------------------
+    ----------------------------------------------------------
+*/
 
+.layout__main {
+    margin-top: 15rem;
+    justify-content: flex-start;
+}
+
+.header__title {
+    font-size: 3rem;
+}
+
+.main__data-removedata {
+    width: 100%;
+    max-width: 102.4rem;
+    /* height: 40rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: radial-gradient(circle, rgb(255, 255, 255), rgb(219, 228, 240), rgb(176, 196, 236));
+    box-shadow: 50px 50px 100px rgb(209, 220, 235);
+    padding: 5rem;
+    border-radius: 0.5rem;
+}
 
 #capa,
 #acumula {
@@ -16,5 +39,5 @@
 
 #info {
     padding: 3rem;
-    background-color: aquamarine;
+    background-color: #8eafeb;
 }
