@@ -1,17 +1,17 @@
-/*  
-    -----------------------------------------------------------
-    ----------  /curso-jquery-escuela-it.com/  ----------------
-    ----------  /05-introduccion-a-jquery/  -------------------  
-    ----------  /01-introduccion-jquery/  ---------------------
-    ----------  /assets/css/introduccion-jquery.css  ----------
-    -----------------------------------------------------------  
+/*
+    ----------------------------------------------------
+    ----------  /01-curso-jquery-escuela-it/  ----------
+    ----------  /src/styles/  --------------------------
+    ----------  /05-introduccion-jquery/  --------------
+    ----------  /01-introduccion-jquery.css  -----------
+    ----------------------------------------------------
 */
 
 
 .main__introduccion {
     max-width: 102.4rem;
     width: 100%;
-    height: 60rem;
+    height: 40rem;
     display: flex;
     flex-direction: column;
     justify-content: center;

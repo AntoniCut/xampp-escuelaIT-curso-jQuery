@@ -1,0 +1,115 @@
+/*
+    -----------------------------------------------------
+    ----------  /01-curso-jquery-escuela-it/  -----------
+    ----------  /src/styles/layout-footer.css  ----------
+    -----------------------------------------------------
+*/
+
+
+.layout__footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(to right, rgb(189, 220, 230) 20%, rgb(133, 157, 189) 40%, rgb(100, 143, 230) 60%, rgb(197, 201, 221) 80%);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.footer__header {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.footer__logo-jquery {
+    width: 4rem;
+    height: 4rem;
+}
+
+.footer__logo-jquery:hover {
+    transform: scale(1.1);
+}
+
+.footer__title {
+    width: 102.4rem;
+    font-size: 2.4rem;
+    color: #E6EBF1;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.footer__separator {
+    max-width: 102.4rem;
+    width: 100%;
+    height: 2px;
+    background-color: #E6EBF1;
+}
+
+.footer__main {
+    width: 100%;
+    /* max-width: 102.4rem; */
+    padding: 1rem 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.footer__list {
+    width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    gap: 1rem;
+}
+
+.footer__list-title {
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+.footer__list a {
+    margin-left: 2rem;
+    color: #ddd;
+}
+
+.footer__list a:hover {
+    margin-left: 4rem;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
+/*
+    ----------------------------------
+    ----------  Responsive  ----------
+    ----------------------------------
+*/
+
+@media (max-width: 565px) {
+   
+    .footer__main {
+        width: 100%;
+        padding: 1rem 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .footer__logo-html5 {
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+
+    .footer__title {
+        font-size: 2rem;
+    }
+    .footer__list {
+        width: 80%;
+    }
+   
+}
