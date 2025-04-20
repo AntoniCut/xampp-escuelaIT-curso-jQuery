@@ -1,9 +1,33 @@
-/*  -----------------------------------------------------------  */
-/*  ----------  /curso-jquery-escuela-it.com/  ----------------  */
-/*  ----------  /08-selectores-jquery-y-traversing/  ----------  */  
-/*  ----------  /02-probar-selectores/  -----------------------  */
-/*  ----------  /assets/css/styles.css  -----------------------  */
-/*  ----------------------------------------------------------- */
+/*
+    ----------------------------------------------------
+    ----------  /01-curso-jquery-escuela-it/  ----------
+    ----------  /src/styles/  --------------------------
+    ----------  /08-selectores-y-traversing/  ----------
+    ----------  /02-probar-selectores.css  -------------
+    ----------------------------------------------------
+*/
+
+
+.layout__main {
+    margin-top: 15rem;
+}
+
+.header__title {
+    font-size: 3rem;
+}
+
+.main__probar-selectores {
+    width: 100%;
+    max-width: 102.4rem;
+    /* height: 40rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: radial-gradient(circle, rgb(255, 255, 255), rgb(219, 228, 240), rgb(176, 196, 236));
+    box-shadow: 50px 50px 100px rgb(209, 220, 235);
+    padding: 5rem;
+    border-radius: 0.5rem;
+}
 
 
 form {

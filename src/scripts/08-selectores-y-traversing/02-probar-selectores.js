@@ -1,12 +1,19 @@
-//  -----------------------------------------------------------  
-//  ----------  /curso-jquery-escuela-it.com/  ----------------
-//  ----------  /08-selectores-jquery-y-traversing/  ----------  
-//  ----------  /02-probar-selectores/  -----------------------  
-//  ----------  /assets/js/02-probar-selectores.js  -----------
-//  ----------------------------------------------------------- 
+/*
+    ----------------------------------------------------
+    ----------  /01-curso-jquery-escuela-it/  ----------
+    ----------  /src/scripts/  -------------------------
+    ----------  /08-selectores-y-traversing/  ----------
+    ----------  /02-probar-selectores.js  --------------
+    ----------------------------------------------------
+*/
 
 
-export const probarSelectores = ($) => {
+(function ($) {
+
+
+	console.log('\n');
+    console.warn('----------  03-probar-selectores.js  ----------');
+
 
     $("#bsel").on("click", function () {
                 
@@ -20,5 +27,8 @@ export const probarSelectores = ($) => {
             "color": colorTexto
         });
     });
-       
-}
+    
+
+})(jQuery);
+  
+

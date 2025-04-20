@@ -15,60 +15,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="../../assets/favicon/jquery-favicon-original.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/01-curso-jquery/src/favicon/jquery-favicon-original.ico" type="image/x-icon">
     <title> Partir de un Contexto - Clase 8 - Selectores de jQuery y Traversing - Curso jQuery escuelaIT </title>
 
-    <link rel="stylesheet" href="../../assets/css/reset.css">
-    <link rel="stylesheet" href="../../assets/css/layout.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="/01-curso-jquery/src/styles/reset.css">
+    <link rel="stylesheet" href="/01-curso-jquery/src/styles/layout.css">
+    <link rel="stylesheet" href="/01-curso-jquery/src/styles/08-selectores-y-traversing/04-partir-de-un-contexto.css">
 
-    <script type="module" src="./main.js"> </script>
+    <script type="module" src="/01-curso-jquery/08-selectores-jquery-y-traversing/04-partir-de-un-contexto/main.js"> </script>
 
 </head>
 
 
 <body>
 
+
     <div class="layout">
 
         <header class="layout__header">
-            <h1 class="layout__title"> Partir de un Contexto - Clase 8 - Selectores de jQuery y Traversing </h1>
+            <img class="header__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery/jquery-logo-ico-original.ico" alt="Logo jQuery">
+            <h1 class="header__title"> Partir de un Contexto - Clase 8 - Selectores de jQuery y Traversing </h1>
+            <img class="header__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery-ui/jquery-ui-icon.svg" alt="Logo jQuery">
         </header>
+        
+        <main class="layout__main">
 
-        <main class="layout__content">
+            <section class="main__partir-de-un-contexto">
 
-            <header id="principal">
+                <header id="principal">
 
-                <h1 class="grande">
-                    Mi Titulo <span> importante </span>
-                </h1>
-
-                <div>
-                    Estoy header > div y
-                    <span class="grande">
-                        span.grande
-                    </span>
+                    <h1 class="grande">
+                        Mi Titulo <span> importante </span>
+                    </h1>
+    
+                    <div>
+                        Estoy header > div y
+                        <span class="grande">
+                            span.grande
+                        </span>
+                    </div>
+    
+                </header>
+    
+                <div class="grande">
+                    Otro elemento
                 </div>
-
-            </header>
-
-            <div class="grande">
-                Otro elemento
-            </div>
-
-            <hr>
-
-            <div class="btn__container">
-                <button id="btn1"> $("#principal .grande").css("color", "red") </button>
-                <button id="btn2"> $("#principal > .grande").css("color", "red") </button>
-                <button id="btn3"> $(".grande", "#principal").css("background", "#ccf") </button>
-                <button id="btn4"> $("#principal").find(".grande").css("color", "blue") </button>
-            </div>
-
+    
+                <hr>
+    
+                <div class="btn__container">
+                    <button id="btn1"> $("#principal .grande").css("color", "red") </button>
+                    <button id="btn2"> $("#principal > .grande").css("color", "red") </button>
+                    <button id="btn3"> $(".grande", "#principal").css("background", "#ccf") </button>
+                    <button id="btn4"> $("#principal").find(".grande").css("color", "blue") </button>
+                </div>
+                                                   
+            </section>
 
         </main>
 
+
+        <footer class="layout__footer">
+            
+            <header class="footer__header">
+                <img class="footer__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery/jquery-logo-ico-original.ico" alt="Logo jQuery">
+                <h3 class="footer__title"> Curso de jQuery - Escuela IT </h3>
+                <img class="footer__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery-ui/jquery-ui-icon.svg" alt="Logo jQuery UI">
+            </header>
+            
+            <div class="footer__separator"> </div>
+                        
+        </footer>
+
     </div>
+   
 
 </body>
 

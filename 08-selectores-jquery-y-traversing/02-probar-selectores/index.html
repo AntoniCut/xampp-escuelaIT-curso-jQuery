@@ -15,151 +15,173 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="../../assets/favicon/jquery-favicon-original.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/01-curso-jquery/src/favicon/jquery-favicon-original.ico" type="image/x-icon">
     <title> Probar Selectores - Clase 8 - Selectores de jQuery y Traversing - Curso jQuery escuelaIT </title>
 
-    <link rel="stylesheet" href="../../assets/css/reset.css">
-    <link rel="stylesheet" href="../../assets/css/layout.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="/01-curso-jquery/src/styles/reset.css">
+    <link rel="stylesheet" href="/01-curso-jquery/src/styles/layout.css">
+    <link rel="stylesheet" href="/01-curso-jquery/src/styles/08-selectores-y-traversing/02-probar-selectores.css">
 
-    <script type="module" src="./main.js"> </script>
+    <script type="module" src="/01-curso-jquery/08-selectores-jquery-y-traversing/02-probar-selectores/main.js"> </script>
 
 </head>
 
 
 <body>
 
+
     <div class="layout">
 
         <header class="layout__header">
-            <h1 class="layout__title"> Probar Selectores - Clase 8 - Selectores de jQuery y Traversing </h1>
+            <img class="header__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery/jquery-logo-ico-original.ico" alt="Logo jQuery">
+            <h1 class="header__title"> Probar Selectores - Clase 8 - Selectores de jQuery y Traversing </h1>
+            <img class="header__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery-ui/jquery-ui-icon.svg" alt="Logo jQuery">
         </header>
+        
+        <main class="layout__main">
 
-        <main class="layout__content">
+            <section class="main__probar-selectores main__background">
 
-            <form>
-                Selector: <input type="text" id="selector" style="width: 50%"> <br>
-                Color fondo: #<input type="text" id="color" style="width: 20%" value="000" name="colorfondo"> <br>
-                Color texto: #<input type="text" id="colorTexto" style="width: 20%" value="fff"> <br>
-                <input type="button" id="bsel" value="Aplica color al selector">
-            </form>
 
-            <hr>
-
-            <div id="contenido">
-
-                <p> p indice 1 </p>
-                <p> p indice 2 </p>
-                <h1> header h1 </h1>
-
-                <div>
-
-                    <P>
-                        Párrafo
-                        <span>
-                            span del
-                            <i> párrafo </i>
-                        </span>
-                        <b>
-                            Negrita
-                            <i> italica </i>
-                            <span> Otro span dentro de negrita </span>
-                        </b>
-                    </P>
-
-                    <P id="p2">
-                        Párrafo
-                        <span>
-                            span del
-                            <i> párrafo </i>
-                        </span>
-                        <b>
-                            Negrita
+                <form>
+                    Selector: <input type="text" id="selector" style="width: 50%"> <br>
+                    Color fondo: #<input type="text" id="color" style="width: 20%" value="000" name="colorfondo"> <br>
+                    Color texto: #<input type="text" id="colorTexto" style="width: 20%" value="fff"> <br>
+                    <input type="button" id="bsel" value="Aplica color al selector">
+                </form>
+    
+                <hr>
+    
+                <div id="contenido">
+    
+                    <p> p indice 1 </p>
+                    <p> p indice 2 </p>
+                    <h1> header h1 </h1>
+    
+                    <div>
+    
+                        <P>
+                            Párrafo
                             <span>
-                                Otro span dentro de negrita
+                                span del
+                                <i> párrafo </i>
                             </span>
-                        </b>
-                    </P>
-
-                    <P>
-                        Párrafo
-                        <span>
-                            span del
-                            <i> párrafo </i>
-                        </span>
-                        <b>
-                            Negrita
-                            <span> Otro span dentro de negrita </span>
-                        </b>
-                    </P>
-
-                    <P>
-                        Párrafo
-                        <span>
-                            span del
-                            <i> párrafo </i>
-                        </span>
-                        <b> Negrita
-                            <span> Otro span dentro de negrita </span>
-                        </b>
-                    </P>
-
-                </div>
-
-                <blockquote>
-
-                    <p> probando p1... </p>
-                    <p> probando p1 </p>
-
-                    <table>
-                        <tr>
-                            <td>1</td>
-                            <td>2</td>
-                            <td>3</td>
-                            <td>4</td>
-                        </tr>
-                        <tr>
-                            <td>5</td>
-                            <td>6</td>
-                            <td>7</td>
-                            <td>8</td>
-                        </tr>
-                        <tr>
-                            <td>9</td>
-                            <td>10</td>
-                            <td>11</td>
-                            <td>12</td>
-                        </tr>
-                        <tr>
-                            <td>13</td>
-                            <td>14</td>
-                            <td>15</td>
-                            <td>16</td>
-                        </tr>
-                    </table>
-                </blockquote>
-
-                <h2> Encabezamiento nivel 2 </h2>
-
-                <p>
-                    <a href="#">enlace </a>
-                </p>
-
-                <p>
-                    probando p4
+                            <b>
+                                Negrita
+                                <i> italica </i>
+                                <span> Otro span dentro de negrita </span>
+                            </b>
+                        </P>
+    
+                        <P id="p2">
+                            Párrafo
+                            <span>
+                                span del
+                                <i> párrafo </i>
+                            </span>
+                            <b>
+                                Negrita
+                                <span>
+                                    Otro span dentro de negrita
+                                </span>
+                            </b>
+                        </P>
+    
+                        <P>
+                            Párrafo
+                            <span>
+                                span del
+                                <i> párrafo </i>
+                            </span>
+                            <b>
+                                Negrita
+                                <span> Otro span dentro de negrita </span>
+                            </b>
+                        </P>
+    
+                        <P>
+                            Párrafo
+                            <span>
+                                span del
+                                <i> párrafo </i>
+                            </span>
+                            <b> Negrita
+                                <span> Otro span dentro de negrita </span>
+                            </b>
+                        </P>
+    
+                    </div>
+    
+                    <blockquote>
+    
+                        <p> probando p1... </p>
+                        <p> probando p1 </p>
+    
+                        <table>
+                            <tr>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                                <td>12</td>
+                            </tr>
+                            <tr>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                            </tr>
+                        </table>
+                    </blockquote>
+    
+                    <h2> Encabezamiento nivel 2 </h2>
+    
+                    <p>
+                        <a href="#">enlace </a>
+                    </p>
+    
+                    <p>
+                        probando p4
+                        <a href="#"> enlace </a>
+                        <span> span </span>
+                    </p>
+    
                     <a href="#"> enlace </a>
-                    <span> span </span>
-                </p>
-
-                <a href="#"> enlace </a>
-
-            </div>
-
-            <hr>
+    
+                </div>
+    
+                <hr>
+                                   
+            </section>
 
         </main>
 
+
+        <footer class="layout__footer">
+            
+            <header class="footer__header">
+                <img class="footer__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery/jquery-logo-ico-original.ico" alt="Logo jQuery">
+                <h3 class="footer__title"> Curso de jQuery - Escuela IT </h3>
+                <img class="footer__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery-ui/jquery-ui-icon.svg" alt="Logo jQuery UI">
+            </header>
+            
+            <div class="footer__separator"> </div>
+                        
+        </footer>
+
     </div>
+
 
 </body>
 

@@ -1,31 +1,37 @@
-//  -----------------------------------------------------------  
-//  ----------  /curso-jquery-escuela-it.com/  ----------------
-//  ----------  /08-selectores-jquery-y-traversing/  ----------  
-//  ----------  /01-selectores/  ------------------------------  
-//  ----------  /assets/js/01-selectores.js  ------------------
-//  ----------------------------------------------------------- 
+/*
+    ----------------------------------------------------
+    ----------  /01-curso-jquery-escuela-it/  ----------
+    ----------  /src/scripts/  -------------------------
+    ----------  /08-selectores-y-traversing/  ----------
+    ----------  /01-selectores.js  ---------------------
+    ----------------------------------------------------
+*/
 
 
-export const selectores = ($) => {
+(function ($) {
 
-    $("#btn1").click(function() {
+    console.log('\n');
+    console.warn('----------  01-selectores.js  ----------');
+
+    
+    $("#btn1").click(function () {
         $("p span").css("color", "blue");
     });
 
-    $("#btn2").click(function() {
+    $("#btn2").click(function () {
         $("p > span").css("color", "red");
     });
 
-    $("#btn3").click(function() {
+    $("#btn3").click(function () {
         $("div ~ p").css("color", "orange");
     });
 
-    $("#btn4").click(function() {
+    $("#btn4").click(function () {
         $("p:not(#p2)").css("color", "green");
     });
 
-    $("#btn5").click(function() {
-        
+    $("#btn5").click(function () {
+
         $("p:first-child").css({
             "font-size": "2em",
             "border": "1px solid #445",
@@ -33,9 +39,16 @@ export const selectores = ($) => {
         });
     });
 
-    $("#btn6").click(function() {
-        
+    $("#btn6").click(function () {
+
         $("p:contains('probando')").hide(3000);
     });
-       
-}
+
+
+})(jQuery);
+
+
+
+
+
+

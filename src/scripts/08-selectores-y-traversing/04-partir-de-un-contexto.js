@@ -1,12 +1,19 @@
-//  --------------------------------------------------------------  
-//  ----------  /curso-jquery-escuela-it.com/  -------------------
-//  ----------  /08-selectores-jquery-y-traversing/  -------------  
-//  ----------  04-partir-de-un-contexto  ------------------------  
-//  ----------  /assets/js/04-partir-de-un-contexto.js  ----------
-//  --------------------------------------------------------------
+/*
+    ----------------------------------------------------
+    ----------  /01-curso-jquery-escuela-it/  ----------
+    ----------  /src/scripts/  -------------------------
+    ----------  /08-selectores-y-traversing/  ----------
+    ----------  /04-partir-de-un-contexto.js  ----------
+    ----------------------------------------------------
+*/
 
 
-export const partirDeUnContexto = ($) => {
+(function ($) {
+
+
+    console.log('\n');
+    console.warn('----------  04-partir-de-un-contexto.js  ----------');
+
 
     $("#btn1").click(function () {
         $("#principal .grande").css("color", "red");
@@ -19,12 +26,15 @@ export const partirDeUnContexto = ($) => {
 
 
     $("#btn3").click(function () {
-        $(".grande", "#principal").css("background", "#ccf");    
+        $(".grande", "#principal").css("background", "#ccf");
     });
 
 
     $("#btn4").click(function () {
         $("#principal").find(".grande").css("color", "blue");
     });
-       
-}
+
+
+})(jQuery);
+
+

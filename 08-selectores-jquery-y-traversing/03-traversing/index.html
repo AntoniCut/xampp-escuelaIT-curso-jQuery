@@ -15,192 +15,215 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="../../assets/favicon/jquery-favicon-original.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="/01-curso-jquery/src/favicon/jquery-favicon-original.ico" type="image/x-icon">
     <title> Traversing - Clase 8 - Selectores de jQuery y Traversing - Curso jQuery escuelaIT </title>
 
-    <link rel="stylesheet" href="../../assets/css/reset.css">
-    <link rel="stylesheet" href="../../assets/css/layout.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="stylesheet" href="/01-curso-jquery/src/styles/reset.css">
+    <link rel="stylesheet" href="/01-curso-jquery/src/styles/layout.css">
+    <link rel="stylesheet" href="/01-curso-jquery/src/styles/08-selectores-y-traversing/03-traversing.css">
 
-    <script type="module" src="./main.js"> </script>
+    <script type="module" src="/01-curso-jquery/08-selectores-jquery-y-traversing/03-traversing/main.js"> </script>
 
 </head>
 
 
 <body>
 
+
     <div class="layout">
 
         <header class="layout__header">
-            <h1 class="layout__title"> Traversing - Clase 8 - Selectores de jQuery y Traversing </h1>
+            <img class="header__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery/jquery-logo-ico-original.ico" alt="Logo jQuery">
+            <h1 class="header__title"> Traversing - Clase 8 - Selectores de jQuery y Traversing </h1>
+            <img class="header__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery-ui/jquery-ui-icon.svg" alt="Logo jQuery">
         </header>
+        
+        <main class="layout__main">
 
-        <main class="layout__content">
+            <section class="main__traversing main__background">
 
+                <section class="ejercicio__container">
 
-            <section class="ejercicio__container">
-
-                <p>
-                    <span class="sp">
-                        Span en el párrafo
-                    </span>
-                    esto está fuera de span
-                    <b> y esto en negrita </b>
-                </p>
-
-                <ul>
-
-                    <li> 1 </li>
-
-                    <li class="milista">
-                        <b> 2 </b>
-                    </li>
-
-                    <li> 3 </li>
-
-                    <li>
-
-                        <ul>
-                            <li id="id1" class="milista"> li con id1 clase milista </li>
-                            <li id="id2"> li con id2 </li>
-                            <li id="id3"> li con id3 </li>
-                            <li> li sin id ni clase </li>
-                        </ul>
-
-                        <ul class="milista">
-
-                            <li>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente impedit quia qui
-                                earum,
-                                atque
-                                quibusdam odit suscipit porro. Temporibus, tempore accusamus odit tenetur ipsam?
-                                Assumenda,
-                                quaerat.
-                                Velit deserunt, dolores voluptates.
-                            </li>
-
-                            <li>
-                                Ea perspiciatis maiores, soluta laboriosam aut? Exercitationem ea non similique dicta
-                                praesentium
-                                nostrum vitae mollitia repellendus eum quos eveniet facere quam fugit facilis delectus
-                                commodi,
-                                hic,
-                                voluptatibus vero earum placeat.
-                            </li>
-
-                            <li>
-                                Quam voluptates expedita reprehenderit doloremque soluta quidem. Adipisci porro, rem,
-                                distinctio
-                                minus deserunt eligendi itaque laborum accusantium quod tempore dolor mollitia totam
-                                quibusdam
-                                beatae ullam odio quasi repellat maxime ad?
-                            </li>
-
-                        </ul>
-
-                    </li>
-
-                </ul>
-
-
-                <div>
-
-                    <ul class="milista">
-
-                        <li> Elem1 </li>
-
-                        <li>
-                            <i> Elem2 </i>
-                            pongo otra cosa
-                            <b> en negrita de nuevo </b>
+                    <p>
+                        <span class="sp">
+                            Span en el párrafo
+                        </span>
+                        esto está fuera de span
+                        <b> y esto en negrita </b>
+                    </p>
+    
+                    <ul>
+    
+                        <li> 1 </li>
+    
+                        <li class="milista">
+                            <b> 2 </b>
                         </li>
-
-                        <li class="miclase"> Elem3 </li>
-
+    
+                        <li> 3 </li>
+    
                         <li>
-                            In sed necessitatibus facere, iusto quia odio explicabo praesentium itaque autem quo
-                            voluptatibus
-                            esse,
-                            magnam, asperiores labore totam sunt pariatur debitis a.
+    
+                            <ul>
+                                <li id="id1" class="milista"> li con id1 clase milista </li>
+                                <li id="id2"> li con id2 </li>
+                                <li id="id3"> li con id3 </li>
+                                <li> li sin id ni clase </li>
+                            </ul>
+    
+                            <ul class="milista">
+    
+                                <li>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente impedit quia qui
+                                    earum,
+                                    atque
+                                    quibusdam odit suscipit porro. Temporibus, tempore accusamus odit tenetur ipsam?
+                                    Assumenda,
+                                    quaerat.
+                                    Velit deserunt, dolores voluptates.
+                                </li>
+    
+                                <li>
+                                    Ea perspiciatis maiores, soluta laboriosam aut? Exercitationem ea non similique dicta
+                                    praesentium
+                                    nostrum vitae mollitia repellendus eum quos eveniet facere quam fugit facilis delectus
+                                    commodi,
+                                    hic,
+                                    voluptatibus vero earum placeat.
+                                </li>
+    
+                                <li>
+                                    Quam voluptates expedita reprehenderit doloremque soluta quidem. Adipisci porro, rem,
+                                    distinctio
+                                    minus deserunt eligendi itaque laborum accusantium quod tempore dolor mollitia totam
+                                    quibusdam
+                                    beatae ullam odio quasi repellat maxime ad?
+                                </li>
+    
+                            </ul>
+    
                         </li>
-
-                        <li>
-                            Lorem ipsum
-                            <span class="milista"> dolor </span>
-                            sit amet, consectetur adipisicing elit.
-                        </li>
-
+    
                     </ul>
-
+    
+    
+                    <div>
+    
+                        <ul class="milista">
+    
+                            <li> Elem1 </li>
+    
+                            <li>
+                                <i> Elem2 </i>
+                                pongo otra cosa
+                                <b> en negrita de nuevo </b>
+                            </li>
+    
+                            <li class="miclase"> Elem3 </li>
+    
+                            <li>
+                                In sed necessitatibus facere, iusto quia odio explicabo praesentium itaque autem quo
+                                voluptatibus
+                                esse,
+                                magnam, asperiores labore totam sunt pariatur debitis a.
+                            </li>
+    
+                            <li>
+                                Lorem ipsum
+                                <span class="milista"> dolor </span>
+                                sit amet, consectetur adipisicing elit.
+                            </li>
+    
+                        </ul>
+    
+                    </div>
+    
+                    <div>
+                        División amiga!!
+                    </div>
+    
+                    <div>
+    
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil nesciunt, fugit ipsum ullam esse
+                        culpa
+                        repellat a fugiat totam consequatur laborum autem alias, perspiciatis repellendus cupiditate,
+                        aspernatur aliquid
+                        enim harum!.
+    
+                        <table border=1>
+                            <tr>
+                                <td> 1.1 </td>
+                                <td class="miclase"> 1.2 </td>
+                                <td> 1.3 </td>
+                                <td> 1.4 </td>
+                            </tr>
+                            <tr>
+                                <td class="c2"> 2.1 </td>
+                                <td> 2.2 </td>
+                                <td class="miclase"> 2.3 </td>
+                                <td> 2.4 </td>
+                            </tr>
+                            <tr>
+                                <td> 3.1 </td>
+                                <td class="c2"> 3.2 </td>
+                                <td> 3.3 </td>
+                                <td> 3.4 </td>
+                            </tr>
+                        </table>
+                    </div>
+    
+                    <div>
+                        Esta es otra
+                        <span> división </span>
+                    </div>
+    
+                    <div id="undiv">
+                        Esta es otra división que tiene id
+                        <span class="sp"> "undiv" </span>
+                    </div>
+    
+    
+                </section>
+    
+    
+                <div class="btn__container">
+                    <button id="btn1"> Hijos de p </button>
+                    <button id="btn2"> Hermanos de p </button>
+                    <button id="btn3"> Hermanos de p que sean etiquetas div </button>
+                    <button id="btn4"> Hermanos de p que sean etiquetas div y eliminar div con id = undiv </button>
+                    <button id="btn5"> Buscar en la tabla elementos con la clase .miclase y los primeros td </button>
+                    <button id="btn6"> Filtrar todos los td y te quedas con los de la clase .c2 </button>
+                    <button id="btn7"> Desde el LI que tiene class="miclase" acceder a la división con texto "división amiga!!" - Forma 1 </button>
+                    <button id="btn8"> Desde el LI que tiene class="miclase" acceder a la división con texto "división amiga!!" - Forma 2 </button>
+                    <button id="btn9"> Buscar las negritas de las ul </button>
+                    <button id="btn10"> Ocultar los elementos de ul y li con la clase .milista </button>
+                    <button id="btn11"> Cambiar estilos a los ul con la clase .milista </button>
+                    <button id="btn12"> Border a los elementos cuyo id empieze por la palabra id </button>
                 </div>
-
-                <div>
-                    División amiga!!
-                </div>
-
-                <div>
-
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil nesciunt, fugit ipsum ullam esse
-                    culpa
-                    repellat a fugiat totam consequatur laborum autem alias, perspiciatis repellendus cupiditate,
-                    aspernatur aliquid
-                    enim harum!.
-
-                    <table border=1>
-                        <tr>
-                            <td> 1.1 </td>
-                            <td class="miclase"> 1.2 </td>
-                            <td> 1.3 </td>
-                            <td> 1.4 </td>
-                        </tr>
-                        <tr>
-                            <td class="c2"> 2.1 </td>
-                            <td> 2.2 </td>
-                            <td class="miclase"> 2.3 </td>
-                            <td> 2.4 </td>
-                        </tr>
-                        <tr>
-                            <td> 3.1 </td>
-                            <td class="c2"> 3.2 </td>
-                            <td> 3.3 </td>
-                            <td> 3.4 </td>
-                        </tr>
-                    </table>
-                </div>
-
-                <div>
-                    Esta es otra
-                    <span> división </span>
-                </div>
-
-                <div id="undiv">
-                    Esta es otra división que tiene id
-                    <span class="sp"> "undiv" </span>
-                </div>
-
-
+    
+    
+          
+    
+                                                   
             </section>
-
-
-            <div class="btn__container">
-                <button id="btn1"> Hijos de p </button>
-                <button id="btn2"> Hermanos de p </button>
-                <button id="btn3"> Hermanos de p que sean etiquetas div </button>
-                <button id="btn4"> Hermanos de p que sean etiquetas div y eliminar div con id = undiv </button>
-                <button id="btn5"> Buscar en la tabla elementos con la clase .miclase y los primeros td </button>
-                <button id="btn6"> Filtrar todos los td y te quedas con los de la clase .c2 </button>
-                <button id="btn7"> Desde el LI que tiene class="miclase" acceder a la división con texto "división amiga!!" - Forma 1 </button>
-                <button id="btn8"> Desde el LI que tiene class="miclase" acceder a la división con texto "división amiga!!" - Forma 2 </button>
-                <button id="btn9"> Buscar las negritas de las ul </button>
-                <button id="btn10"> Ocultar los elementos de ul y li con la clase .milista </button>
-                <button id="btn11"> Cambiar estilos a los ul con la clase .milista </button>
-                <button id="btn12"> Border a los elementos cuyo id empieze por la palabra id </button>
-            </div>
-
 
         </main>
 
+
+        <footer class="layout__footer">
+            
+            <header class="footer__header">
+                <img class="footer__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery/jquery-logo-ico-original.ico" alt="Logo jQuery">
+                <h3 class="footer__title"> Curso de jQuery - Escuela IT </h3>
+                <img class="footer__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery-ui/jquery-ui-icon.svg" alt="Logo jQuery UI">
+            </header>
+            
+            <div class="footer__separator"> </div>
+                        
+        </footer>
+
     </div>
+   
 
 </body>
 
