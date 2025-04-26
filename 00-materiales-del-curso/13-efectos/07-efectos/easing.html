@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso de jQuery</title>
+    <style>
+	#capa{
+		padding: 20px;
+		background-color: #ccc;
+		width: 100px;
+	}
+    </style>
+</head>
+<body>
+    <div id="capa">haz click</div>
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="jquery.easing.1.3.js"></script>
+    <script>
+        $(function(){
+         	$("#capa").animate({
+			    "width": "500px",
+			    padding: "80px"
+			  }, 10000, "easeInOutBack");
+        });
+    </script>   
+</body>
+</html>

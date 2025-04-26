@@ -1,0 +1,18 @@
+form{
+  width: 300px;
+  background-color: #ddd;
+  padding: 10px;
+}
+div.lineaform{
+  border: 1px solid #ccc;
+  font-size: 1.2em;
+  padding: 10px;
+}
+form span{
+  display: inline-block;
+  width: 50%;
+  margin-right: 15px;
+}
+form input{
+  width: 100px;
+}
