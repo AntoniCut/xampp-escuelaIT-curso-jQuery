@@ -1,14 +1,17 @@
-/*  
-    ----------------------------------------------------------------
-    ----------  /curso-jquery-escuela-it.com/  ---------------------
-    ----------  /12-eventos-de-teclado-y-raton/  -------------------
-    ----------  /03-textarea-cuenta-caracteres/  -------------------
-    ----------  /assets/js/textarea-cuenta-caracteres.js  ----------
-    ----------------------------------------------------------------    
+/*
+    ---------------------------------------------------------
+    ----------  /01-curso-jquery-escuela-it/  ---------------
+    ----------  /src/scripts/  ------------------------------
+    ----------  /12-eventos-teclado-raton/  -----------------
+    ----------  /03-textarea-cuenta-caracteres.js  ----------
+    ---------------------------------------------------------
 */
 
 
-export const textareaCuentaCaracteres = ($) => {
+(function ($) {
+
+    console.log('\n');
+    console.warn('----------  03-textarea-cuenta-caracteres.js  ----------');
 
 
     //  -----  referencias al HTML  -----
@@ -17,7 +20,6 @@ export const textareaCuentaCaracteres = ($) => {
     const $cuentaCaracteres = $("<div class='cuenta-caracteres'> Llevas escritos <span> </span> caracteres </div>");
     
     $cuentaCaracteres.insertAfter($textArea);
-
 
 
     //  -------------------------------
@@ -109,4 +111,4 @@ export const textareaCuentaCaracteres = ($) => {
     calcularCaracteresTextarea();
 
 
-}
+})(jQuery);

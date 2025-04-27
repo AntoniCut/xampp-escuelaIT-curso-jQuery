@@ -1,15 +1,18 @@
-/*  
-    -------------------------------------------------------------
-    ----------  /curso-jquery-escuela-it.com/  ------------------
-    ----------  /12-eventos-de-teclado-y-raton/  ----------------
-    ----------  /01-seguir-movimiento-raton/  -------------------
-    ----------  /assets/js/seguir-movimiento-raton.js  ----------
-    -------------------------------------------------------------  
+/*
+    ------------------------------------------------------
+    ----------  /01-curso-jquery-escuela-it/  ------------
+    ----------  /src/scripts/  ---------------------------
+    ----------  /12-eventos-teclado-raton/  --------------
+    ----------  /01-seguir-movimiento-raton.js  ----------
+    ------------------------------------------------------
 */
 
 
+(function ($) {
 
-export const seguirMovimientoRaton = ($) => {
+    console.log('\n');
+    console.warn('----------  01-seguir-movimiento-raton.js  ----------');
+
 
     const $document = $(document);
     
@@ -24,4 +27,5 @@ export const seguirMovimientoRaton = ($) => {
 
     });
 
-}
+
+})(jQuery);

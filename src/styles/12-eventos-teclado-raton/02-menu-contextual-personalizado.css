@@ -1,12 +1,33 @@
-/*  
-    ---------------------------------------------------------------------
-    ----------  /curso-jquery-escuela-it.com/  --------------------------
-    ----------  /12-eventos-de-teclado-y-raton/  ------------------------
-    ----------  /02-menu-contextual-personalizado/  ---------------------
-    ----------  /assets/css/menu-contextual-personalizado.css  ----------
-    ---------------------------------------------------------------------  
+/*
+    -------------------------------------------------------------
+    ----------  /curso-jquery-escuela-it.com/  ------------------
+    ----------  /src/styles/  -----------------------------------
+    ----------  /12-eventos-teclado-raton/  ---------------------
+    ----------  /02-menu-contextual-personalizado.css  ----------
+    -------------------------------------------------------------
 */
 
+
+.layout__main {
+    margin-top: 20rem;
+}
+
+.header__title {
+    font-size: 2.6rem;
+}
+
+.main__menu-contextual-personalizado {
+    width: 100%;
+    max-width: 102.4rem;
+    /* height: 40rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: radial-gradient(circle, rgb(255, 255, 255), rgb(219, 228, 240), rgb(176, 196, 236));
+    box-shadow: 50px 50px 100px rgb(209, 220, 235);
+    padding: 5rem;
+    border-radius: 0.5rem;
+}
 
 #menu{
     position: absolute;
@@ -23,7 +44,10 @@
 }
 
 #info {
+    height: 8rem;
     display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 2rem;
     font-size: 1.8rem;
     font-weight: bold;

@@ -1,14 +1,18 @@
-/*  
-    -------------------------------------------------------------------
-    ----------  /curso-jquery-escuela-it.com/  ------------------------
-    ----------  /12-eventos-de-teclado-y-raton/  ----------------------
-    ----------  /02-menu-contextual-personalizado/  -------------------
-    ----------  /assets/js/menu-contextual-personalizado.js  ----------
-    -------------------------------------------------------------------  
+/*
+    ------------------------------------------------------------
+    ----------  /01-curso-jquery-escuela-it/  ------------------
+    ----------  /src/scripts/  ---------------------------------
+    ----------  /12-eventos-teclado-raton/  --------------------
+    ----------  /02-menu-contextual-personalizado.js  ----------
+    ------------------------------------------------------------
 */
 
 
-export const menuContextualPersonalizado = ($) => {
+(function ($) {
+
+    console.log('\n');
+    console.warn('----------  02-menu-contextual-personalizado.js  ----------');
+
 
     const $document = $(document);
     const $info = $("#info");
@@ -45,4 +49,5 @@ export const menuContextualPersonalizado = ($) => {
 
     });
 
-}
+
+})(jQuery);
