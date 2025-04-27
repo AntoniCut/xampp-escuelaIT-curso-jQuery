@@ -2,7 +2,7 @@
     -------------------------------------------------------------------------------
     ----------  /curso-jquery-escuela-it.com/  ------------------------------------
     ----------  /09-dudas-y-conceptos-i-ejercicios-introduccion-jquery/  ----------
-    ----------  /01-ejercicio-this/  ----------------------------------------------
+    ----------  /01-ejercicio1/  --------------------------------------------------
     ----------  /main.js  ---------------------------------------------------------
     -------------------------------------------------------------------------------
 */
@@ -15,7 +15,7 @@ import { loadJQueryByCdnOLocal } from "/01-curso-jquery/src/libs/jquery/load/loa
 const cdnJQuery = cdnJQuery_1_11_0;
 const localJQuery = "/01-curso-jquery/src/libs/jquery/local/jquery-1.11.1.min.js";
 
-const scriptUrl = "/01-curso-jquery/src/scripts/09-dudas-y-conceptos-1-ejercicios-introduccion/06-ejercicio-this.js";
+const scriptUrl = "/01-curso-jquery/src/scripts/09-dudas-y-conceptos-1-ejercicios-introduccion/01-ejercicio1.js";
 
 
 //  ------------------------------------------------------------------------------------

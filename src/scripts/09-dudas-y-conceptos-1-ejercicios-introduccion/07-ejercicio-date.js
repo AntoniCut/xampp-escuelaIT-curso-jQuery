@@ -1,12 +1,18 @@
-//  ---------------------------------------------------------------------------------  
-//  ----------  /curso-jquery-escuela-it.com/  ----------------------  --------------
-//  ----------  /09-dudas-y-conceptos-i-ejercicios-introduccion-a-jquery/  ----------  
-//  ----------  /07-ejercicio-date/  ------------------------------------------------  
-//  ----------  /assets/js/07-ejercicio-date.js  ------------------------------------
-//  --------------------------------------------------------------------------------- 
+/*
+    -------------------------------------------------------------------------------
+    ----------  /01-curso-jquery-escuela-it/  -------------------------------------
+    ----------  /src/scripts/  ----------------------------------------------------
+    ----------  /09-dudas-y-conceptos-i-ejercicios-introduccion-jquery/  ----------
+    ----------  /07-ejercicio-date.js  --------------------------------------------
+    -------------------------------------------------------------------------------
+*/
 
 
-export const ejercicioDate = ($) => {
+(function ($) {
+
+    console.log('\n');
+    console.warn('----------  07-ejercicio-date.js  ----------');
+
 
     function timestampSegundos(){
         const date = new Date();
@@ -37,27 +43,30 @@ export const ejercicioDate = ($) => {
                 
         //  -----  this ¿qué contiene aquí?  -----
         //  obtenemos el párrafo clicado y lo convertimos en un objeto jQuery.
-        const parrafoPulsado = $(this);
+        const $parrafoPulsado = $("p");
+        //const parrafoPulsado = $(this);
 
         //  -------------------------------------------------------------------------------
         //  Obtiene el instante del último clic almacenado en .data("time").
-        //  Resta ahora - instanteUltimoClic para obtener los segundos transcurridos.
+        //  Resta (ahora - instanteUltimoClic) para obtener los segundos transcurridos.
         //  Muestra en consola la información.
         //  -------------------------------------------------------------------------------
-        const instanteUltimoClic = parrafoPulsado.data("time");
+        const instanteUltimoClic = $parrafoPulsado.data("time");
         let numSegundos = ahora - instanteUltimoClic;
-        console.log("El número de segundos desde el último clic es ", numSegundos, " y el párrafo es: ", parrafoPulsado);
+        console.log("El número de segundos desde el último clic es ", numSegundos, " y el párrafo es: ",$parrafoPulsado);
            
         //  -----  obtenemos el número de párrafo pulsado  -----
-        let numParrafo = parrafoPulsado.index() + 1;
+        let numParrafo = $parrafoPulsado.index(this) + 1;
+        //let numParrafo = parrafoPulsado.index() + 1;
                 
         //  -----  mostramos el resultado en el html  -----
         $("#result").html(`<h3> El número de segundos desde el último clic es ${numSegundos}, y el número de párrafo es ${numParrafo} </h3>`);
 
         //  -----  actualizamos el dato del párrafo para colocar el instante de el último clic (ahora)  -----
-        parrafoPulsado.data("time", ahora);
+        $parrafoPulsado.data("time", ahora);
    
        
     });
-
-}
+        
+    
+})(jQuery);

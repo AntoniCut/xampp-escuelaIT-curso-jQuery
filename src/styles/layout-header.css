@@ -8,12 +8,13 @@
 
 .layout__header {
     width: 100%;
-    height: 10rem;
+    height: 12rem;
     position: fixed;
     z-index: 10;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    align-items: center;
     padding: 2rem;
     text-align: center;
     background: linear-gradient(to right, rgb(189, 220, 230) 20%, rgb(133, 157, 189) 40%, rgb(100, 143, 230) 60%, rgb(197, 201, 221) 80%);

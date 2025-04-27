@@ -1,14 +1,39 @@
-/*  ---------------------------------------------------------------------------------  */
-/*  ----------  /curso-jquery-escuela-it.com/  ----------------------  --------------  */
-/*  ----------  /09-dudas-y-conceptos-i-ejercicios-introduccion-a-jquery/  ----------  */  
-/*  ----------  /03-ejercicio-3/  ---------------------------------------------------  */
-/*  ----------  /assets/css/styles.css  ---------------------------------------------  */
-/*  ---------------------------------------------------------------------------------  */
+/*
+    -------------------------------------------------------------------------------
+    ----------  /curso-jquery-escuela-it.com/  ------------------------------------
+    ----------  /src/styles/  -----------------------------------------------------
+    ----------  /09-dudas-y-conceptos-i-ejercicios-introduccion-jquery/  ----------
+    ----------  /03-ejercicio3.css  -----------------------------------------------
+    -------------------------------------------------------------------------------
+*/
 
 
-.contenido {
-    padding-left: 50px;
-    padding-right: 50px;
+.layout__main {
+    margin-top: 20rem;
+}
+
+.header__title {
+    font-size: 2.6rem;
+}
+
+.main__ejercicio3 {
+    width: 100%;
+    max-width: 160rem;
+    /* height: 40rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: radial-gradient(circle, rgb(255, 255, 255), rgb(219, 228, 240), rgb(176, 196, 236));
+    box-shadow: 50px 50px 100px rgb(209, 220, 235);
+    padding: 5rem;
+    border-radius: 0.5rem;
+}
+
+.ejercicio3__description {
+    width: 100%;
+    padding: 2rem;
+    color: #fff;
+    background-color: #8eafeb;
 }
 
 li {
