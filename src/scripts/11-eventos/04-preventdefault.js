@@ -1,13 +1,18 @@
-//  -----------------------------------------------------
-//  ----------  /curso-jquery-escuela-it.com/  ----------
-//  ----------  /11-eventos-en-jquery/  -----------------
-//  ----------  /04-preventdefault/  --------------------
-//  ----------  /assets/js/preventdefault.js  -----------
-//  -----------------------------------------------------
+/*
+    ----------------------------------------------------
+    ----------  /01-curso-jquery-escuela-it/  ----------
+    ----------  /src/scripts/  -------------------------
+    ----------  /11-eventos/  --------------------------
+    ----------  /04-preventdefault.js  -----------------
+    ----------------------------------------------------
+*/
 
 
+(function ($) {
 
-export const preventDefault = ($) => {
+    console.log('\n');
+    console.warn('----------  04-preventdefault.js  ----------');
+
 
     //  -----  referencias al HTML  -----
     const $enlace1 = $(".enlace1");
@@ -33,4 +38,6 @@ export const preventDefault = ($) => {
         //return false; 
     });
 
-}
+
+
+})(jQuery);

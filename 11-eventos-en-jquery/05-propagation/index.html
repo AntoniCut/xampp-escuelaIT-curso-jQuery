@@ -1,9 +1,11 @@
-<!--  -----------------------------------------------------  -->
-<!--  ----------  /curso-jquery-escuela-it.com/  ----------  -->
-<!--  ----------  /11-eventos-en-jquery/  -----------------  -->
-<!--  ----------  /05-propagation/  -----------------------  -->
-<!--  ----------  /index.html  ----------------------------  -->
-<!--  -----------------------------------------------------  -->
+<!--  
+    -----------------------------------------------------
+    ----------  /curso-jquery-escuela-it.com/  ----------
+    ----------  /11-eventos/  ---------------------------
+    ----------  /05-propagation/  -----------------------
+    ----------  /index.html  ----------------------------
+    -----------------------------------------------------
+-->
 
 
 <!DOCTYPE html>
@@ -15,53 +17,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="../../assets/favicon/jquery-favicon-original.ico" type="image/x-icon">
-    <title> 5 - Propagation - Clase 11 - Eventos en jQuery - Curso jQuery escuelaIT </title>
+    <link rel="shortcut icon" href="/01-curso-jquery/src/favicon/jquery-favicon-original.ico" type="image/x-icon">
+    <title> 5. Propagation - Clase 11 - Eventos en jQuery - Curso jQuery escuelaIT </title>
 
-    <link rel="stylesheet" href="../../assets/css/reset.css">
-    <link rel="stylesheet" href="../../assets/css/layout.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    
-    <script type="module" src="./main.js"> </script>
+    <link rel="stylesheet" href="/01-curso-jquery/src/styles/reset.css">
+    <link rel="stylesheet" href="/01-curso-jquery/src/styles/layout.css">
+    <link rel="stylesheet" href="/01-curso-jquery/src/styles/11-eventos/05-propagation.css">
+
+    <script type="module" src="/01-curso-jquery/11-eventos-en-jquery/05-propagation/main.js"> </script>
 
 </head>
 
 
 <body>
 
+
     <div class="layout">
 
         <header class="layout__header">
-            <h1 class="layout__title"> 5 - Propagation </h1>
+            <img class="header__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery/jquery-logo-ico-original.ico" alt="Logo jQuery">
+            <h1 class="header__title"> 
+                5. Propagation
+                <br>
+                Eventos en jQuery
+            </h1>
+            <img class="header__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery-ui/jquery-ui-icon.svg" alt="Logo jQuery">
         </header>
-
-        <main class="layout__content">
-
-            <div class="div">
-                
-                Esto es la división
-                
-                <p> &nbsp; &nbsp;
-                    Esto es el párrafo dentro de la division <br>
-                    &nbsp; &nbsp; &nbsp; &nbsp; <span> esto es el primer span, esta dentro del párrafo </span> <br>
-                    &nbsp; &nbsp; &nbsp; &nbsp; Esto no es span, esta dentro del párrafo <br>
-                    &nbsp; &nbsp; &nbsp; &nbsp; <span> el segundo span, esta dentro del párrafo </span> <br> 
-                    &nbsp; &nbsp; &nbsp; &nbsp; Esto tampoco es span, esta dentro del párrafo <br>
-                    &nbsp; &nbsp; &nbsp; &nbsp; <span> el tercer span, esta dentro del párrafo </span> <br>
-                </p>
-
-            </div>
         
-            <div class="salidas__container">
+        <main class="layout__main">
 
-                <div id="salida1"> </div>
-                <div id="salida2"> </div>
+            <section class="main__propagation main__background">
 
-            </div>
-                                    
+                <div class="div">
+                
+                    Esto es la división
+                    
+                    <p> &nbsp; &nbsp;
+                        Esto es el párrafo dentro de la division <br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; <span> esto es el primer span, esta dentro del párrafo </span> <br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; Esto no es span, esta dentro del párrafo <br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; <span> el segundo span, esta dentro del párrafo </span> <br> 
+                        &nbsp; &nbsp; &nbsp; &nbsp; Esto tampoco es span, esta dentro del párrafo <br>
+                        &nbsp; &nbsp; &nbsp; &nbsp; <span> el tercer span, esta dentro del párrafo </span> <br>
+                    </p>
+    
+                </div>
+            
+                <div class="salidas__container">
+    
+                    <div id="salida1"> </div>
+                    <div id="salida2"> </div>
+    
+                </div>
+                    
+            </section>
+
         </main>
 
+        <footer class="layout__footer">
+            
+            <header class="footer__header">
+                <img class="footer__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery/jquery-logo-ico-original.ico" alt="Logo jQuery">
+                <h3 class="footer__title"> Curso de jQuery - Escuela IT </h3>
+                <img class="footer__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery-ui/jquery-ui-icon.svg" alt="Logo jQuery UI">
+            </header>
+            
+            <div class="footer__separator"> </div>
+                        
+        </footer>
+
     </div>
+   
    
 </body>
 

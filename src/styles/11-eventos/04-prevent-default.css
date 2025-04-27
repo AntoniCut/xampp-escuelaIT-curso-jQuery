@@ -1,11 +1,33 @@
-/*  -----------------------------------------------------  */
-/*  ----------  /curso-jquery-escuela-it.com/  ----------  */
-/*  ----------  /11-eventos-en-jquery/  -----------------  */
-/*  ----------  /04-preventdefault/  --------------------  */
-/*  ----------  /assets/css/styles.css  -----------------  */
-/*  -----------------------------------------------------  */
+/*
+    -----------------------------------------------------
+    ----------  /curso-jquery-escuela-it.com/  ----------
+    ----------  /src/styles/  ---------------------------
+    ----------  /11-eventos/  ---------------------------
+    ----------  /04-prevent-default.css  ----------------
+    -----------------------------------------------------
+*/
 
 
+.layout__main {
+    margin-top: 20rem;
+}
+
+.header__title {
+    font-size: 2.6rem;
+}
+
+.main__preventdefault {
+    width: 100%;
+    max-width: 102.4rem;
+    /* height: 40rem; */
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    background: radial-gradient(circle, rgb(255, 255, 255), rgb(219, 228, 240), rgb(176, 196, 236));
+    box-shadow: 50px 50px 100px rgb(209, 220, 235);
+    padding: 5rem;
+    border-radius: 0.5rem;
+}
 
 .enlace1,
 .enlace2 {

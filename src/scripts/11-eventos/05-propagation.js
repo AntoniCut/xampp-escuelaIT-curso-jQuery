@@ -1,13 +1,18 @@
-//  -----------------------------------------------------
-//  ----------  /curso-jquery-escuela-it.com/  ----------
-//  ----------  /11-eventos-en-jquery/  -----------------
-//  ----------  /05-propagation/  -----------------------
-//  ----------  /assets/js/propagation.js  --------------
-//  -----------------------------------------------------
+/*
+    ----------------------------------------------------
+    ----------  /01-curso-jquery-escuela-it/  ----------
+    ----------  /src/scripts/  -------------------------
+    ----------  /11-eventos/  --------------------------
+    ----------  /05-propagation.js  --------------------
+    ----------------------------------------------------
+*/
 
 
+(function ($) {
 
-export const propagation = ($) => {
+    console.log('\n');
+    console.warn('----------  05-propagation.js  ----------');
+
 
     //  -----  referencias al HTML  -----
     const $div = $(".div");
@@ -63,6 +68,6 @@ export const propagation = ($) => {
         $(this).css("background-color", "green");
         e.stopPropagation();
     });
-    
 
-}
+
+})(jQuery);

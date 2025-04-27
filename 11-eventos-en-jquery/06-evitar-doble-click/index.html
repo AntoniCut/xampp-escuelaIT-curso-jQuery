@@ -1,9 +1,11 @@
-<!--  -----------------------------------------------------  -->
-<!--  ----------  /curso-jquery-escuela-it.com/  ----------  -->
-<!--  ----------  /11-eventos-en-jquery/  -----------------  -->
-<!--  ----------  /06-evitar-dos-click/  ------------------  -->
-<!--  ----------  /index.html  ----------------------------  -->
-<!--  -----------------------------------------------------  -->
+<!--  
+    -----------------------------------------------------
+    ----------  /curso-jquery-escuela-it.com/  ----------
+    ----------  /11-eventos/  ---------------------------
+    ----------  /06-evitar-doble-click/  ----------------
+    ----------  /index.html  ----------------------------
+    -----------------------------------------------------
+-->
 
 
 <!DOCTYPE html>
@@ -15,43 +17,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="../../assets/favicon/jquery-favicon-original.ico" type="image/x-icon">
-    <title> 6 - Evitar Dos Click - Clase 11 - Eventos en jQuery - Curso jQuery escuelaIT </title>
+    <link rel="shortcut icon" href="/01-curso-jquery/src/favicon/jquery-favicon-original.ico" type="image/x-icon">
+    <title> 6. Evitar Doble Click - Clase 11 - Eventos en jQuery - Curso jQuery escuelaIT </title>
 
-    <link rel="stylesheet" href="../../assets/css/reset.css">
-    <link rel="stylesheet" href="../../assets/css/layout.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    
-    <script type="module" src="./main.js"> </script>
+    <link rel="stylesheet" href="/01-curso-jquery/src/styles/reset.css">
+    <link rel="stylesheet" href="/01-curso-jquery/src/styles/layout.css">
+    <link rel="stylesheet" href="/01-curso-jquery/src/styles/11-eventos/06-evitar-doble-click.css">
+
+    <script type="module" src="/01-curso-jquery/11-eventos-en-jquery/06-evitar-doble-click/main.js"> </script>
 
 </head>
 
 
 <body>
 
+
     <div class="layout">
 
         <header class="layout__header">
-            <h1 class="layout__title"> 6 - Evitar Dos Click </h1>
+            <img class="header__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery/jquery-logo-ico-original.ico" alt="Logo jQuery">
+            <h1 class="header__title"> 
+                6. Evitar Doble Click
+                <br>
+                Eventos en jQuery
+            </h1>
+            <img class="header__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery-ui/jquery-ui-icon.svg" alt="Logo jQuery">
         </header>
-
-        <main class="layout__content">
-
-            <div class="div">
-                
-                <span> Haz click varias veces en este span, al pasar 4 segundos del ultimo click se volvera a activar </span> <br>
-                
-            </div>
         
-            <div class="salidas__container">
+        <main class="layout__main">
 
-                <div id="salida"> </div>
+            <section class="main__evitar-doble-click main__background">
+
+                <div class="div">
                 
-            </div>
-                                    
+                    <span> Haz click varias veces en este span, al pasar 4 segundos del ultimo click se volvera a activar </span> <br>
+                    
+                </div>
+            
+                <div class="salidas__container">
+    
+                    <div id="salida"> </div>
+                    
+                </div>
+                    
+            </section>
+
         </main>
 
+        <footer class="layout__footer">
+            
+            <header class="footer__header">
+                <img class="footer__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery/jquery-logo-ico-original.ico" alt="Logo jQuery">
+                <h3 class="footer__title"> Curso de jQuery - Escuela IT </h3>
+                <img class="footer__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery-ui/jquery-ui-icon.svg" alt="Logo jQuery UI">
+            </header>
+            
+            <div class="footer__separator"> </div>
+                        
+        </footer>
+
     </div>
+   
    
 </body>
 
