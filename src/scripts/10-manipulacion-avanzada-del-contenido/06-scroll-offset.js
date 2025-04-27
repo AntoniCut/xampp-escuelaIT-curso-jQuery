@@ -1,12 +1,18 @@
-//  -----------------------------------------------------------------
-//  ----------  /curso-jquery-escuela-it.com/  ----------------------
-//  ----------  /10-mainipulacion-avanzada-del-contenido/  ----------
-//  ----------  /06-scroll-offset/  ---------------------------------
-//  ----------  /assets/js/scroll-offset.js  ------------------------
-//  -----------------------------------------------------------------
+/*
+    ----------------------------------------------------------------
+    ----------  /01-curso-jquery-escuela-it/  ----------------------
+    ----------  /src/scripts/  -------------------------------------
+    ----------  /10-manipulacion-avanzada-del-contenido/  ----------
+    ----------  /06-scroll-offset.js  ------------------------------
+    ----------------------------------------------------------------
+*/
 
 
-export const scrollOffset = ($) => {
+(function ($) {
+
+    console.log('\n');
+    console.warn('----------  06-scroll-offset.js  ----------');
+
 
     const $capa = $(".capa");
     const $btnCapa = $("#btnCapa");
@@ -40,13 +46,13 @@ export const scrollOffset = ($) => {
 
 
     $p1.on("click", function () {
-        const scrollActual = $(window).scrollTop() - "200px";
+        const scrollActual = $(window).scrollTop();
         alert("El scroll actual de la ventana es: " + scrollActual);
     });
 
     $btnScroll.on("click", function () {
         
-        const posicionParrafo = $p1.offset().top - 250;
+        const posicionParrafo = $p1.offset().top - 300;
                 
         $("html, body").scrollTop(posicionParrafo);
         
@@ -55,7 +61,7 @@ export const scrollOffset = ($) => {
 
     $btnScrollAnimation.on("click", function () {
         
-        const posicionParrafo = $p1.offset().top - 250;
+        const posicionParrafo = $p1.offset().top - 300;
                 
         $("html, body").animate({ 
             scrollTop: posicionParrafo 
@@ -63,4 +69,5 @@ export const scrollOffset = ($) => {
         
     });
 
-}
+
+})(jQuery);

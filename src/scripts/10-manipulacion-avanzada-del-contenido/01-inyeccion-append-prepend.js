@@ -1,12 +1,18 @@
-//  -----------------------------------------------------------------
-//  ----------  /curso-jquery-escuela-it.com/  ----------------------
-//  ----------  /10-mainipulacion-avanzada-del-contenido/  ----------
-//  ----------  /01-inyeccion-append-prepend/  ----------------------
-//  ----------  /assets/js/index.js  --------------------------------
-//  -----------------------------------------------------------------
+/*
+    ----------------------------------------------------------------
+    ----------  /01-curso-jquery-escuela-it/  ----------------------
+    ----------  /src/scripts/  -------------------------------------
+    ----------  /10-manipulacion-avanzada-del-contenido/  ----------
+    ----------  /01-inyeccion-append-prepend.js  -------------------
+    ----------------------------------------------------------------
+*/
 
 
-export const inyeccionAppendPreppend = ($) => {
+(function ($) {
+
+    console.log('\n');
+    console.warn('----------  01-inyeccion-append-prepend.js  ----------');
+
 
     $("#div1, #div2").css("background-color", "rgb(204, 211, 226)");
 
@@ -22,5 +28,7 @@ export const inyeccionAppendPreppend = ($) => {
 
     $("#div2")
         .prepend("<i> principio </i>, añadimos con prepend a la division <br> <br>");
-       
-}
+
+   
+
+})(jQuery);

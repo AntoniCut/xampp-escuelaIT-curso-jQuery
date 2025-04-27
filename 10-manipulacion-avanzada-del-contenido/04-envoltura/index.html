@@ -1,9 +1,11 @@
-<!--  -----------------------------------------------------------------  -->
-<!--  ----------  /curso-jquery-escuela-it.com/  ----------------------  -->
-<!--  ----------  /10-mainipulacion-avanzada-del-contenido/  ----------  -->
-<!--  ----------  /04-envoltura/  -------------------------------------  -->
-<!--  ----------  /index.html  ----------------------------------------  -->
-<!--  -----------------------------------------------------------------  -->
+<!--  
+    ----------------------------------------------------------------
+    ----------  /curso-jquery-escuela-it.com/  ---------------------
+    ----------  /10-manipulacion-avanzada-del-contenido/  ----------
+    ----------  /04-envoltura/  ------------------------------------
+    ----------  /index.html  ---------------------------------------
+    ----------------------------------------------------------------
+-->
 
 
 <!DOCTYPE html>
@@ -15,35 +17,64 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="../../assets/favicon/jquery-favicon-original.ico" type="image/x-icon">
-    <title> 4 - Envoltura - Clase 10 - Manipulación Avanzada del Contenido - Curso jQuery escuelaIT </title>
+    <link rel="shortcut icon" href="/01-curso-jquery/src/favicon/jquery-favicon-original.ico" type="image/x-icon">
+    <title> 4 Envoltura - Clase 10 - Manipulación Avanzada del Contenido - Curso jQuery escuelaIT </title>
 
-    <link rel="stylesheet" href="../../assets/css/reset.css">
-    <link rel="stylesheet" href="../../assets/css/layout.css">
-    <!-- <link rel="stylesheet" href="./assets/css/styles.css"> -->
-    <script type="module" src="./main.js"> </script>
+    <link rel="stylesheet" href="/01-curso-jquery/src/styles/reset.css">
+    <link rel="stylesheet" href="/01-curso-jquery/src/styles/layout.css">
+    <link rel="stylesheet" href="/01-curso-jquery/src/styles/10-manipulacion-avanzada-del-contenido/04-envoltura.css">
+
+    <script type="module" src="/01-curso-jquery/10-manipulacion-avanzada-del-contenido/04-envoltura/main.js"> </script>
 
 </head>
 
 
 <body>
 
-    <header class="layout__header">
-        <h1 class="layout__title"> 4 - Envoltura </h1>
-    </header>
 
-    <main class="layout__content">
+    <div class="layout">
 
-        <div class="x"> esto esta dentro de un article, y el article dentro de una section </div>
+        <header class="layout__header">
+            <img class="header__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery/jquery-logo-ico-original.ico" alt="Logo jQuery">
+            <h1 class="header__title"> 
+                4 Envoltura
+                <br>
+                Manipulación Avanzada del Contenido
+            </h1>
+            <img class="header__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery-ui/jquery-ui-icon.svg" alt="Logo jQuery">
+        </header>
+        
+        <main class="layout__main">
 
-        <u> 
-            <i> 
-                <b> hola, sin etiquetas i ni u </b> 
-            </i> 
-        </u>
+            <section class="main__envoltura main__background">
 
-    </main>
+                <div class="x"> esto esta dentro de un article, y el article dentro de una section </div>
 
+                <u> 
+                    <i> 
+                        <b> hola, sin etiquetas i ni u </b> 
+                    </i> 
+                </u>
+        
+            </section>
+
+        </main>
+
+        <footer class="layout__footer">
+            
+            <header class="footer__header">
+                <img class="footer__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery/jquery-logo-ico-original.ico" alt="Logo jQuery">
+                <h3 class="footer__title"> Curso de jQuery - Escuela IT </h3>
+                <img class="footer__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery-ui/jquery-ui-icon.svg" alt="Logo jQuery UI">
+            </header>
+            
+            <div class="footer__separator"> </div>
+                        
+        </footer>
+
+    </div>
+   
+   
 </body>
 
 </html>

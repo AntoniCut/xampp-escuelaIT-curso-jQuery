@@ -1,12 +1,18 @@
-//  -----------------------------------------------------------------
-//  ----------  /curso-jquery-escuela-it.com/  ----------------------
-//  ----------  /10-mainipulacion-avanzada-del-contenido/  ----------
-//  ----------  /01-inyeccion-append-prepend/  ----------------------
-//  ----------  /assets/js/inyeccion-after-before.js  ---------------
-//  -----------------------------------------------------------------
+/*
+    ----------------------------------------------------------------
+    ----------  /01-curso-jquery-escuela-it/  ----------------------
+    ----------  /src/scripts/  -------------------------------------
+    ----------  /10-manipulacion-avanzada-del-contenido/  ----------
+    ----------  /02-inyeccion-after-before.js  ---------------------
+    ----------------------------------------------------------------
+*/
 
 
-export const inyeccionAfterBefore = ($) => {
+(function ($) {
+
+    console.log('\n');
+    console.warn('----------  02-inyeccion-after-before.js  ----------');
+
 
     $("#div1, #div2").css("background-color", "rgb(166, 191, 228)");
 
@@ -22,4 +28,6 @@ export const inyeccionAfterBefore = ($) => {
     $("#div2")
         .before("<p> hola antes </p>");
 
-}
+   
+
+})(jQuery);

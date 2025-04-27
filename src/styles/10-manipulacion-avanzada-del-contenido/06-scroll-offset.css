@@ -1,16 +1,33 @@
-/*  -----------------------------------------------------------------  */
-/*  ----------  /curso-jquery-escuela-it.com/  ----------------------  */
-/*  ----------  /10-mainipulacion-avanzada-del-contenido/  ----------  */
-/*  ----------  /06-scroll-offset/  ---------------------------------  */
-/*  ----------  /assets/css/styles.css  -----------------------------  */
-/*  -----------------------------------------------------------------  */
+/*
+    -----------------------------------------------------------------
+    ----------  /curso-jquery-escuela-it.com/  ----------------------
+    ----------  /src/styles/  ---------------------------------------
+    ----------  /10-mainipulacion-avanzada-del-contenido/  ----------
+    ----------  /06-scroll-offset.css  ------------------------------
+    -----------------------------------------------------------------
+*/
 
-.layout {
-    min-height: 200rem;
+
+.layout__main {
+    margin-top: 20rem;
 }
 
-.btn__container {
-    margin-top: 60rem;
+.header__title {
+    font-size: 2.6rem;
+}
+
+.main__scroll-offset {
+    width: 100%;
+    max-width: 102.4rem;
+    height: 100rem; 
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background: radial-gradient(circle, rgb(255, 255, 255), rgb(219, 228, 240), rgb(176, 196, 236));
+    box-shadow: 50px 50px 100px rgb(209, 220, 235);
+    padding: 5rem;
+    margin-top: 50rem;
+    border-radius: 0.5rem;
 }
 
 #p1 {

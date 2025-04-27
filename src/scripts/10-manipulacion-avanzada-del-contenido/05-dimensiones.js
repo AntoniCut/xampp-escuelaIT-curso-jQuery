@@ -1,12 +1,18 @@
-//  -----------------------------------------------------------------
-//  ----------  /curso-jquery-escuela-it.com/  ----------------------
-//  ----------  /10-mainipulacion-avanzada-del-contenido/  ----------
-//  ----------  /05-dimensiones/  -----------------------------------
-//  ----------  /assets/js/dimensionesindex.js  ---------------------
-//  -----------------------------------------------------------------
+/*
+    ----------------------------------------------------------------
+    ----------  /01-curso-jquery-escuela-it/  ----------------------
+    ----------  /src/scripts/  -------------------------------------
+    ----------  /10-manipulacion-avanzada-del-contenido/  ----------
+    ----------  /05-dimensiones.js  --------------------------------
+    ----------------------------------------------------------------
+*/
 
 
-export const dimensiones = ($) => {
+(function ($) {
+
+    console.log('\n');
+    console.warn('----------  05-dimensiones.js  ----------');
+
 
     const $capa = $(".capa");
     const $btnWidth = $("#btnWidth");
@@ -17,35 +23,35 @@ export const dimensiones = ($) => {
     const $btnOuterHeight = $("#btnOuterHeight");
 
 
-    $btnWidth.click(function() {
+    $btnWidth.click(function () {
         $capa.width("10%");
         alert('width: ' + $capa.width());
     });
 
-    $btnHeight.click(function() {
+    $btnHeight.click(function () {
         $capa.height("300px");
         alert('Height: ' + $capa.height());
     });
 
-    $btnInnerWidth.click(function() {
+    $btnInnerWidth.click(function () {
         $capa.innerWidth();
         alert('innerWidth: ' + $capa.innerWidth());
     });
 
-    $btnInnerHeight.click(function() {
+    $btnInnerHeight.click(function () {
         $capa.innerHeight();
         alert('innerHeight: ' + $capa.innerHeight());
     });
 
-    $btnOuterWidth.click(function() {
+    $btnOuterWidth.click(function () {
         $capa.outerWidth();
         alert('outerWidth - true: ' + $capa.outerWidth(true));
     });
 
-    $btnOuterHeight.click(function() {
+    $btnOuterHeight.click(function () {
         $capa.outerHeight();
         alert('outerHeight - false: ' + $capa.outerHeight(false));
     });
-    
-    
-}
+
+
+})(jQuery);

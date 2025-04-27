@@ -1,9 +1,11 @@
-<!--  -----------------------------------------------------------------  -->
-<!--  ----------  /curso-jquery-escuela-it.com/  ----------------------  -->
-<!--  ----------  /10-mainipulacion-avanzada-del-contenido/  ----------  -->
-<!--  ----------  /05-dimensiones/  -----------------------------------  -->
-<!--  ----------  /index.html  ----------------------------------------  -->
-<!--  -----------------------------------------------------------------  -->
+<!--  
+    ----------------------------------------------------------------
+    ----------  /curso-jquery-escuela-it.com/  ---------------------
+    ----------  /10-manipulacion-avanzada-del-contenido/  ----------
+    ----------  /05-dimensiones/  ----------------------------------
+    ----------  /index.html  ---------------------------------------
+    ----------------------------------------------------------------
+-->
 
 
 <!DOCTYPE html>
@@ -15,44 +17,69 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="shortcut icon" href="../../assets/favicon/jquery-favicon-original.ico" type="image/x-icon">
-    <title> 5 - Dimensiones - Clase 10 - Manipulación Avanzada del Contenido - Curso jQuery escuelaIT </title>
+    <link rel="shortcut icon" href="/01-curso-jquery/src/favicon/jquery-favicon-original.ico" type="image/x-icon">
+    <title> 5 Dimensiones - Clase 10 - Manipulación Avanzada del Contenido - Curso jQuery escuelaIT </title>
 
-    <link rel="stylesheet" href="../../assets/css/reset.css">
-    <link rel="stylesheet" href="../../assets/css/layout.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
-    <script type="module" src="./main.js"> </script>
+    <link rel="stylesheet" href="/01-curso-jquery/src/styles/reset.css">
+    <link rel="stylesheet" href="/01-curso-jquery/src/styles/layout.css">
+    <link rel="stylesheet" href="/01-curso-jquery/src/styles/10-manipulacion-avanzada-del-contenido/05-dimensiones.css">
+
+    <script type="module" src="/01-curso-jquery/10-manipulacion-avanzada-del-contenido/05-dimensiones/main.js"> </script>
 
 </head>
 
 
 <body>
 
+
     <div class="layout">
 
         <header class="layout__header">
-            <h1 class="layout__title"> 5 - Dimensiones </h1>
+            <img class="header__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery/jquery-logo-ico-original.ico" alt="Logo jQuery">
+            <h1 class="header__title"> 
+                5 Dimensiones
+                <br>
+                Manipulación Avanzada del Contenido
+            </h1>
+            <img class="header__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery-ui/jquery-ui-icon.svg" alt="Logo jQuery">
         </header>
+        
+        <main class="layout__main">
 
-        <main class="layout__content">
+            <section class="main__dimensiones main__background">
 
-            <div class="btn__container">
-                <button id="btnWidth"> Width 10% Capa </button>
-                <button id="btnHeight"> Height 300px Capa </button>
-                <button id="btnInnerWidth"> InnerWidth </button>
-                <button id="btnInnerHeight"> InnerHeight </button>
-                <button id="btnOuterWidth"> OuterWidth - true </button>
-                <button id="btnOuterHeight"> OuterHeight - false </button>
-            </div>
-    
-            <img src="./assets/img/dimensiones.png" alt="imagen dimensiones" class="img-dimensiones">
-    
-            <div class="capa"> Esto es una capa </div>
-            
+                <div class="btn__container">
+                    <button id="btnWidth"> Width 10% Capa </button>
+                    <button id="btnHeight"> Height 300px Capa </button>
+                    <button id="btnInnerWidth"> InnerWidth </button>
+                    <button id="btnInnerHeight"> InnerHeight </button>
+                    <button id="btnOuterWidth"> OuterWidth - true </button>
+                    <button id="btnOuterHeight"> OuterHeight - false </button>
+                </div>
+        
+                <img src="./assets/img/dimensiones.png" alt="imagen dimensiones" class="img-dimensiones">
+        
+                <div class="capa"> Esto es una capa </div>
+        
+            </section>
+
         </main>
 
-    </div>
+        <footer class="layout__footer">
+            
+            <header class="footer__header">
+                <img class="footer__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery/jquery-logo-ico-original.ico" alt="Logo jQuery">
+                <h3 class="footer__title"> Curso de jQuery - Escuela IT </h3>
+                <img class="footer__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery-ui/jquery-ui-icon.svg" alt="Logo jQuery UI">
+            </header>
+            
+            <div class="footer__separator"> </div>
+                        
+        </footer>
 
+    </div>
+   
+   
 </body>
 
 </html>
