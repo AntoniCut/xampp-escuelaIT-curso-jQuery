@@ -1,0 +1,63 @@
+/*
+    ----------------------------------------------------
+    ----------  /01-curso-jquery-escuela-it/  ----------
+    ----------  /src/styles/  --------------------------
+    ----------  /13-efectos/  --------------------------
+    ----------  /01-toggle.css  ------------------------
+    ----------------------------------------------------
+*/
+
+
+.layout__main {
+    margin-top: 20rem;
+}
+
+.header__title {
+    font-size: 2.6rem;
+}
+
+.main__toggle {
+    max-width: 102.4rem;
+    width: 100%;
+    min-height: 46rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+    border-radius: 0.5rem;
+}
+
+.btn__container {
+    margin-top: 1rem;
+}
+
+a {
+    width: 10rem;
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #4a84ee;
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 300ms linear;
+}
+
+a:hover {
+    background-color: #8db2f7;
+}
+
+#anim{
+    width: 30rem;
+    height: 15rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #f86;
+  }

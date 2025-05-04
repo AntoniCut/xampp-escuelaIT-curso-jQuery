@@ -43,7 +43,8 @@ body {
     gap: 2rem;
 }
 
-button {
+button,
+input[type="submit"] {
     padding: 1rem 2rem;
     background-color: cornflowerblue;
     color: #fff;
@@ -53,7 +54,8 @@ button {
     border-radius: 5px;
 }
 
-button:hover {
+button:hover,
+input[type="submit"]:hover {
     background-color: rgb(24, 56, 116)
 }
 
