@@ -1,0 +1,43 @@
+/*
+    ----------------------------------------------------
+    ----------  /01-curso-jquery-escuela-it/  ----------
+    ----------  /src/styles/  --------------------------
+    ----------  /14-cola-de-efectos/  ------------------
+    ----------  /01-encolado-efectos.css  --------------
+    ----------------------------------------------------
+*/
+
+
+.layout__main {
+    margin-top: 20rem;
+}
+
+.header__title {
+    font-size: 2.6rem;
+}
+
+.main__encolado-efectos {
+    max-width: 102.4rem;
+    width: 100%;
+    min-height: 46rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+    border-radius: 0.5rem;
+}
+
+.texto,
+.parrafo {
+    width: 100%;
+    color: white;
+    background-color: #f99;
+    text-align: center;
+    padding: 4rem;
+}
+
+.texto {
+    cursor: pointer;
+}

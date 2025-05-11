@@ -1,0 +1,42 @@
+/*
+    ---------------------------------------------------------
+    ----------  /01-curso-jquery-escuela-it/  ---------------
+    ----------  /src/styles/  -------------------------------
+    ----------  /14-cola-de-efectos/  -----------------------
+    ----------  /05-encolado-respuesta-evento.css  ----------
+    ---------------------------------------------------------
+*/
+
+
+.layout__main {
+    margin-top: 20rem;
+}
+
+.header__title {
+    font-size: 2.6rem;
+}
+
+.main__encolado-respuesta-evento {
+    max-width: 102.4rem;
+    width: 100%;
+    min-height: 46rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+    padding-top: 15rem;
+    border-radius: 0.5rem;
+}
+
+.texto {
+    width: 100%;
+    color: white;
+    background-color: #f99;
+    text-align: center;
+    padding: 4rem;
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-width: 1px;
+}

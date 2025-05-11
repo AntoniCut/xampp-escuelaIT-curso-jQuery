@@ -1,0 +1,68 @@
+/*
+    ----------------------------------------------------
+    ----------  /01-curso-jquery-escuela-it/  ----------
+    ----------  /src/styles/  --------------------------
+    ----------  /14-cola-de-efectos/  ------------------
+    ----------  /02-ejemplo-stop.css  ------------------
+    ----------------------------------------------------
+*/
+
+
+.layout__main {
+    margin-top: 20rem;
+}
+
+.header__title {
+    font-size: 2.6rem;
+}
+
+.main__ejemplo-stop {
+    max-width: 102.4rem;
+    width: 100%;
+    min-height: 46rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 3rem;
+    border-radius: 0.5rem;
+}
+
+a {
+    padding: 1rem 2rem;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #4a84ee;
+    font-size: 1.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 300ms linear;
+}
+
+a:hover {
+    background-color: #8db2f7;
+}
+
+#tip{
+  padding: 10px;
+  background-color: #9df;
+  width: 200px;
+  display: none;
+  position: absolute;
+}
+
+/*
+.texto,
+.parrafo {
+    width: 100%;
+    color: white;
+    background-color: #f99;
+    text-align: center;
+    padding: 4rem;
+}
+
+.texto {
+    cursor: pointer;
+}
+    */
