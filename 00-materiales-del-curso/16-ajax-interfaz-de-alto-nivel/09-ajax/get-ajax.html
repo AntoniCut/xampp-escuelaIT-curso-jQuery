@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso de jQuery</title>
+    <style>
+.error{
+	color: red;
+}
+    </style>
+</head>
+<body>
+    <a href="#" id="enlace">Trae algo por Ajax</a>
+   	<div id="salida"></div>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        $(function(){
+        	$("#enlace").click(function(e){
+        		e.preventDefault();
+        		$.get("contenido.php", function(respuesta){
+	      			//alert(respuesta);
+	      			if(respuesta == "error")
+	      				$("#salida").addClass("error");
+	      			$("#salida").text(respuesta);
+	      			var lista = $("<ul>").append("<li>" + respuesta + "</li>");
+	      			$("p").append(lista);
+	      		});
+        	});
+        });
+    </script>
+</body>
+</html>

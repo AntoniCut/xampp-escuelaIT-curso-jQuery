@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso de jQuery</title>
+    <style>
+.error{
+	color: red;
+}
+#cargando{
+	display: none;
+	background-color: #ddd;
+}
+    </style>
+</head>
+<body>
+    <a href="#" id="enlace">Trae algo por Ajax</a>
+   	<div id="salida"></div>
+   	<div id="cargando">Cargando...</div>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        $(function(){
+        	var nombrePersona = "Francisco"
+        	$("#enlace").click(function(e){
+        		e.preventDefault();
+        		$.get("contenido-dato.php", {
+        			nombre: nombrePersona,
+        			apellido: "Martil"
+        		} ,function(respuesta){
+	      			$("#salida").html(respuesta);
+	      		});
+	      		$.get("contenido.php", {
+        			nombre: nombrePersona,
+        			apellido: "Martil"
+        		} ,function(respuesta){
+	      			//$("#salida").html(respuesta);
+	      		});
+        	});
+
+        	$(document).ajaxStart(function(){
+        		$("#cargando").css("display", "block");
+        		console.log("start");
+        	});
+        	$(document).ajaxSuccess(function(){
+        		$("#cargando").css("display", "none");
+        		$("#salida").text("error").css("color", "black");
+        		console.log("success");
+        	});
+			$(document).ajaxError(function(){
+				$("#salida").text("error").css("color", "red");
+        		$("#cargando").css("display", "none");
+        		console.log("Error");
+        	});
+        	$(document).ajaxComplete(function(){
+				console.log("complete");
+        	});
+        	$(document).ajaxSend(function(){
+				console.log("Send");
+        	});
+        });
+
+
+    </script>
+</body>
+</html>

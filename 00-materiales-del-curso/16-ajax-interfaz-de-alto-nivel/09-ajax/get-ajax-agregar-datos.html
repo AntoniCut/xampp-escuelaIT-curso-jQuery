@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso de jQuery</title>
+    <style>
+.error{
+	color: red;
+}
+#cargando{
+	display: none;
+	background-color: #ddd;
+}
+.cargando{
+	background: url(1-0.gif);
+}
+#salida{
+	padding: 10px;
+}
+    </style>
+</head>
+<body>
+    <a href="#" id="enlace">Trae algo por Ajax</a>
+   	<div id="salida"></div>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+	<p></p>
+
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        $(function(){
+        	var datos = {
+        			nombre: "Iván",
+        			apellido: "Martil"
+        		}
+        	datos.nuevo = "kk";
+
+        	$("#enlace").click(function(e){
+        		e.preventDefault();
+        		$("#salida").addClass("cargando");
+        		var objetoAjax = $.get("contenido-dato.php", datos ,function(respuesta){
+        			$("#salida")
+        				.html(respuesta)
+        				.css("color", "black");
+	      		});
+
+	      		objetoAjax.always(function(){
+	      			$("#salida").removeClass("cargando");
+	      		});
+	      		objetoAjax.fail(function(){
+	      			$("#salida").css("color", "red");
+	      		});
+
+        	});
+
+    
+
+
+        });
+
+
+    </script>
+</body>
+</html>

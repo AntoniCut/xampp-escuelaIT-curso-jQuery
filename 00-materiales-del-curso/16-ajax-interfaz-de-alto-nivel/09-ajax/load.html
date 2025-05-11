@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso de jQuery</title>
+</head>
+<body>
+    <div id="capa">haz click</div>
+    
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script>
+        $(function(){
+      		//load más fácil
+      		$("#capa").click(function(){
+      			$(this).load("contenido.php", function(){
+      				alert("ya");
+      			});
+      		})
+      		
+        });
+    </script>
+</body>
+</html>
