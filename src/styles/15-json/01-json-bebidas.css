@@ -1,0 +1,59 @@
+/*
+    ----------------------------------------------------
+    ----------  /01-curso-jquery-escuela-it/  ----------
+    ----------  /src/styles/  --------------------------
+    ----------  /15-json/  -----------------------------
+    ----------  /01-json-bebidas.css  ------------------
+    ----------------------------------------------------
+*/
+
+
+.layout__main {
+    margin-top: 18rem;
+}
+
+.header__title {
+    font-size: 2.6rem;
+}
+
+.main__json-bebidas {
+    max-width: 102.4rem;
+    width: 100%;
+    min-height: 46rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    padding: 3rem;
+    border-radius: 0.5rem;
+}
+
+.json-bebidas__title {
+    color: darkgreen;
+}
+
+.json-bebidas__subtitle {
+    color: rgb(55, 184, 55);
+}
+
+.main__json-bebidas ul,
+.main__json-bebidas ol {
+    padding-left: 2rem;
+}
+
+.main__json-bebidas table {
+    border-collapse: collapse;
+    width: 60%;
+}
+
+.main__json-bebidas th,
+.main__json-bebidas td {
+    border: 1px solid #ccc;
+    padding: 0.8rem 1.2rem;
+    text-align: left;
+}
+
+.main__json-bebidas th {
+    background-color: #f0f0f0;
+}
