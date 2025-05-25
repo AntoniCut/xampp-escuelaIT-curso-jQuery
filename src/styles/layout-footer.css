@@ -1,7 +1,8 @@
 /*
     -----------------------------------------------------
     ----------  /01-curso-jquery-escuela-it/  -----------
-    ----------  /src/styles/layout-footer.css  ----------
+    ----------  /src/styles/  ---------------------------
+    ----------  /layout-footer.css  ---------------------
     -----------------------------------------------------
 */
 
@@ -16,25 +17,69 @@
     text-align: center;
     background: linear-gradient(to right, rgb(189, 220, 230) 20%, rgb(133, 157, 189) 40%, rgb(100, 143, 230) 60%, rgb(197, 201, 221) 80%);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    padding-bottom: 5rem;
 }
+
+
+/*  -----  Footer Header  -----  */
 
 .footer__header {
     width: 100%;
+    max-width: 102.4rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+
+/*  -----  logos  -----  */
+
+.footer__container-logos {
+    width: 25rem;
+    height: 5rem;
     display: flex;
     justify-content: center;
+    align-items: center;
+    gap: 3rem;
 }
 
-.footer__logo-jquery {
-    width: 4rem;
-    height: 4rem;
+.footer__jquery-logo,
+.footer__jquery-ui-logo {
+    width: 3rem;
+    height: 3rem;
+
+    &:hover {
+        transform: scale(1.1);
+    }
 }
 
-.footer__logo-jquery:hover {
-    transform: scale(1.1);
+.footer__jquery-banner,
+.footer__jquery-ui-banner {
+    width: 15rem;
+    height: auto;
+    mix-blend-mode: multiply;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+
+/*  -----  title  -----  */
+
+.footer__container-title {
+    /* width: 76rem; */
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer__title {
-    width: 102.4rem;
+    width: 100%;
     font-size: 2rem;
     color: #E6EBF1;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
@@ -46,6 +91,9 @@
     height: 2px;
     background-color: #E6EBF1;
 }
+
+
+/*  -----  Footer Main  -----  */
 
 .footer__main {
     width: 100%;
@@ -61,7 +109,7 @@
     width: 30rem;
     display: flex;
     flex-direction: column;
-    align-items:baseline;
+    align-items: baseline;
     gap: 1rem;
 }
 
@@ -89,8 +137,29 @@
     ----------------------------------
 */
 
+@media (max-width: 900px) {
+
+    .footer__header {
+        height: 15rem;
+        flex-direction: column;
+    }
+
+    .footer__container-logos {
+        height: 5rem;
+    }
+
+    .footer__container-title {
+        height: 5rem;
+    }
+
+}
+
 @media (max-width: 565px) {
-   
+
+    .footer__title {
+        font-size: 1.6rem;
+    }
+
     .footer__main {
         width: 100%;
         padding: 1rem 1rem;
@@ -100,16 +169,5 @@
         gap: 2rem;
     }
 
-    .footer__logo-html5 {
-        width: 3.5rem;
-        height: 3.5rem;
-    }
 
-    .footer__title {
-        font-size: 2rem;
-    }
-    .footer__list {
-        width: 80%;
-    }
-   
 }

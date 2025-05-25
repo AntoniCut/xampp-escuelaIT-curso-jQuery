@@ -1,0 +1,42 @@
+/*
+    ----------------------------------------------------
+    ----------  /01-curso-jquery-escuela-it/  ----------
+    ----------  /src/styles/  --------------------------
+    ----------  /01-que-es-jquery/  --------------------
+    ----------  /que-es-jquery.css  --------------------
+    ----------------------------------------------------
+*/
+
+
+.main__que-es-jquery {
+    max-width: 102.4rem;
+    width: 100%;
+    min-height: 46rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    padding: 5rem;
+    padding-top: 10rem;
+    border-radius: 0.5rem;
+    background: radial-gradient(circle, rgb(255, 255, 255), rgb(219, 228, 240), rgb(176, 196, 236));
+    box-shadow: 50px 50px 100px rgb(209, 220, 235);
+}
+
+
+/*  -----  Responsive  -----  */
+
+@media (max-width: 1024px) {
+    
+    .main__que-es-jquery {
+        padding: 2rem;
+        padding-top: 5rem;
+    }
+}
+
+@media (max-width: 568px) {
+    
+    .main__que-es-jquery {
+        padding: 1rem;
+        padding-top: 3rem;
+    }
+}

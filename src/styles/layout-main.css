@@ -14,10 +14,54 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
+    margin-top: 15rem;
     margin-bottom: 5rem;
 }
 
 .main__background {
     background: radial-gradient(circle, rgb(255, 255, 255), rgb(219, 228, 240), rgb(176, 196, 236));
     box-shadow: 50px 50px 100px rgb(209, 220, 235);
+}
+
+.main__banner {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+.main__pdfs {
+    border-radius: 5px;
+}
+
+
+/*
+    ----------------------------------
+    ----------  Responsive  ----------
+    ----------------------------------
+*/
+
+
+@media (max-width: 1380px) {
+
+    .layout__main {
+        margin-top: 25rem;
+    }
+
+}
+
+/* @media (max-width: 1215px) {
+
+    .layout__main {
+        margin-top: 32rem;
+    }
+
+} */
+
+@media (max-width: 1024px) {
+
+    .layout__main {
+        margin-top: 2rem;
+    }
+    
 }
