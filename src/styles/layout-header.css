@@ -1,23 +1,23 @@
 /*
-    ----------------------------------------------------
-    ----------  /01-curso-jquery-escuela-it/  ----------
-    ----------  /src/styles/  --------------------------
-    ----------  /layout-header.css  --------------------
-    ----------------------------------------------------
+    ------------------------------------------
+    ----------  /01-curso-jquery/  -----------
+    ----------  /src/styles/  ----------------
+    ----------  /layout-header.css  ----------
+    ------------------------------------------
 */
 
 
+.header__container {
+    width: 100%;
+}
+
 .layout__header {
     width: 100%;
-    height: 12rem;
+    min-height: 14rem;
     position: fixed;
-    z-index: 10;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    /* flex-wrap: wrap; */
-    text-align: center;
+    top: 0;
+    left: 0;
+    z-index: 100;
     background: linear-gradient(to right, rgb(189, 220, 230) 20%, rgb(133, 157, 189) 40%, rgb(100, 143, 230) 60%, rgb(197, 201, 221) 80%);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
@@ -28,17 +28,26 @@
 .header__container-logos {
     width: 30rem;
     height: 12rem;
+    position: absolute;
+    top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 3rem;
 }
 
+.header__container-logos--jquery {
+    left: 2rem;
+}
+
+.header__container-logos--jquery-ui {
+    right: 2rem;
+}
+
 .header__jquery-logo,
 .header__jquery-ui-logo {
     width: 4rem;
     height: 4rem;
-
     &:hover {
         transform: scale(1.1);
     }
@@ -49,32 +58,41 @@
     width: 20rem;
     height: auto;
     mix-blend-mode: multiply;
-
     &:hover {
         transform: scale(1.1);
     }
 }
 
+
 /*  -----  title  -----  */
+
 .header__container-title {
-    width: 100rem;
+    width: 102.4rem;
     height: 12rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 3rem;
 }
 
 .header__title {
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-size: 2.6rem;
     color: #E6EBF1;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .header__separator {
-    width: 90%;
+    width: 100%;
     height: 0.1rem;
-    margin: 1rem 2rem;
     background-color: #E6EBF1;
 }
 
@@ -85,15 +103,25 @@
     ----------------------------------
 */
 
+@media (max-width: 1675px) {
+
+    .header__container-title {
+        top: auto;                 
+        bottom: 2rem;              
+        transform: translateX(-50%); 
+        gap: 2rem;
+    }
+
+    .header__separator {
+        width: 75%;
+    }
+}
+
 @media (max-width: 1380px) {
 
     .layout__header {
-        height: 24rem;
+        height: 18rem;
         flex-direction: column;
-    }
-
-    .header__container-logos {
-        height: 8rem;
     }
 
     .header__jquery-logo,
@@ -107,7 +135,6 @@
         width: 15rem;
         height: auto;
         mix-blend-mode: multiply;
-
         &:hover {
             transform: scale(1.1);
         }
@@ -115,9 +142,13 @@
 
     .header__container-title {
         width: 100%;
-        height: 8rem;
+        height: 14rem;
     }
-    
+
+    .header__separator {
+        width: 95%;
+    }
+
 }
 
 
@@ -125,17 +156,53 @@
 
     .layout__header {
         position: relative;
-        height: 35rem;
+        height: 22rem;
     }
-    
+
+    .header__container-title {
+        bottom: 1.5rem;              
+        gap: 1.5rem;
+    }
+
 }
 
-@media (max-width: 568px) {
+@media (max-width: 630px) {
 
     .header__title {
         font-size: 2rem;
     }
-    
+
+}
+
+@media (max-width: 600px) {
+
+    .layout__header {
+        height: auto;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding: 2rem 0;
+    }
+
+    .header__container-logos {
+        position: static;
+        width: 100%;
+        justify-content: center;
+        height: auto;
+    }
+
+    .header__container-title {
+        position: static;
+        width: 100%;
+        transform: none;
+        height: auto;
+    }
+
+    .header__title {
+        font-size: 2rem;
+    }
 }
 
 @media (max-width: 400px) {
@@ -143,5 +210,5 @@
     .header__title {
         font-size: 1.6rem;
     }
-    
+
 }
