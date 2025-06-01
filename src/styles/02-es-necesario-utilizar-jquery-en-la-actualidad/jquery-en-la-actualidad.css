@@ -8,6 +8,10 @@
 */
 
 
+.header__title {
+    font-size: 2rem;
+}
+
 .main__jquery-en-la-actualidad {
     max-width: 102.4rem;
     width: 100%;
@@ -24,6 +28,13 @@
 
 
 /*  -----  Responsive  -----  */
+
+@media (max-width: 1200px) {
+    
+    .header__title {
+        font-size: 1.8rem;
+    }
+}
 
 @media (max-width: 1024px) {
     

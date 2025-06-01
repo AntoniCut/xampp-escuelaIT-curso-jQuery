@@ -24,23 +24,27 @@
     <link rel="stylesheet" href="/01-curso-jquery/src/styles/layout.css">
     <link rel="stylesheet" href="/01-curso-jquery/src/styles/06-primeros-pasos/02-ejemplo2.css">
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"> </script>
-    <script> window.jQuery || document.write('<script src="/01-curso-jquery/src/libs/jquery/local/jquery-1.11.1.min.js"><\/script>') </script>
+    <script type="module" src="/01-curso-jquery/06-primeros-pasos-con-jquery/02-ejemplo-2/main.js"> </script>
 
 </head>
 
 
 <body>
 
+
+    <!--  ----------  LAYOUT  ----------  -->
     <div class="layout">
 
-        <header class="layout__header">
-            <img class="header__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery/jquery-logo-ico-original.ico" alt="Logo jQuery">
-            <h1 class="header__title"> Ejemplo 2 - Clase 6 - Hola mundo </h1>
-            <img class="header__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery-ui/jquery-ui-icon.svg" alt="Logo jQuery">
-        </header>
+
+        <!--  ----------  HEADER  ----------  -->
+        <div class="header__container" id="layoutHeader"> </div>
         
 
+        <!--  ----------  NAVBAR  ----------  -->
+        <div class="navbar__container" id="layoutNavbar"> </div>
+    
+    
+        <!--  ----------  MAIN  ----------    -->
         <main class="layout__main">
 
             <section class="main__ejemplo2 background-main">
@@ -65,93 +69,23 @@
                     <li> tres </li>
                 </ul>
     
-                <div id="info"> </div>
+                <div id="info1"> </div>
+
+                <br>
+                
+                <div id="info2"> </div>
 
             </section>
 
         </main>
 
-        <footer class="layout__footer">
-            
-            <header class="footer__header">
-                <img class="footer__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery/jquery-logo-ico-original.ico" alt="Logo jQuery">
-                <h3 class="footer__title"> Curso de jQuery - Escuela IT </h3>
-                <img class="footer__logo-jquery" src="/01-curso-jquery/src/img/logo-jquery-ui/jquery-ui-icon.svg" alt="Logo jQuery UI">
-            </header>
-            
-            <div class="footer__separator"> </div>
-                        
-        </footer>
+        
+        <!--  ----------  FOOTER  ----------  -->
+        <div class="footer__container" id="layoutFooter"> </div>
+
 
     </div>
-
-
-    <script>
-
-        $(document).ready(function () {
-
-            const jQueryVersion = $.fn.jquery;
-            console.warn('jQuery Version:', jQueryVersion);
-
-
-            const $parrafos = $("p");
-            const $info = $("#info");
-
-            console.log('parrafos', $parrafos);
-            //$info.append( $parrafos.html() );
-
-            $parrafos.each(function (indice, elem) {
-
-                //  -----  codigo para cada uno  -----
-                console.log("\nhola - " + indice);
-
-                elem = $(elem);
-                console.log('Texto del párrafo ', (indice + 1), ' - ', elem.text());
-                $info.append(`<h3> Texto del párrafo ${(indice + 1)}, ${elem.text()} </h3>`);
-            });
-
-
-            let x = [1, 2, 3, "x"];
-
-            console.log('\n');
-
-            $(x).each(function (i, e) {
-                console.log('posicion ', i, ' elemento ', e, ' del array x');
-                $info.append(`<h3> Posición ${i}, elemento ${e} del array x </h3>`);
-            });
-
-        });
-
-
-        $(function () {
-            
-            const jQueryVersion = $.fn.jquery;
-            console.log('\n');
-            console.warn('jQuery Version:', jQueryVersion);
-
-            const $info = $("#info");
-
-            // Primero modificamos el texto de todos los <li> a "hola"
-            $("li").text("hola");
-
-            // Luego recorremos los elementos
-            $("li").each(recorreLi);
-
-            function recorreLi(indice, elem) {
-                
-                console.log('elem', elem, ' - indice ', indice, ' - $(elem)', $(elem), ' - texto de li', $(elem).text());
-                $info.append(`<h3> elem ${$(elem).text()} - indice ${indice} - $(elem) ${$(elem).text()} - texto de li ${$(elem).text()} </h3>`);
-
-                $(elem).css("color", "red");
-
-                if ($(elem).text() == "dos") {
-                    $(elem).remove();
-                }
-            }
-        });
-
-       
-    </script>
+   
 
 </body>
 

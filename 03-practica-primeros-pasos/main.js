@@ -1,9 +1,9 @@
 /*  
-    ------------------------------------------
-    ----------  /01-curso-jquery/  -----------
-    ----------  /01-que-es-jquery/  ----------
-    ----------  /main.js  --------------------
-    ------------------------------------------  
+    ----------------------------------------------------
+    ----------  /01-curso-jquery/  ---------------------
+    ----------  /03-practica-primeros-pasos/  ----------
+    ----------  /main.js  ------------------------------
+    ----------------------------------------------------  
 */
 
 
@@ -17,8 +17,8 @@ const cdnJQuery = cdnJQuery_1_11_0;
 const localJQuery = "/01-curso-jquery/src/libs/jquery/local/jquery-1.11.1.min.js";
 
 //  -----  declarar el tilulo del header  -----
-const headerTitle = 'Clase 1. Que es jQuery <br> introduccion a jQuery y pdf de repaso de JavaScript - Parte 1';
-
+const headerTitle = 'Clase 3. Práctica primeros pasos <br> primeros pasos y pdf manual de jQuery';
+const scriptUrl = "/01-curso-jquery/src/scripts/03-practica-primeros-pasos/practica-primeros-pasos.js";
 
 //  ------------------------------------------------------------------------------------
 //  -----  Ejecutamos la Promesa de carga de jQuery y el script del proyecto  ----------
@@ -33,8 +33,9 @@ loadJQueryByCdnOLocal(cdnJQuery, localJQuery)
         console.log('\n');
         console.warn("jQuery cargado correctamente - Version:", $.fn.jquery);
 
-        //  -----  cargamos el script que carga los componentes de la layout  -----
+        //  -----  cargamos el script que carga los componentes de la layout, y script del proyecto  -----
         loadComponentsLayout(headerTitle);
+        loadScript(scriptUrl);
         
     })
 

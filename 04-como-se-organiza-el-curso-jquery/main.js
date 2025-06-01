@@ -1,9 +1,9 @@
 /*  
-    ------------------------------------------
-    ----------  /01-curso-jquery/  -----------
-    ----------  /01-que-es-jquery/  ----------
-    ----------  /main.js  --------------------
-    ------------------------------------------  
+    ------------------------------------------------------
+    ----------  /01-curso-jquery/  -----------------------
+    ----------  /04-como-se-organiza-el-curso/  ----------
+    ----------  /main.js  --------------------------------
+    ------------------------------------------------------  
 */
 
 
@@ -17,7 +17,7 @@ const cdnJQuery = cdnJQuery_1_11_0;
 const localJQuery = "/01-curso-jquery/src/libs/jquery/local/jquery-1.11.1.min.js";
 
 //  -----  declarar el tilulo del header  -----
-const headerTitle = 'Clase 1. Que es jQuery <br> introduccion a jQuery y pdf de repaso de JavaScript - Parte 1';
+const headerTitle = 'Clase 4 - Como se organiza el curso <br> Como se organiza el curso y pdf manual de jQuery Mobile';
 
 
 //  ------------------------------------------------------------------------------------

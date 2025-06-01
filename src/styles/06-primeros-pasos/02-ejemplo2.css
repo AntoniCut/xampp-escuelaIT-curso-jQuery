@@ -17,7 +17,6 @@
     background: radial-gradient(circle, rgb(255, 255, 255), rgb(219, 228, 240), rgb(176, 196, 236));
     box-shadow: inset 50px 50px 100px rgb(209, 220, 235);
     padding: 3rem 3rem;
-    margin-top: 15rem;
     margin-bottom: 5rem;
 }
 
@@ -31,17 +30,19 @@
     background-color: #0f0;
 }
 
-#info {
+#info1,
+#info2 {
     padding: 2rem 3rem;
     background-color: rgb(190, 215, 235);
 }
 
-#info h3 {
+#info1 h3,
+#info2 h3 {
     font-size: 1.4rem;
     font-weight: 100;
     padding: 0.5rem;
 }
 
-li {
+.main__ejemplo2 li {
     margin: 1rem 0;
 }

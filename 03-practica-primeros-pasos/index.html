@@ -23,42 +23,28 @@
     <link rel="stylesheet" href="/01-curso-jquery/src/styles/layout.css">
     <link rel="stylesheet" href="/01-curso-jquery/src/styles/03-practica-primeros-pasos/practica-primeros-pasos.css">
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"> </script>
-    <script> window.jQuery || document.write('<script src="../../assets/jquery/core/jquery-1.11.1.min.js"><\/script>') </script>
+    <script type="module" src="/01-curso-jquery/03-practica-primeros-pasos/main.js"> </script>
 
+    
 </head>
 
 
 <body>
 
+
+    <!--  ----------  LAYOUT  ----------  -->
     <div class="layout">
 
 
         <!--  ----------  HEADER  ----------  -->
-        <header class="layout__header">
-            
-            <div class="header__container-logos">
-                <img class="header__jquery-banner" src="/01-curso-jquery/src/img/logo-jquery/jquery-banner.webp" alt="Logo Banner jQuery">
-                <img class="header__jquery-logo" src="/01-curso-jquery/src/img/logo-jquery/jquery-logo.webp" alt="Logo jQuery">
-            </div>
-            
-            <div class="header__container-title">
-                <h1 class="header__title"> 
-                    Clase 3 - Práctica primeros pasos con jQuery                   
-                    <div class="header__separator"> </div>
-                    Primeros pasos y pdf manual de jQuery
-                </h1>
-            </div>
-            
-            <div class="header__container-logos">
-                <img class="header__jquery-ui-banner" src="/01-curso-jquery/src/img/logo-jquery-ui/jquery-ui-banner.webp" alt="Logo Banner jQuery UI">
-                <img class="header__jquery-ui-logo" src="/01-curso-jquery/src/img/logo-jquery-ui/jquery-ui-logo.svg" alt="Logo jQuery UI">
-            </div>
-            
-        </header>
+        <div class="header__container" id="layoutHeader"> </div>
         
+
+        <!--  ----------  NAVBAR  ----------  -->
+        <div class="navbar__container" id="layoutNavbar"> </div>
+    
         
-        <!--  ----------  Main  ----------    -->
+        <!--  ----------  MAIN  ----------  -->
         <main class="layout__main">
 
 
@@ -76,7 +62,7 @@
             <section class="main__primeros-pasos main__background">
 
                 <div class="primeros-pasos__titular-container">
-                    <h2> Bienvenidos a jQuery desde Escuela.it </h2>
+                    <h2 class="titulo"> Bienvenidos a jQuery desde Escuela.it </h2>
                 </div>
     
                 
@@ -105,61 +91,12 @@
         </main>
 
 
-         <!--  ----------  FOOTER  ----------  -->
-        <footer class="layout__footer">
-            
-            <header class="footer__header">
-
-                <div class="footer__container-logos">
-                    <img class="footer__jquery-banner" src="/01-curso-jquery/src/img/logo-jquery/jquery-banner.webp" alt="Logo Banner jQuery">
-                    <img class="footer__jquery-logo" src="/01-curso-jquery/src/img/logo-jquery/jquery-logo.webp" alt="Logo jQuery">
-                </div>
-            
-                <div class="footer__container-title">
-                    <h3 class="footer__title"> Curso de jQuery - Escuela IT </h3>
-                </div>
-                            
-                <div class="header__container-logos">
-                    <img class="footer__jquery-ui-banner" src="/01-curso-jquery/src/img/logo-jquery-ui/jquery-ui-banner.webp" alt="Logo Banner jQuery UI">
-                    <img class="footer__jquery-ui-logo" src="/01-curso-jquery/src/img/logo-jquery-ui/jquery-ui-logo.svg" alt="Logo jQuery UI">
-                </div>
-
-            </header>
-
-            <div class="footer__separator"> </div>
-            
-        </footer>
+        <!--  ----------  FOOTER  ----------  -->
+        <div class="footer__container" id="layoutFooter"> </div>
 
 
     </div>
 
-
-    <script>
-
-        $(document).ready(function () {
-
-            const jQueryVersion = $.fn.jquery;
-            console.warn('jQuery Version:', jQueryVersion);
-
-            $('h2').css('color', 'orange');
-            $('h2').css('background-color', '#ffc');
-
-            const $anadir = $('#anadir');
-            const $quitar = $('#quitar');
-
-            $anadir.click(cambiarTitular);
-            
-            $quitar.click(function() {
-                $('h2').removeClass('titular');
-            });
-                
-            function cambiarTitular () {
-                $('h2').addClass('titular');
-            }
-
-        });
-
-    </script>
 
 </body>
 

@@ -23,40 +23,26 @@
     <link rel="stylesheet" href="/01-curso-jquery/src/styles/layout.css">
     <link rel="stylesheet" href="/01-curso-jquery/src/styles/05-introduccion-jquery/introduccion-jquery.css">
 
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"> </script>
-    <script> window.jQuery || document.write('<script src="../../assets/jquery/core/jquery-1.11.1.min.js"><\/script>') </script>
+    <script type="module" src="/01-curso-jquery/05-introduccion-jquery/main.js"> </script>
 
 </head>
 
 
 <body>
 
+
+    <!--  ----------  LAYOUT  ----------  -->
     <div class="layout">
 
 
         <!--  ----------  HEADER  ----------  -->
-        <header class="layout__header">
-            
-            <div class="header__container-logos">
-                <img class="header__jquery-banner" src="/01-curso-jquery/src/img/logo-jquery/jquery-banner.webp" alt="Logo Banner jQuery">
-                <img class="header__jquery-logo" src="/01-curso-jquery/src/img/logo-jquery/jquery-logo.webp" alt="Logo jQuery">
-            </div>
-            
-            <div class="header__container-title">
-                <h1 class="header__title"> 
-                    Clase 5 - Introducción a jQuery
-                    <div class="header__separator"> </div>
-                    Introducción a jQuery y pdf resumen de selectores
-                </h1>
-            </div>
-            
-            <div class="header__container-logos">
-                <img class="header__jquery-ui-banner" src="/01-curso-jquery/src/img/logo-jquery-ui/jquery-ui-banner.webp" alt="Logo Banner jQuery UI">
-                <img class="header__jquery-ui-logo" src="/01-curso-jquery/src/img/logo-jquery-ui/jquery-ui-logo.svg" alt="Logo jQuery UI">
-            </div>
-            
-        </header>
+        <div class="header__container" id="layoutHeader"> </div>
+        
 
+        <!--  ----------  NAVBAR  ----------  -->
+        <div class="navbar__container" id="layoutNavbar"> </div>
+    
+    
         <!--  ----------  MAIN  ----------    -->
         <main class="layout__main">
 
@@ -94,45 +80,11 @@
 
 
         <!--  ----------  FOOTER  ----------  -->
-        <footer class="layout__footer">
-            
-            <header class="footer__header">
-
-                <div class="footer__container-logos">
-                    <img class="footer__jquery-banner" src="/01-curso-jquery/src/img/logo-jquery/jquery-banner.webp" alt="Logo Banner jQuery">
-                    <img class="footer__jquery-logo" src="/01-curso-jquery/src/img/logo-jquery/jquery-logo.webp" alt="Logo jQuery">
-                </div>
-            
-                <div class="footer__container-title">
-                    <h3 class="footer__title"> Curso de jQuery - Escuela IT </h3>
-                </div>
-                            
-                <div class="header__container-logos">
-                    <img class="footer__jquery-ui-banner" src="/01-curso-jquery/src/img/logo-jquery-ui/jquery-ui-banner.webp" alt="Logo Banner jQuery UI">
-                    <img class="footer__jquery-ui-logo" src="/01-curso-jquery/src/img/logo-jquery-ui/jquery-ui-logo.svg" alt="Logo jQuery UI">
-                </div>
-
-            </header>
-
-            <div class="footer__separator"> </div>
-            
-        </footer>
+        <div class="footer__container" id="layoutFooter"> </div>
 
 
     </div>
-
-
-    <script>
-
-        $(document).on('ready', function () {
-
-            const jQueryVersion = $.fn.jquery;
-            console.warn('jQuery Version:', jQueryVersion);
-
-            $("#capa").css("background-color", "red");
-        });
-
-    </script>
+   
 
 </body>
 
