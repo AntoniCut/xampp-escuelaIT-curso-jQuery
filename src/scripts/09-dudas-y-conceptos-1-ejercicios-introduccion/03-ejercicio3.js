@@ -28,7 +28,7 @@
     ];
 
 
-    $("li").each(function (index, elem) {
+    $(".contenido li").each(function (index, elem) {
 
         //  -----  operador % --> resto de la división: 4 % 3 = 1,  23 % 5 = 3  -----
         const i = index % arrayRGB.length;

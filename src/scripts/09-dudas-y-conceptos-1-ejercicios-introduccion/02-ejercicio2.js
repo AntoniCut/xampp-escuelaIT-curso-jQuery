@@ -28,7 +28,7 @@
     ];
 
 
-    $("li").each(function (index, elem) {
+    $(".contenido li").each(function (index, elem) {
 
         $(elem).css("background-color", arrayRGB[index]);
 

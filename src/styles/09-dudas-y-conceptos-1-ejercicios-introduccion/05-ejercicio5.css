@@ -8,14 +8,6 @@
 */
 
 
-.layout__main {
-    margin-top: 20rem;
-}
-
-.header__title {
-    font-size: 2.6rem;
-}
-
 .main__ejercicio5 {
     width: 100%;
     max-width: 102.4rem;
@@ -36,7 +28,7 @@
     background-color: #8eafeb;
 }
 
-p {
+.main__ejercicio5 p {
     padding: 10px;
     margin-bottom: 2rem;
 }

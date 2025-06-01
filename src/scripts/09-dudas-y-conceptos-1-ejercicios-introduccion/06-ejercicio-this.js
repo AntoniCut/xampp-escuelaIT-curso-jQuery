@@ -12,16 +12,18 @@
 
     console.log('\n');
     console.warn('----------  06-ejercicio-this.js  ----------');
-
-
     console.log('\n');
+
     
+    const $lis = $('section.main__ejercicio-this ul li');
+
+
     //  -----  ejemplo con this, objeto nativo de JavaScript.  ---------------------------- 
     //  -----  No esta extendido con las funcionalidades de jQuery.  ----------------------
     //  -----  Sobre this yo podre ejecutar cosas que tengan que ver con JavaScript.  -----
     //  -----  Pero no cosas que tengan que ver con jQuery.  ------------------------------
     
-    $("li").each(function () { 
+    $lis.each(function () { 
                 
         //  -----  Operaciones que quieres realizar para cada elemento "genérico", en este  -----
         //  -----  caso son los LI de mi página. Este código se ejecuta 3 veces.  ---------------
@@ -35,7 +37,7 @@
 
     //  -----  Ejemplo con $(this), this extendido con las funcionalidades de jQuery.  -----
     
-    $("li").each(function () { 
+    $lis.each(function () { 
                  
         const elemActual = $(this);
         console.log('elemActual', elemActual);
@@ -51,7 +53,7 @@
 
         console.log("innerHTML:", this.innerHTML);
 
-        alert("Paro en cada iteración");
+        //alert("Paro en cada iteración");
                  
     });
         

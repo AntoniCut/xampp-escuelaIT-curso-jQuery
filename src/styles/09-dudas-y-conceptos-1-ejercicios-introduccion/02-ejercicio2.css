@@ -7,13 +7,6 @@
     -------------------------------------------------------------------------------
 */
 
-.layout__main {
-    margin-top: 20rem;
-}
-
-.header__title {
-    font-size: 2.6rem;
-}
 
 .main__ejercicio2 {
     width: 100%;
@@ -35,6 +28,6 @@
     background-color: #8eafeb;
 }
 
-li {
+.main__ejercicio2 li {
     margin-bottom: 10px;
 }

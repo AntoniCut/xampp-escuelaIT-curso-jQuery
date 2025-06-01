@@ -13,7 +13,7 @@
     console.log('\n');
     console.warn('----------  01-ejercicio1.js  ----------');
 
-    $("p").each(function(index, elem) {
+    $(".contenido p").each(function(index, elem) {
 
         //const parrafoActual = $(this);
         const parrafoActual = $(elem);

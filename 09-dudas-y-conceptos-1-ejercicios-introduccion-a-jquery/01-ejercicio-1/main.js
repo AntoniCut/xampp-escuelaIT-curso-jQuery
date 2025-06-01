@@ -1,21 +1,25 @@
-/*
-    -------------------------------------------------------------------------------
-    ----------  /curso-jquery-escuela-it.com/  ------------------------------------
-    ----------  /09-dudas-y-conceptos-i-ejercicios-introduccion-jquery/  ----------
-    ----------  /03-ejercicio3/  --------------------------------------------------
-    ----------  /main.js  ---------------------------------------------------------
-    -------------------------------------------------------------------------------
+/*  
+    ---------------------------------------------------------------------------------
+    ----------  /01-curso-jquery/  --------------------------------------------------
+    ----------  /09-dudas-y-conceptos-1-ejercicios-introduccion-a-jquery/  ----------
+    ----------  /01-ejercicio-1/  ---------------------------------------------------
+    ----------  /main.js  -----------------------------------------------------------
+    ---------------------------------------------------------------------------------  
 */
 
 
 import { cdnJQuery_1_11_0 } from "/01-curso-jquery/src/libs/jquery/cdn/cdn-jquery-1.11.0.js";
 import { loadJQueryByCdnOLocal } from "/01-curso-jquery/src/libs/jquery/load/load-jquery-by-cdn-local.js";
+import { loadComponentsLayout } from "/01-curso-jquery/src/scripts/load-components-layout.js";
 
 
+//  -----  scripts libs jQuery  -----
 const cdnJQuery = cdnJQuery_1_11_0;
 const localJQuery = "/01-curso-jquery/src/libs/jquery/local/jquery-1.11.1.min.js";
 
-const scriptUrl = "/01-curso-jquery/src/scripts/09-dudas-y-conceptos-1-ejercicios-introduccion/03-ejercicio3.js";
+//  -----  declarar el tilulo del header, url script del proyecto  -----
+const headerTitle = 'Clase 9. Dudas y conceptos 1 <br> Ejercicios introducción a jQuery - 1. Ejercicio 1';
+const scriptUrl = "/01-curso-jquery/src/scripts/09-dudas-y-conceptos-1-ejercicios-introduccion/01-ejercicio1.js";
 
 
 //  ------------------------------------------------------------------------------------
@@ -32,12 +36,11 @@ loadJQueryByCdnOLocal(cdnJQuery, localJQuery)
         console.warn("jQuery cargado correctamente - Version:", $.fn.jquery);
 
         //  -----  cargamos el script principal del proyecto  -----
-        //scriptMain($);
+        loadComponentsLayout(headerTitle);
         loadScript(scriptUrl);
     })
 
     .catch(err => console.error("Error al cargar jQuery:", err));
-
 
 
 //  ----------------------------------------------------------------------------------------

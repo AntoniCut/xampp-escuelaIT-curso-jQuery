@@ -1,9 +1,8 @@
 /*
-    -----------------------------------------
-    ----------  /01-curso-jquery/  ----------
-    ----------  /src/styles/  ---------------
-    ----------  /layout-main.css  -----------
-    -----------------------------------------
+    ----------------------------------------------------
+    ----------  /01-curso-jquery-escuela-it/  ----------
+    ----------  /src/styles/layout-main.css  -----------
+    ----------------------------------------------------
 */
 
 
@@ -15,7 +14,7 @@
     justify-content: center;
     align-items: center;
     gap: 3rem;
-    margin-top: 10rem; 
+    margin-top: 10rem;
     margin-bottom: 5rem;
 }
 
@@ -29,12 +28,6 @@
     height: auto;
     border-radius: 5px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
-}
-
-.main__title {
-    font-size: 2.6rem;
-    color: #e9edeec7;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
 
 .main__pdfs {
@@ -52,7 +45,7 @@
 @media (max-width: 1380px) {
 
     .layout__main {
-        margin-top: 15rem;
+        margin-top: 25rem;
     }
 
 }
@@ -60,7 +53,7 @@
 @media (max-width: 1024px) {
 
     .layout__main {
-        margin-top: -5rem;
+        margin-top: 2rem;
     }
     
 }

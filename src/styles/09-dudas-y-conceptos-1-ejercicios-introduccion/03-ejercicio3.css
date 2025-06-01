@@ -8,14 +8,6 @@
 */
 
 
-.layout__main {
-    margin-top: 20rem;
-}
-
-.header__title {
-    font-size: 2.6rem;
-}
-
 .main__ejercicio3 {
     width: 100%;
     max-width: 160rem;
@@ -36,6 +28,6 @@
     background-color: #8eafeb;
 }
 
-li {
+.main__ejercicio3 li {
     margin-bottom: 10px;
 }

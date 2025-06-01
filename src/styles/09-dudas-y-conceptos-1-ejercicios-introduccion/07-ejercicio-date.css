@@ -8,14 +8,6 @@
 */
 
 
-.layout__main {
-    margin-top: 20rem;
-}
-
-.header__title {
-    font-size: 2.6rem;
-}
-
 .main__ejercicio-date {
     width: 100%;
     max-width: 160rem;
@@ -36,7 +28,7 @@
     background-color: #8eafeb;
 }
 
-p {
+.main__ejercicio-date p {
     padding: 1rem;
     cursor: pointer;
 }

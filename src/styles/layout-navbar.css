@@ -116,16 +116,16 @@
 @media (max-width: 1380px) {
 
     .layout__navbar {
-        margin-top: 20rem;   
+        margin-top: 5rem;   
     }
 }
 
 
 @media (max-width: 1024px) {
 
-     .layout__navbar {
-        margin-top: 2rem;   
-    }
+    .layout__navbar {
+        margin-top: -13rem;   
+    } 
 
 }
 
