@@ -1,20 +1,24 @@
-/*
-    -----------------------------------------------------------  
-    ----------  /01-curso-jquery-escuela-it/  -----------------
-    ----------  /08-selectores-jquery-y-traversing/  ----------  
-    ----------  /01-selectores/  ------------------------------  
+/*  
+    -----------------------------------------------------------
+    ----------  /01-curso-jquery/  ----------------------------
+    ----------  /08-selectores-jquery-y-traversing/  ----------
+    ----------  /01-selectores/  ------------------------------
     ----------  /main.js  -------------------------------------
-    ----------------------------------------------------------- 
+    -----------------------------------------------------------  
 */
 
 
 import { cdnJQuery_1_11_0 } from "/01-curso-jquery/src/libs/jquery/cdn/cdn-jquery-1.11.0.js";
 import { loadJQueryByCdnOLocal } from "/01-curso-jquery/src/libs/jquery/load/load-jquery-by-cdn-local.js";
+import { loadComponentsLayout } from "/01-curso-jquery/src/scripts/load-components-layout.js";
 
 
+//  -----  scripts libs jQuery  -----
 const cdnJQuery = cdnJQuery_1_11_0;
 const localJQuery = "/01-curso-jquery/src/libs/jquery/local/jquery-1.11.1.min.js";
 
+//  -----  declarar el tilulo del header, url script del proyecto  -----
+const headerTitle = 'Clase 8. Selectores jQuery y Traversing <br> 1. Selectores';
 const scriptUrl = "/01-curso-jquery/src/scripts/08-selectores-y-traversing/01-selectores.js";
 
 
@@ -32,12 +36,11 @@ loadJQueryByCdnOLocal(cdnJQuery, localJQuery)
         console.warn("jQuery cargado correctamente - Version:", $.fn.jquery);
 
         //  -----  cargamos el script principal del proyecto  -----
-        //scriptMain($);
+        loadComponentsLayout(headerTitle);
         loadScript(scriptUrl);
     })
 
     .catch(err => console.error("Error al cargar jQuery:", err));
-
 
 
 //  ----------------------------------------------------------------------------------------

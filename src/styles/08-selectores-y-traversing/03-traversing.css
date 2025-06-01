@@ -12,10 +12,6 @@
     margin-top: 15rem;
 }
 
-.header__title {
-    font-size: 3rem;
-}
-
 .main__traversing {
     width: 100%;
     max-width: 160rem;
@@ -43,10 +39,11 @@
     margin-top: -10rem;
 }
 
-ul, li {
+.main__traversing ul, 
+.main__traversing li {
     list-style: disc;
 }
 
-li {
+.main__traversing li {
     margin-left: 2rem;
 }

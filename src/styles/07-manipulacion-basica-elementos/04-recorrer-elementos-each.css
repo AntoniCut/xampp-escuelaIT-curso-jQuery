@@ -13,10 +13,6 @@
     justify-content: flex-start;
 }
 
-.header__title {
-    font-size: 3rem;
-}
-
 .main__recorrer-elementos-each {
     width: 100%;
     max-width: 102.4rem;

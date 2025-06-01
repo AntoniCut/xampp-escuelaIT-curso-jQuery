@@ -12,10 +12,6 @@
     justify-content: flex-start;
 }
 
-.header__title {
-    font-size: 3rem;
-}
-
 .main__data-removedata {
     width: 100%;
     max-width: 102.4rem;
