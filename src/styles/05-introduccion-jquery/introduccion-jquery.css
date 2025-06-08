@@ -11,12 +11,16 @@
 .main__introduccion {
     max-width: 102.4rem;
     width: 100%;
+    min-height: 46rem;
     display: flex;
     flex-direction: column;
     gap: 5rem;
-    padding: 3rem;
+    padding: 5rem;
     border-radius: 0.5rem;
-    margin-top: 5rem;
+}
+
+.main__introduccion:nth-of-type(2) {
+    min-height: 10rem;
 }
 
 #capa {
