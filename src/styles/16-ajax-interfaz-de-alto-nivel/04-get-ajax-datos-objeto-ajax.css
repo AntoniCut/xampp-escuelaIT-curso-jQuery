@@ -1,0 +1,48 @@
+/*
+    ----------------------------------------------------------
+    ----------  xampp-escuela-it/  ---------------------------
+    ----------  01-curso-jquery//  ---------------------------
+    ----------  /src/styles/  --------------------------------
+    ----------  /16-ajax-interfaz-de-alto-nivel/  ------------
+    ----------  /02-get-ajax-datos-objeto-ajax.css  ----------
+    ----------------------------------------------------------
+*/
+
+
+#enlace {
+    padding: 1rem 2rem;
+    background-color: cornflowerblue;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: all 300ms ease-in-out;
+    &:hover {
+        background-color: rgb(24, 56, 116);
+    }
+}
+
+#salida {
+    width: 100%;
+    padding: 3rem;
+    background-color: #8eafeb;
+    text-align: center;
+}
+
+#cargando{
+	display: none;
+	width: 100%;
+    padding: 3rem;
+    background-color: #8eafeb;
+    text-align: center;
+}
+
+.error{
+	color: red !important;
+}
+
+.info {
+    font-size: 2.4rem;
+    color: white;
+}

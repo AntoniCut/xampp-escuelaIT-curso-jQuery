@@ -24,7 +24,7 @@
         	$("#enlace").click(function(e){
         		e.preventDefault();
         		$.get("contenido.php", function(respuesta){
-	      			//alert(respuesta);
+	      			alert(respuesta);
 	      			if(respuesta == "error")
 	      				$("#salida").addClass("error");
 	      			$("#salida").text(respuesta);
