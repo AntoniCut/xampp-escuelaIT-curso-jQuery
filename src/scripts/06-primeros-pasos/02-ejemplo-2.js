@@ -16,7 +16,7 @@ $(document).ready(function () {
     console.log('\n');
 
 
-    const $parrafos = $(".main__ejemplo2 p");
+    const $parrafos = $(".main__section p");
     const $info1 = $("#info1");
 
     console.log('parrafos', $parrafos);
@@ -52,7 +52,7 @@ $(function () {
     console.warn('-----  02-ejemplo-2.js  --  $(function() {} )  -----');
     console.log('\n');
 
-    const $lis = $('.main__ejemplo2 li');
+    const $lis = $('.main__section li');
     const $info2 = $("#info2");
 
     // Primero modificamos el texto de todos los <li> a "hola"
