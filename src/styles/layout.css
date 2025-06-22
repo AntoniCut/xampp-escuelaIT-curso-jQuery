@@ -1,15 +1,10 @@
 /*
-    ----------------------------------------------------
-    ----------  /01-curso-jquery-escuela-it/  ----------
-    ----------  /src/styles/layout.css  ----------------
-    ----------------------------------------------------
+    -----------------------------------------
+    ----------  /01-curso-jquery/  ----------
+    ----------  /src/styles/  ---------------
+    ----------  /layout.css  ----------------
+    -----------------------------------------
 */
-
-
-@import '/01-curso-jquery/src/styles/layout-header.css';
-@import '/01-curso-jquery/src/styles/layout-navbar.css';
-@import '/01-curso-jquery/src/styles/layout-main.css';
-@import '/01-curso-jquery/src/styles/layout-footer.css';
 
 
 html {

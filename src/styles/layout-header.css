@@ -27,7 +27,7 @@
 
 .header__container-logos {
     width: 30rem;
-    height: 12rem;
+    height: 6rem;
     position: absolute;
     top: 0;
     display: flex;
@@ -46,8 +46,8 @@
 
 .header__jquery-logo,
 .header__jquery-ui-logo {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
     &:hover {
         transform: scale(1.1);
     }
@@ -55,7 +55,7 @@
 
 .header__jquery-banner,
 .header__jquery-ui-banner {
-    width: 20rem;
+    width: 15rem;
     height: auto;
     mix-blend-mode: multiply;
     &:hover {

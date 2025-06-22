@@ -1,0 +1,9 @@
+#menu{
+  padding: 20px;
+  background: #840;
+  color: #fff;
+  width: 200px;
+  position: absolute;
+  left: 300px;
+  display: none;
+}
