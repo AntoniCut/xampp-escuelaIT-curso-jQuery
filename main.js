@@ -6,7 +6,8 @@
 */
 
 
-import { cdnJQuery_3_6_3 } from "/01-curso-jquery/src/libs/jquery/cdn/cdn-jquery-3.6.3.js";
+//import { cdnJQuery_3_6_3 } from "/01-curso-jquery/src/libs/jquery/cdn/cdn-jquery-3.6.3.js";
+import { cdnJQuery_4_0_0 } from "/01-curso-jquery/src/libs/jquery/cdn/cdn-jquery-4.0.0.js";
 import { loadJQueryByCdnOLocal } from "/01-curso-jquery/src/libs/jquery/load/load-jquery-by-cdn-local.js";
 
 import { cdnJQueryUI_1_14_1 } from "/01-curso-jquery/src/libs/jquery-ui/cdn/cdn-jquery-ui-1.14.1.js";
@@ -17,8 +18,8 @@ import { spaCursoJQuery } from "/01-curso-jquery/src/scripts/spa-curso-jquery.js
 
 
 //  -----  Carga de jQuery  -----
-const cdnJQuery = cdnJQuery_3_6_3;
-const localJQuery = "/01-curso-jquery/src/libs/jquery/local/jquery-3.7.1.min.js";
+const cdnJQuery = cdnJQuery_4_0_0;
+const localJQuery = "/01-curso-jquery/src/libs/jquery/local/jquery-4.0.0-beta.min.js";
 
 //  -----  Carga de jQuery UI  -----
 const cdnJQueryUI = cdnJQueryUI_1_14_1;

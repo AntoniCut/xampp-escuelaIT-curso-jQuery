@@ -22,6 +22,17 @@ export const routesClases01To06 = [
         scripts: []
     },
 
+    // {
+    //     id: 'navigation',
+    //     url: '/01-curso-jquery/src/pages/navigation/index.html',
+    //     title: 'Navigation',
+    //     path: '/navigation/',
+    //     favicon: '/01-curso-jquery/src/favicon/jquery-favicon-original.ico',
+    //     headerTitle: 'Navigation',
+    //     styles: '/01-curso-jquery/src/styles/navigation.css',
+    //     scripts: []
+    // },
+
     {
         id: 'clase01',
         url: '/01-curso-jquery/src/pages/01-que-es-jquery/index.html',
@@ -112,7 +123,7 @@ export const routesClases01To06 = [
         title: 'Ejemplo 2 - Clase 6 - Primeros pasos con jQuery - Curso jQuery escuelaIT',
         path: '/clase-6-primeros-pasos-con-jquery/ejemplo-2/',
         favicon: '/01-curso-jquery/src/favicon/jquery-favicon-original.ico',
-        headerTitle: 'Clase 6 - Primeros pasos con jQuery <br> Ejemplo 1',
+        headerTitle: 'Clase 6 - Primeros pasos con jQuery <br> Ejemplo 2',
         styles: '/01-curso-jquery/src/styles/06-primeros-pasos/02-ejemplo2.css',
         scripts: [
             '/01-curso-jquery/src/scripts/06-primeros-pasos/02-ejemplo-2.js'

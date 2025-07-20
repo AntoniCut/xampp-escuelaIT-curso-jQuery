@@ -14,3 +14,11 @@
 @import '/01-curso-jquery/src/styles/layout-main.css';
 @import '/01-curso-jquery/src/styles/layout-footer.css';
 
+
+@view-transition {
+    navigation: auto;
+}
+
+::view-transition-group(*) {
+    animation-duration: 1000ms;
+}

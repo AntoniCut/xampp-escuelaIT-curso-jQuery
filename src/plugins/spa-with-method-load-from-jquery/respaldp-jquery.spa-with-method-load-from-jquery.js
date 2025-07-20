@@ -46,10 +46,10 @@ export const spaWithMethodLoadFromJQueryPlugins = ($) => {
             //  ------------------------------------------------------------------------------------
             //  ----------  función para la Carga del Contenido Inicial de la Aplicación  ----------
             //  ------------------------------------------------------------------------------------
-            const init = () => {
+            function init() {
 
 
-                //  -----  Cargamos el navbar para que siempre este disponible  -----
+                //  -----  Cargamos el navbar para que siempre este disponible  -----    ----------
                 $layoutNavbar.load(settings.urlNavBar, () => actionsNavbar());
 
                 if (settings.draggable)
@@ -82,7 +82,7 @@ export const spaWithMethodLoadFromJQueryPlugins = ($) => {
             //  --------------------------------------------------------------------
             //  ----------  función para mover componentes por la página  ----------
             //  --------------------------------------------------------------------
-            const draggableComponentsHtml = () => {
+            function draggableComponentsHtml() {
 
                 //  ----------  Hacemos los menús arrastrables  ----------
                 $layoutNavbar.draggable({
@@ -96,7 +96,7 @@ export const spaWithMethodLoadFromJQueryPlugins = ($) => {
             //  ------------------------------------------------------------------
             //  ----------  Función para manejar la carga de contenido  ----------
             //  ------------------------------------------------------------------
-            const loadContent = route => {
+            function loadContent(route) {
 
                 //  -----  Si el navegador no soporta ViewTransition, usa el método clásico  -----
                 if (!document.startViewTransition)
@@ -110,7 +110,7 @@ export const spaWithMethodLoadFromJQueryPlugins = ($) => {
             //  -------------------------------------------------------------------------------------
             //  ----------  Función para manejar la carga de contenido con viewtransition  ----------
             //  -------------------------------------------------------------------------------------
-            const loadContentWithViewTransition = route => {
+            function loadContentWithViewTransition(route) {
 
                 //  -----  Usamos la API ViewTransition para una transición suave  -----
                 document.startViewTransition(() => {
@@ -128,20 +128,28 @@ export const spaWithMethodLoadFromJQueryPlugins = ($) => {
             //  -------------------------------------------------------------------------------------
             //  ----------  Función para manejar la carga de contenido sin viewtransition  ----------
             //  -------------------------------------------------------------------------------------
-            const loadContentWithoutViewTransition = route => loadTodoContentInHtml(route);
+            function loadContentWithoutViewTransition(route) {
 
-            
+                loadTodoContentInHtml(route);
+
+            }
+
+
 
             //  -----------------------------------------------------------------
             //  ----------  Función que carga el contenido en el HTML  ----------
             //  -----------------------------------------------------------------
-            const loadTodoContentInHtml = route => {
+            function loadTodoContentInHtml(route) {
 
 
                 //  -----  carga el header  -----
                 $layoutHeader.load(settings.urlHeader, function () {
                     $('#titlePage').html(route.headerTitle);
                 });
+
+
+                //  -----  cargamos el navbar  -----
+                //$layoutNavbar.load(settings.urlNavBar, () => actionsNavbar());
 
 
                 //  -----  carga el contenido del main  -----
@@ -182,13 +190,14 @@ export const spaWithMethodLoadFromJQueryPlugins = ($) => {
             //  --------------------------------------------------------
             //  ----------  Función que Actualiza el Favicon  ----------
             //  --------------------------------------------------------
-            const updateFavicon = favicon => {
+            function updateFavicon(favicon) {
 
                 let $favicon = $('link[rel~="icon"]');
 
-                if ($favicon.length === 0)
+                if ($favicon.length === 0) {
                     $favicon = $('<link rel="icon" type="image/x-icon">').appendTo('head');
-                
+                }
+
                 $favicon.attr('href', `${favicon}?t=${new Date().getTime()}`);
 
             }
@@ -197,7 +206,7 @@ export const spaWithMethodLoadFromJQueryPlugins = ($) => {
             //  ------------------------------------------------------------------
             //  ----------  Función que Carga los estilos de la página  ----------
             //  ------------------------------------------------------------------
-            const loadStylesheet = cssFile => {
+            function loadStylesheet(cssFile) {
 
                 let $stylesheet = $(`link[href*="${cssFile}"]`);
                 if ($stylesheet.length === 0) {
@@ -210,7 +219,7 @@ export const spaWithMethodLoadFromJQueryPlugins = ($) => {
             //  ------------------------------------------------------------------
             //  ----------  Función que Carga un Script si este Existe  ----------
             //  ------------------------------------------------------------------
-            const loadScriptsIfExists = scriptUrl => {
+            function loadScriptsIfExists(scriptUrl) {
 
                 $.ajax({
 

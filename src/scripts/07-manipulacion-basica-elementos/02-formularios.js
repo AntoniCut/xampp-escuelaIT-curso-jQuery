@@ -52,7 +52,10 @@
 
     $check.on("click", mostrarOcular);
 
-    $cerrar.on("click", function () {
+    $cerrar.on("click", function (e) {
+        
+        e.preventDefault();  
+        
         $check.prop("checked", false);
         mostrarOcular();
     });

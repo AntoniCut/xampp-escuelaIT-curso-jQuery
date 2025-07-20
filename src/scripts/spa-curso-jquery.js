@@ -7,6 +7,7 @@
 */
 
 import { routesClases01To06 } from "/01-curso-jquery/src/routes/routes-clases-01-06.js";
+import { routesClase07 } from "/01-curso-jquery/src/routes/routes-clase-07.js";
 
 
 export const spaCursoJQuery = ($) => {
@@ -19,7 +20,8 @@ export const spaCursoJQuery = ($) => {
     
     //  ----------  Arrays con la informacion del contenido a cargar de las rutas del proyecto ----------
     const allRoutes = [
-        ...routesClases01To06
+        ...routesClases01To06,
+        ...routesClase07
     ];
 
   
